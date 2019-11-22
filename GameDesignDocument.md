@@ -3,14 +3,39 @@
 ## USER INTERFACE
 
 ## CHARACTER CREATION
+You sort-of "create your character" as you play the game, since your responses
+to npc interactions shape your character's personality.
+
+However, there is no visual customization of your character.
 
 ## LEVELING UP
 
 ## SUCCESS
+You move closer to winning the game by making the correct decisions in your
+conversations with other NPCs. If you earn enough empathy, then you can speak
+with the character blocking the exit to the village and you will be able to
+leave (ALEX correct this if this description is wrong...)
 
 ## FAILURE
+You lose the game if you do not earn enough empathy during your conversations
+with other players. When you go to talk to the character blocking the exit to
+village, (ALEX, please fill in what will happen...)
 
 ## PLAYER ACTIONS
+Left Arrow: Move character left
+Right Arrow: Move character right
+Up Arrow: Move character up
+Down Arrow: Move character down
+
+Hold j with Arrow Key: Sprint in corresonding direction
+
+Walk into door from outside: Character enters house
+Walk into door from inside: Character leaves house
+
+Walk up to NPC and press Fire1: Initiate Conversation
+When in conversation, press Fire1: View next bit of text
+When in conversation, press 1: Make choice 1 in conversation
+When in conversation, press 2: Make choice 2 in conversation
 
 ## ENVIRONMENTS
 
@@ -19,3 +44,11 @@
 ## NPC TYPES
 
 ## OTHER ASSETS
+### Sound
+Windless Slopes: For outdoor music, Source: https://bakudas.itch.io/generic-rpg-pack
+Red Carpet Wooden Floor: For indoor music, Source: https://bakudas.itch.io/generic-rpg-pack
+Squeaky Door Open: https://freesound.org/people/CastIronCarousel/sounds/216878/
+Door Close: https://freesound.org/people/InspectorJ/sounds/339677/
+Orchestral-victory-fanfare: Gained empathy, Source: https://freesound.org/people/Sheyvan/sounds/470083/
+UI Confirmation Beep: https://freesound.org/people/paep3nguin/sounds/388046/
+victory-fanfare: Beat the game, Source: https://freesound.org/people/humanoide9000/sounds/466133/
