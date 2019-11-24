@@ -44,6 +44,13 @@ When in conversation, press 2: Make choice 2 in conversation
 ## NPC TYPES
 
 ## OTHER ASSETS
+
+### Physics and Movement
+For realistic player movement speed that gives the user a sense of momentum
+and friction, implementation will include use of ADSR envelope code. 
+Implementation of boundary checking will ensure player remains safely within
+boundaries of town and any house they enter. 
+
 ### Sound
 Windless Slopes: For outdoor music, Source: https://bakudas.itch.io/generic-rpg-pack
 Red Carpet Wooden Floor: For indoor music, Source: https://bakudas.itch.io/generic-rpg-pack
@@ -52,3 +59,8 @@ Door Close: https://freesound.org/people/InspectorJ/sounds/339677/
 Orchestral-victory-fanfare: Gained empathy, Source: https://freesound.org/people/Sheyvan/sounds/470083/
 UI Confirmation Beep: https://freesound.org/people/paep3nguin/sounds/388046/
 victory-fanfare: Beat the game, Source: https://freesound.org/people/humanoide9000/sounds/466133/
+
+### Game Feel
+Player's character movement throughout the game should feel immediate and 
+match what you would expect from your surrounding terrain. NPC interactions
+triggerable from reasonable range. 
