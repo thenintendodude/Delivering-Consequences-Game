@@ -1,0 +1,55 @@
+{
+    "nodes": [
+        {
+            "id": "root1",
+            "character": "Fie",
+            "script": "This is my first example sentence.",
+            "choice1": "I choose left!",
+            "choice2": "I choose right!",
+            "choice1id": "left1",
+            "choice2id": "right1",
+            "nextConversation": "root2"
+        },
+        {
+            "id": "left1",
+            "character": "Fie",
+            "script": "Left is a great choice!",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "",
+            "choice2id": "",
+            "nextConversation": "root2"
+        },
+        {
+            "id": "right1",
+            "character": "Demanim",
+            "script": "I will perform diabolical actions now! Mwahahaha!",
+            "choice1": "Scream loudly",
+            "choice2": "Attempt to scream, but actually cough uncontrollably",
+            "choice1id": "",
+            "choice2id": "right2",
+            "nextConversation": "root2"
+        },
+        {
+            "id": "right2",
+            "character": "Fie",
+            "script": "Real impressive display of physical prowess...",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "",
+            "choice2id": "right2",
+            "nextConversation": "root2"
+        },
+        {
+            "id": "root2",
+            "character": "Fie",
+            "script": "I have nothing left to say to you.",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "",
+            "choice2id": "",
+            "nextConversation": "root2"
+        }
+    ]
+}
+
