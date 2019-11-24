@@ -64,3 +64,11 @@ victory-fanfare: Beat the game, Source: https://freesound.org/people/humanoide90
 Player's character movement throughout the game should feel immediate and 
 match what you would expect from your surrounding terrain. NPC interactions
 triggerable from reasonable range. 
+
+___
+## Animation and Visuals
+To keep the art style consistent, one main asset package will be used, the Liberated Pixel Cup (LPC) Base Assets: https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles . These assets are free to use, according to the site they were found on: https://opengameart.org/content/faq#q-how-to-credit and the credits are available in the Credits.txt file of the package, also noted here.
+
+"Liberated Pixel Cup (LPC) Base Assets" by Lanea Zimmerman (AKA Sharm), Stephen Challener (AKA Redshrike), Charles Sanchez (AKA CharlesGabriel), Manuel Riecke (AKA MrBeast), and Daniel Armstrong (AKA HughSpectrum).
+
+The asset package includes environment tiles and character sprites of 32x32 pixels. The environment tiles will be used to create a village map and houses that a player character can explore. The character and NPCs will also be animated based on which X or Y direction they are moving in on the map. 
