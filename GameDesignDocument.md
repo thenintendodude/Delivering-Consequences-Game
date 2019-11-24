@@ -1,6 +1,9 @@
 # GAME DESIGN
 
 ## USER INTERFACE
+There is a popup dialogue panel that will appear whenever your character tries to talk to an NPC. The text will be parsed to show up without overflowing accordingly. If the player has a choice to make from the conversation, then the choice buttons will pop up on the screen. We have IDs that accordingly indicate what is the next conversation the player will have with the NPC. 
+
+There will be an "empathy" value measurement on the screen that indicates to the player how much closer they are to moving on in the game. 
 
 ## CHARACTER CREATION
 You sort-of "create your character" as you play the game, since your responses
@@ -64,6 +67,9 @@ victory-fanfare: Beat the game, Source: https://freesound.org/people/humanoide90
 Player's character movement throughout the game should feel immediate and 
 match what you would expect from your surrounding terrain. NPC interactions
 triggerable from reasonable range. 
+
+### Gameplay Testing
+Gameplay testing will begin once the game is nearing the end of production. 
 
 ___
 ## Animation and Visuals
