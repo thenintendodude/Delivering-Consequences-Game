@@ -36,6 +36,7 @@ Temporary Items
 # Get latest from https://github.com/github/gitignore/blob/master/Unity.gitignore
 /[Ll]ibrary/
 /Delivering-Consequences-Game/[Tt]emp/
+/Delivering-Consequences-Game/[Ll]ibrary/
 /[Oo]bj/
 /[Bb]uild/
 /[Bb]uilds/
