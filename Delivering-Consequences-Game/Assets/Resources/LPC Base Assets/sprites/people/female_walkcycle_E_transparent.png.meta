@@ -1,7 +1,115 @@
 fileFormatVersion: 2
 guid: 520dfe625ad337a47bf07fb30e6242c1
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 6855836385332950095
+    second: female_walkcycle_E_transparent_0
+  - first:
+      213: 3702805358324988843
+    second: female_walkcycle_E_transparent_1
+  - first:
+      213: -1702666302214061823
+    second: female_walkcycle_E_transparent_2
+  - first:
+      213: -32166050513627352
+    second: female_walkcycle_E_transparent_3
+  - first:
+      213: -1914621052208857642
+    second: female_walkcycle_E_transparent_4
+  - first:
+      213: -5092093939516259775
+    second: female_walkcycle_E_transparent_5
+  - first:
+      213: 7236952313519490916
+    second: female_walkcycle_E_transparent_6
+  - first:
+      213: 3356622708795880031
+    second: female_walkcycle_E_transparent_7
+  - first:
+      213: 897642957954503211
+    second: female_walkcycle_E_transparent_8
+  - first:
+      213: 1186399095168320529
+    second: female_walkcycle_E_transparent_9
+  - first:
+      213: 2453644759703233989
+    second: female_walkcycle_E_transparent_10
+  - first:
+      213: 7094901393546386367
+    second: female_walkcycle_E_transparent_11
+  - first:
+      213: -3802570367457854408
+    second: female_walkcycle_E_transparent_12
+  - first:
+      213: 7948632430698236367
+    second: female_walkcycle_E_transparent_13
+  - first:
+      213: -2474577623537499599
+    second: female_walkcycle_E_transparent_14
+  - first:
+      213: -7332965013439335070
+    second: female_walkcycle_E_transparent_15
+  - first:
+      213: 3431254278416979884
+    second: female_walkcycle_E_transparent_16
+  - first:
+      213: -7482990508173801667
+    second: female_walkcycle_E_transparent_17
+  - first:
+      213: -2138094523598035862
+    second: female_walkcycle_E_transparent_18
+  - first:
+      213: -9168406867691529906
+    second: female_walkcycle_E_transparent_19
+  - first:
+      213: -8301670393233162668
+    second: female_walkcycle_E_transparent_20
+  - first:
+      213: -1977573188038304909
+    second: female_walkcycle_E_transparent_21
+  - first:
+      213: 2766480485399093267
+    second: female_walkcycle_E_transparent_22
+  - first:
+      213: 7322818085992728066
+    second: female_walkcycle_E_transparent_23
+  - first:
+      213: 37725751607260801
+    second: female_walkcycle_E_transparent_24
+  - first:
+      213: 3685815690466028423
+    second: female_walkcycle_E_transparent_25
+  - first:
+      213: -7337998810413927345
+    second: female_walkcycle_E_transparent_26
+  - first:
+      213: 5003358299818304394
+    second: female_walkcycle_E_transparent_27
+  - first:
+      213: -5470126845396090794
+    second: female_walkcycle_E_transparent_28
+  - first:
+      213: 4672194235362876261
+    second: female_walkcycle_E_transparent_29
+  - first:
+      213: -1502012617191207257
+    second: female_walkcycle_E_transparent_30
+  - first:
+      213: 2388894381347926772
+    second: female_walkcycle_E_transparent_31
+  - first:
+      213: 3172423747959861347
+    second: female_walkcycle_E_transparent_32
+  - first:
+      213: -5874099220117126012
+    second: female_walkcycle_E_transparent_33
+  - first:
+      213: -6675223962461159415
+    second: female_walkcycle_E_transparent_34
+  - first:
+      213: -7537239494721149395
+    second: female_walkcycle_E_transparent_35
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -31,7 +139,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -40,12 +148,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -63,7 +171,19 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -72,7 +192,763 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: female_walkcycle_E_transparent_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 195
+        width: 64
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f82c9576f1dccf4286db7679b73adbd
+      internalID: 6855836385332950095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female_walkcycle_E_transparent_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 195
+        width: 64
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 454aa5187ea3c9d4d87fd02e75ccc8dc
+      internalID: 3702805358324988843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female_walkcycle_E_transparent_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 195
+        width: 64
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23a4b57ceaf855f4792b23b9ef66fa7b
+      internalID: -1702666302214061823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female_walkcycle_E_transparent_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 195
+        width: 64
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5262252ede8ef2b4b8ae4a1135185514
+      internalID: -32166050513627352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female_walkcycle_E_transparent_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 195
+        width: 64
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a475f024cb972f43a36423515706d7e
+      internalID: -1914621052208857642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female_walkcycle_E_transparent_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 195
+        width: 64
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 032076f57172595449ba723c309b4f63
+      internalID: -5092093939516259775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female_walkcycle_E_transparent_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 195
+        width: 64
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7605e85ded2766b4780367aad8d70309
+      internalID: 7236952313519490916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female_walkcycle_E_transparent_7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 195
+        width: 64
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 632819f57d10c08469a436257b1cf5a7
+      internalID: 3356622708795880031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female_walkcycle_E_transparent_8
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 195
+        width: 64
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 594c9344c769361458eb9e0f0426c07e
+      internalID: 897642957954503211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female_walkcycle_E_transparent_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 130
+        width: 64
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e28f1f8d91b47264e9147e1885ca2a2a
+      internalID: 1186399095168320529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female_walkcycle_E_transparent_10
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 130
+        width: 64
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcb62325e8c7cb54cbb1ebcb46f68544
+      internalID: 2453644759703233989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female_walkcycle_E_transparent_11
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 130
+        width: 64
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32397122a15d3374e987cd85b00d9600
+      internalID: 7094901393546386367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female_walkcycle_E_transparent_12
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 130
+        width: 64
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ec963bd9c058f74b9d7a58037b41b47
+      internalID: -3802570367457854408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female_walkcycle_E_transparent_13
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 130
+        width: 64
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e381d9da15f969f4aad9885899c78a51
+      internalID: 7948632430698236367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female_walkcycle_E_transparent_14
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 130
+        width: 64
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d18a3fb54847c604e90222eeff51b2a1
+      internalID: -2474577623537499599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female_walkcycle_E_transparent_15
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 130
+        width: 64
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caf92ec91c10c8542abbccafcb825bf4
+      internalID: -7332965013439335070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female_walkcycle_E_transparent_16
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 130
+        width: 64
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7d14da3e0472b64c899c7f2b40b7f37
+      internalID: 3431254278416979884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female_walkcycle_E_transparent_17
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 130
+        width: 64
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa91162e76967344faaee97117834171
+      internalID: -7482990508173801667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female_walkcycle_E_transparent_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 65
+        width: 64
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b7ab8cc9b7d5b24586284d4a6bfda5a
+      internalID: -2138094523598035862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female_walkcycle_E_transparent_19
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 65
+        width: 64
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9da6843636c48ea45b24a12e02bfe9dc
+      internalID: -9168406867691529906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female_walkcycle_E_transparent_20
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 65
+        width: 64
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fd16334b4a999f4f8ff95cd20eda5f8
+      internalID: -8301670393233162668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female_walkcycle_E_transparent_21
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 65
+        width: 64
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2f76a486e4c9294686e682025c755f6
+      internalID: -1977573188038304909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female_walkcycle_E_transparent_22
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 65
+        width: 64
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbde5c5aa8bd17f4db9341b3e3084280
+      internalID: 2766480485399093267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female_walkcycle_E_transparent_23
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 65
+        width: 64
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7733f2c43317d2b439ff5c903c99ff85
+      internalID: 7322818085992728066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female_walkcycle_E_transparent_24
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 65
+        width: 64
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ba4d353dec28bf4dbc17d51d63da4b6
+      internalID: 37725751607260801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female_walkcycle_E_transparent_25
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 65
+        width: 64
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaf624fd100d91040b9c159b947bbb58
+      internalID: 3685815690466028423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female_walkcycle_E_transparent_26
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 65
+        width: 64
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4e4dbd6b7db8194bac96fbc194cfb4c
+      internalID: -7337998810413927345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female_walkcycle_E_transparent_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e63665273cab23d44a143b00625b40d6
+      internalID: 5003358299818304394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female_walkcycle_E_transparent_28
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a13e9bd979b0cb4db4db271dec5d782
+      internalID: -5470126845396090794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female_walkcycle_E_transparent_29
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f7b71290248a664383a05d4bbf5b3ed
+      internalID: 4672194235362876261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female_walkcycle_E_transparent_30
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd7c092d0dacca24fba1276dad500e7b
+      internalID: -1502012617191207257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female_walkcycle_E_transparent_31
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 64
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 352521f301abd174999b262518c42b95
+      internalID: 2388894381347926772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female_walkcycle_E_transparent_32
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 64
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 129117ef1c15bac4cab8249d1424ca3d
+      internalID: 3172423747959861347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female_walkcycle_E_transparent_33
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 64
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fe5b4bb76158634a9ca1bd98b138931
+      internalID: -5874099220117126012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female_walkcycle_E_transparent_34
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 64
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 995e6abe190cb5841906b9acda56c709
+      internalID: -6675223962461159415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female_walkcycle_E_transparent_35
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 64
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5bb630b15588ec409e55904b1cd1da5
+      internalID: -7537239494721149395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
