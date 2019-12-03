@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RedDoorExit : MonoBehaviour
+public class ExitHouse : MonoBehaviour
 {
     [SerializeField] private GameObject MainCamera;
     [SerializeField] private GameObject RoomCamera;
@@ -12,9 +12,6 @@ public class RedDoorExit : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Triggered Doormat");
-        //Player enters door of red house
-        Debug.Log(collision.gameObject.name);
         if (collision.gameObject.name == "Player")
         {
             Debug.Log("Switching Cameras To Outdoor");
