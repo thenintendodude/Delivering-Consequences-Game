@@ -106,6 +106,9 @@ public class VillagerMovement : MonoBehaviour
         var NPCPosition = this.transform.position;
         //Debug.Log("Player:" + PlayerPosition + "NPC: " + NPCPosition);
         VillagerAnimator.enabled = false;
+        IsWalking = false;
+        VillagerRigidBody.velocity = Vector2.zero;
+        VillagerAnimator.SetFloat("Speed", VillagerRigidBody.velocity.sqrMagnitude);
 
         if (PlayerPosition.x < NPCPosition.x && (
             (PlayerPosition.y > NPCPosition.y && PlayerPosition.y < (NPCPosition.y + .35))
