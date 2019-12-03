@@ -338,7 +338,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 15
+  m_SortingOrder: 13
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -26124,6 +26124,14 @@ MonoBehaviour:
   VillagerAnimator: {fileID: 240934391}
   WalkTime: 1
   WaitTime: 3
+  LeftSprite: {fileID: -6963595524649819140, guid: 2eef5747b5bb2684a9fc8eef50cc8be2,
+    type: 3}
+  RightSprite: {fileID: 7911201718178638804, guid: 2eef5747b5bb2684a9fc8eef50cc8be2,
+    type: 3}
+  UpSprite: {fileID: -1712709210781593432, guid: 2eef5747b5bb2684a9fc8eef50cc8be2,
+    type: 3}
+  DownSprite: {fileID: -3917737989471408162, guid: 2eef5747b5bb2684a9fc8eef50cc8be2,
+    type: 3}
 --- !u!50 &240934393
 Rigidbody2D:
   serializedVersion: 4
@@ -26318,7 +26326,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 14
+  m_SortingOrder: 12
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -28629,6 +28637,14 @@ MonoBehaviour:
   VillagerAnimator: {fileID: 398273623}
   WalkTime: 1
   WaitTime: 3
+  LeftSprite: {fileID: 1186399095168320529, guid: 520dfe625ad337a47bf07fb30e6242c1,
+    type: 3}
+  RightSprite: {fileID: 5003358299818304394, guid: 520dfe625ad337a47bf07fb30e6242c1,
+    type: 3}
+  UpSprite: {fileID: 6855836385332950095, guid: 520dfe625ad337a47bf07fb30e6242c1,
+    type: 3}
+  DownSprite: {fileID: -2138094523598035862, guid: 520dfe625ad337a47bf07fb30e6242c1,
+    type: 3}
 --- !u!50 &398273625
 Rigidbody2D:
   serializedVersion: 4
@@ -63769,7 +63785,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 16
+  m_SortingOrder: 14
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -65239,6 +65255,14 @@ MonoBehaviour:
   VillagerAnimator: {fileID: 1286582878}
   WalkTime: 1
   WaitTime: 3
+  LeftSprite: {fileID: -700207145760663714, guid: 072bc666b0acd574b9348c44fe885aa2,
+    type: 3}
+  RightSprite: {fileID: 2847634463238158637, guid: 072bc666b0acd574b9348c44fe885aa2,
+    type: 3}
+  UpSprite: {fileID: 8448685036910516125, guid: 072bc666b0acd574b9348c44fe885aa2,
+    type: 3}
+  DownSprite: {fileID: 7977435031334894272, guid: 072bc666b0acd574b9348c44fe885aa2,
+    type: 3}
 --- !u!50 &1286582874
 Rigidbody2D:
   serializedVersion: 4
@@ -65661,6 +65685,14 @@ MonoBehaviour:
   VillagerAnimator: {fileID: 1452780136}
   WalkTime: 1
   WaitTime: 3
+  LeftSprite: {fileID: -6077950757100142919, guid: fedc3c9b9fa19904686d66c19c1eae88,
+    type: 3}
+  RightSprite: {fileID: -8115932599905966099, guid: fedc3c9b9fa19904686d66c19c1eae88,
+    type: 3}
+  UpSprite: {fileID: -3425673428005539885, guid: fedc3c9b9fa19904686d66c19c1eae88,
+    type: 3}
+  DownSprite: {fileID: 1154871954976718436, guid: fedc3c9b9fa19904686d66c19c1eae88,
+    type: 3}
 --- !u!50 &1452780138
 Rigidbody2D:
   serializedVersion: 4
