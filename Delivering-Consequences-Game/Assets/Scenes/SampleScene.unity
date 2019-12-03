@@ -26117,8 +26117,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e6cdf02a52c5974884c74720dc03fc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Player: {fileID: 1467697446}
   MoveSpeed: 2
   IsWalking: 0
+  FacePlayer: 0
   VillagerAnimator: {fileID: 240934391}
   WalkTime: 1
   WaitTime: 3
@@ -28620,8 +28622,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e6cdf02a52c5974884c74720dc03fc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Player: {fileID: 1467697446}
   MoveSpeed: 2
   IsWalking: 0
+  FacePlayer: 0
   VillagerAnimator: {fileID: 398273623}
   WalkTime: 1
   WaitTime: 3
@@ -65228,8 +65232,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e6cdf02a52c5974884c74720dc03fc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Player: {fileID: 0}
   MoveSpeed: 2
   IsWalking: 0
+  FacePlayer: 0
   VillagerAnimator: {fileID: 1286582878}
   WalkTime: 1
   WaitTime: 3
@@ -65339,7 +65345,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1286582872}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 15, y: 35.2, z: 0}
+  m_LocalPosition: {x: 8.9, y: 36.98, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -65648,8 +65654,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e6cdf02a52c5974884c74720dc03fc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Player: {fileID: 1467697446}
   MoveSpeed: 2
   IsWalking: 0
+  FacePlayer: 0
   VillagerAnimator: {fileID: 1452780136}
   WalkTime: 1
   WaitTime: 3

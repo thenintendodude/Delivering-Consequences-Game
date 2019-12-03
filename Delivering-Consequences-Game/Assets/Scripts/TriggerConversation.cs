@@ -11,6 +11,8 @@ public class TriggerConversation : MonoBehaviour
         if (collision.gameObject.name == "Player")
         {
             Debug.Log("Trigger Conversation :)");
+            //Trigger Stop in Movement, Start Movement to Rotate and Face Player 
+            NPC.GetComponent<VillagerMovement>().FacePlayer = true;
         }
     }
 
@@ -19,6 +21,7 @@ public class TriggerConversation : MonoBehaviour
         if (collision.gameObject.name == "Player")
         {
             Debug.Log("Can No Longer Trigger Conversation :(");
+            NPC.GetComponent<VillagerMovement>().FacePlayer = false;
         }
     }
 
