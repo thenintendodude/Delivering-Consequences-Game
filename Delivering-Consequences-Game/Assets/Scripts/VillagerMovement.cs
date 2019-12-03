@@ -94,12 +94,17 @@ public class VillagerMovement : MonoBehaviour
     {
         var PlayerPosition = Player.transform.position;
         var NPCPosition = this.transform.position;
+        //Debug.Log("Player:" + PlayerPosition + "NPC: " + NPCPosition);
 
-        if (PlayerPosition.x < NPCPosition.x && (PlayerPosition.y < (NPCPosition.y + .1) || PlayerPosition.y > (NPCPosition.y - .1)))
+        if (PlayerPosition.x < NPCPosition.x && (
+            (PlayerPosition.y > NPCPosition.y && PlayerPosition.y < (NPCPosition.y + .35))
+            || (PlayerPosition.y < NPCPosition.y && PlayerPosition.y > (NPCPosition.y - .1))))
         {
             Debug.Log("Face West");
         }
-        else if (PlayerPosition.x > NPCPosition.x && (PlayerPosition.y < (NPCPosition.y + .1) || PlayerPosition.y > (NPCPosition.y - .1)))
+        else if (PlayerPosition.x > NPCPosition.x && (
+                (PlayerPosition.y  > NPCPosition.y && PlayerPosition.y < (NPCPosition.y + .35))
+                || (PlayerPosition.y < NPCPosition.y && PlayerPosition.y > (NPCPosition.y - .1))))
         {
             Debug.Log("Face East");
         }
