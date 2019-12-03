@@ -73,9 +73,11 @@ The first of these packages includes environmental 32x32 pixel tile squares that
 
 For this game, we want to have a player character and five non-playable characters. Although the LPC Base Assets package only contains two premade character sprites, the package does include blank character templates to make additional male and female characters. So, using the provided “base walkcycle” and “hairstyle” files, four custom character sprites will be created to present visually different looking NPCs in the game. 
 
-To animate each of these characters, the “walkcycle” sprites of each character will be spliced up and then used to create Left / Right / Up / Down animations. Code will be written to decide which animation to display depending on which direction (X or Y direction) the character is moving in on the map. The player character’s movement will be based on player input, while the NPCs will be set to randomly move about the map upon the game’s start to give the feel that the village is alive with living people. 
+To animate each of these characters, the “walkcycle” sprites of each character will be spliced up and then used to create Left / Right / Up / Down animations. Code will be written to decide which animation to display depending on which direction (X or Y direction) the character is moving in on the map. The player character’s movement will be based on player input, while the NPCs will be set to randomly move about the map upon the game’s start to give the feel that the village is alive with living people.
 
-The second of the listed asset packages will be used for a bunny NPC. This package specifically contains premade sprites of an animated bunny, which will be placed to randomly move about on the main village map to help make the village appear more alive. 
+The second of the listed asset packages contains more tile squares that will be used to further decorate the village map with additional village-related objects and explorable areas, such as a graveyard. These tiles will all contribute to making the village feel more like an actual village. 
+
+The last asset package will be used for a bunny NPC. This package specifically contains premade sprites of an animated bunny, which will be placed to randomly move about on the main village map to help make the village appear more alive. 
 
 ## Input
 
