@@ -26,20 +26,6 @@ with other players. When you go to talk to the character blocking the exit to
 village, (ALEX, please fill in what will happen...)
 
 ## Player Actions
-Left Arrow: Move character left
-Right Arrow: Move character right
-Up Arrow: Move character up
-Down Arrow: Move character down
-
-Hold j with Arrow Key: Sprint in corresonding direction
-
-Walk into door from outside: Character enters house
-Walk into door from inside: Character leaves house
-
-Walk up to NPC and press Fire1: Initiate Conversation
-When in conversation, press Fire1: View next bit of text
-When in conversation, press 1: Make choice 1 in conversation
-When in conversation, press 2: Make choice 2 in conversation
 
 ## Environments
 
@@ -80,6 +66,20 @@ The second of the listed asset packages contains more tile squares that will be 
 The last asset package will be used for a bunny NPC. This package specifically contains premade sprites of an animated bunny, which will be placed to randomly move about on the main village map to help make the village appear more alive.
 
 ## Input
+Left Arrow: Move character left
+Right Arrow: Move character right
+Up Arrow: Move character up
+Down Arrow: Move character down
+
+Hold j with Arrow Key: Sprint in corresonding direction
+
+Walk into door from outside: Character enters house
+Walk into door from inside: Character leaves house
+
+Walk up to NPC and press Fire1: Initiate Conversation
+When in conversation, press Fire1: View next bit of text
+When in conversation, press 1: Make choice 1 in conversation
+When in conversation, press 2: Make choice 2 in conversation
 
 ## Game Logic
 
