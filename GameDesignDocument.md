@@ -55,7 +55,7 @@ Implementation of boundary checking will ensure player remains safely within
 boundaries of town and any house they enter. 
 
 ### Sound
-Windless Slopes: For outdoor music, Source: https://bakudas.itch.io/generic-rpg-pack
+Our-Mountain_v003: For outdoor music, Source: https://soundimage.org/wp-content/uploads/2014/09/Our-Mountain_v003.mp3
 Red Carpet Wooden Floor: For indoor music, Source: https://bakudas.itch.io/generic-rpg-pack
 Squeaky Door Open: https://freesound.org/people/CastIronCarousel/sounds/216878/
 Door Close: https://freesound.org/people/InspectorJ/sounds/339677/
