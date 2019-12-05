@@ -12,7 +12,10 @@ public class TriggerConversation : MonoBehaviour
         {
             Debug.Log("Trigger Conversation :)");
             //Trigger Stop in Movement, Start Movement to Rotate and Face Player 
-            NPC.GetComponent<VillagerMovement>().FacePlayer = true;
+            if(NPC.GetComponent<VillagerMovement>() != null)
+            {
+                NPC.GetComponent<VillagerMovement>().FacePlayer = true;
+            }
         }
     }
 

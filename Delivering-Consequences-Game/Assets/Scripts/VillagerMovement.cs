@@ -114,24 +114,24 @@ public class VillagerMovement : MonoBehaviour
             (PlayerPosition.y > NPCPosition.y && PlayerPosition.y < (NPCPosition.y + .35))
             || (PlayerPosition.y < NPCPosition.y && PlayerPosition.y > (NPCPosition.y - .1))))
         {
-            Debug.Log("Face West");
+            //Debug.Log("Face West");
             SpriteRenderer.sprite = LeftSprite;
         }
         else if (PlayerPosition.x > NPCPosition.x && (
                 (PlayerPosition.y  > NPCPosition.y && PlayerPosition.y < (NPCPosition.y + .35))
                 || (PlayerPosition.y < NPCPosition.y && PlayerPosition.y > (NPCPosition.y - .1))))
         {
-            Debug.Log("Face East");
+            //Debug.Log("Face East");
             SpriteRenderer.sprite = RightSprite;
         }
         else if (PlayerPosition.y > NPCPosition.y)
         {
-            Debug.Log("Face North");
+            //Debug.Log("Face North");
             SpriteRenderer.sprite = UpSprite;
         }
         else
         {
-            Debug.Log("Face South");
+            //Debug.Log("Face South");
             SpriteRenderer.sprite = DownSprite;
         }
     }
