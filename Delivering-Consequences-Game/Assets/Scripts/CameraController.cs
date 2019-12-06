@@ -9,7 +9,7 @@ namespace Obscura
 
     public class CameraController: MonoBehaviour
     {
-        // Position Lock Camera Controller; 
+        // Position Lock Lerp Camera Controller; 
         [SerializeField] private float LerpDuration;
         [SerializeField] protected GameObject Target;
         private float minX = -26.0f;
