@@ -44,10 +44,9 @@ There is a popup dialogue panel that will appear whenever your character tries t
 There will be an "empathy" value measurement on the screen that indicates to the player how much closer they are to moving on in the game.
 
 ## Movement/Physics
-For realistic player movement speed that gives the user a sense of momentum
-and friction, implementation will include use of ADSR envelope code.
-Implementation of boundary checking will ensure player remains safely within
-boundaries of town and any house they enter.
+For realistic player movement player movement was implemented for our 2D topdown game very similarly to the Final Combat assignment. Implementation of collisions will ensure player remains safely within boundaries of town and any house they enter realistically. We have set the character's box collider to encompass their feet so they can stand in front of collidables.
+
+To enter and exit homes simply walk up to the door or doormat. A camera switch with empty game object collidables set to "is trigger" makes this possible. The cameras stationed at these NCP homes no longer lerp because the size of the home is smaller than the camera frame. Once within a certain circular radius of NPCs that can be talked to, a conversation can be triggered.
 
 ## Animation and Visuals
 To keep the art style consistent, the main asset packages used will all be of the Liberated Pixel Cup (LPC) art style. More about the LPC can be found here: http://lpc.opengameart.org. More specifically, the following asset packages will be used for tilemaps and character sprites for this game:
@@ -104,6 +103,3 @@ Gameplay testing will begin once the game is nearing the end of production.
 ## Press Kit and Trailer
 
 ## Game Feel
-Player's character movement throughout the game should feel immediate and
-match what you would expect from your surrounding terrain. NPC interactions
-triggerable from reasonable range.

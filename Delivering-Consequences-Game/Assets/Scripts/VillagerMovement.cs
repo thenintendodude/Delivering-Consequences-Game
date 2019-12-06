@@ -8,14 +8,19 @@ public class VillagerMovement : MonoBehaviour
     public float MoveSpeed = 2.0f;
     private Rigidbody2D VillagerRigidBody;
     public bool IsWalking;
-    public bool FacePlayer;
+    private bool FacePlayer;
     public Animator VillagerAnimator;
 
+    // Random movement vars.
     public float WalkTime = 1.0f;
     private float WalkCounter = 0.0f;
     public float WaitTime = 3.0f;
     private float WaitCounter = 0.0f;
     private int WalkDirection;
+
+    // Face Player constants.
+    private float UpperThreshold = .35f;
+    private float LowerThreshold = .2f;
 
     public Sprite LeftSprite;
     public Sprite RightSprite;
@@ -100,38 +105,43 @@ public class VillagerMovement : MonoBehaviour
         WalkCounter = WalkTime;
     }
 
+    public void setFacePlayer(bool CurrentStatus)
+    {
+        this.FacePlayer = CurrentStatus;
+    }
+
+    private bool PlayerBesideNPC(Vector3 PlayerPosition, Vector3 NPCPosition)
+    {
+        return (PlayerPosition.y > NPCPosition.y && PlayerPosition.y < (NPCPosition.y + UpperThreshold))
+            || (PlayerPosition.y < NPCPosition.y && PlayerPosition.y > (NPCPosition.y - LowerThreshold));
+    }
+
     private void UpdateToFacePlayer()
     {
         var PlayerPosition = Player.transform.position;
         var NPCPosition = this.transform.position;
-        //Debug.Log("Player:" + PlayerPosition + "NPC: " + NPCPosition);
+
+        // NPC Stops Walking.
         VillagerAnimator.enabled = false;
         IsWalking = false;
         VillagerRigidBody.velocity = Vector2.zero;
         VillagerAnimator.SetFloat("Speed", VillagerRigidBody.velocity.sqrMagnitude);
 
-        if (PlayerPosition.x < NPCPosition.x && (
-            (PlayerPosition.y > NPCPosition.y && PlayerPosition.y < (NPCPosition.y + .35))
-            || (PlayerPosition.y < NPCPosition.y && PlayerPosition.y > (NPCPosition.y - .1))))
+        // Find Player position relative to NPC,
+        if (PlayerPosition.x < NPCPosition.x && PlayerBesideNPC(PlayerPosition, NPCPosition))
         {
-            //Debug.Log("Face West");
             SpriteRenderer.sprite = LeftSprite;
         }
-        else if (PlayerPosition.x > NPCPosition.x && (
-                (PlayerPosition.y  > NPCPosition.y && PlayerPosition.y < (NPCPosition.y + .35))
-                || (PlayerPosition.y < NPCPosition.y && PlayerPosition.y > (NPCPosition.y - .1))))
+        else if (PlayerPosition.x > NPCPosition.x && PlayerBesideNPC(PlayerPosition, NPCPosition))
         {
-            //Debug.Log("Face East");
             SpriteRenderer.sprite = RightSprite;
         }
         else if (PlayerPosition.y > NPCPosition.y)
         {
-            //Debug.Log("Face North");
             SpriteRenderer.sprite = UpSprite;
         }
         else
         {
-            //Debug.Log("Face South");
             SpriteRenderer.sprite = DownSprite;
         }
     }

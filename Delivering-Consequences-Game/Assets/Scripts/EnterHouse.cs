@@ -14,7 +14,7 @@ public class EnterHouse : MonoBehaviour
     {
         if (collision.gameObject.name == "Player")
         {
-            Debug.Log("Switching Cameras");
+            Debug.Log("Switching Cameras to Indoor");
             this.MainCamera.SetActive(false);
             this.RoomCamera.SetActive(true);
             Player.transform.position = RoomSpawn;

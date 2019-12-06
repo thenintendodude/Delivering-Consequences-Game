@@ -11,10 +11,10 @@ public class TriggerConversation : MonoBehaviour
         if (collision.gameObject.name == "Player")
         {
             Debug.Log("Trigger Conversation :)");
-            //Trigger Stop in Movement, Start Movement to Rotate and Face Player 
+            // Trigger behavior that happens when Player within radius of NPC. 
             if(NPC.GetComponent<VillagerMovement>() != null)
             {
-                NPC.GetComponent<VillagerMovement>().FacePlayer = true;
+                NPC.GetComponent<VillagerMovement>().setFacePlayer(true);
             }
         }
     }
@@ -24,13 +24,17 @@ public class TriggerConversation : MonoBehaviour
         if (collision.gameObject.name == "Player")
         {
             Debug.Log("Can No Longer Trigger Conversation :(");
-            NPC.GetComponent<VillagerMovement>().FacePlayer = false;
+            // Trigger behavior that happens when Player is outside of radius of NPC. 
+            if (NPC.GetComponent<VillagerMovement>() != null)
+            {
+                NPC.GetComponent<VillagerMovement>().setFacePlayer(false);
+            }
         }
     }
 
-    // Update after movement has been settled
     void LateUpdate()
     {
+        // Snap trigger radius to its NPC.
         this.transform.position = NPC.transform.position; 
     }
 }

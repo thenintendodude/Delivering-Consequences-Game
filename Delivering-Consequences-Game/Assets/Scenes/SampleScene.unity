@@ -2166,8 +2166,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 198812016}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.4, y: 5.5, z: 0}
-  m_LocalScale: {x: 1.66, y: 1.18, z: 1}
+  m_LocalPosition: {x: -3.57, y: 11.33, z: 0}
+  m_LocalScale: {x: 2.07002, y: 1.37234, z: 1}
   m_Children: []
   m_Father: {fileID: 1118644011}
   m_RootOrder: 9
@@ -26279,7 +26279,6 @@ MonoBehaviour:
   Player: {fileID: 1467697446}
   MoveSpeed: 2
   IsWalking: 0
-  FacePlayer: 0
   VillagerAnimator: {fileID: 240934391}
   WalkTime: 1
   WaitTime: 3
@@ -26339,7 +26338,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.00000029802322, y: -0.050782204}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -26350,7 +26349,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2, y: 2.03125}
+  m_Size: {x: 0.9493748, y: 1.6588688}
   m_EdgeRadius: 0
 --- !u!1 &299823572
 GameObject:
@@ -28834,7 +28833,6 @@ MonoBehaviour:
   Player: {fileID: 1467697446}
   MoveSpeed: 2
   IsWalking: 0
-  FacePlayer: 0
   VillagerAnimator: {fileID: 398273623}
   WalkTime: 1
   WaitTime: 3
@@ -28906,7 +28904,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.12041092}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -28917,7 +28915,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2, y: 2.03125}
+  m_Size: {x: 0.8642483, y: 1.4807816}
   m_EdgeRadius: 0
 --- !u!114 &398273628
 MonoBehaviour:
@@ -65570,7 +65568,6 @@ MonoBehaviour:
   Player: {fileID: 0}
   MoveSpeed: 2
   IsWalking: 0
-  FacePlayer: 0
   VillagerAnimator: {fileID: 1286582878}
   WalkTime: 1
   WaitTime: 3
@@ -66042,7 +66039,6 @@ MonoBehaviour:
   Player: {fileID: 1467697446}
   MoveSpeed: 2
   IsWalking: 0
-  FacePlayer: 0
   VillagerAnimator: {fileID: 1452780136}
   WalkTime: 1
   WaitTime: 3
@@ -66088,7 +66084,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.022762299, y: -0.10237312}
+  m_Offset: {x: -0.022762299, y: -0.110975266}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -66099,7 +66095,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.0440292, y: 1.5080147}
+  m_Size: {x: 1.0440292, y: 1.525219}
   m_EdgeRadius: 0
 --- !u!212 &1452780140
 SpriteRenderer:
@@ -66193,7 +66189,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.025814056, y: -0.1118145}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -66204,7 +66200,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2, y: 2.03125}
+  m_Size: {x: 1.0535355, y: 1.5323906}
   m_EdgeRadius: 0
 --- !u!1 &1467697446
 GameObject:
@@ -66500,8 +66496,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1510692592}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -69.7, y: -1.7, z: 0}
-  m_LocalScale: {x: 1.7460314, y: 1.0363499, z: 1}
+  m_LocalPosition: {x: -119.6, y: -17.7, z: 0}
+  m_LocalScale: {x: 2.2523804, y: 1.4612533, z: 1}
   m_Children: []
   m_Father: {fileID: 1118644011}
   m_RootOrder: 10
@@ -72492,7 +72488,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -10.4600525, y: -11.964966}
+  m_AnchoredPosition: {x: -10.460083, y: -11.964966}
   m_SizeDelta: {x: 235.08002, y: 106.07001}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1711415647
@@ -72557,8 +72553,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1724963084}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.1, y: -39.1, z: 0}
-  m_LocalScale: {x: 2.1783106, y: 1.3962644, z: 1}
+  m_LocalPosition: {x: -10.5, y: -102.2, z: 0}
+  m_LocalScale: {x: 2.701105, y: 2.0378478, z: 1}
   m_Children: []
   m_Father: {fileID: 1118644011}
   m_RootOrder: 11
