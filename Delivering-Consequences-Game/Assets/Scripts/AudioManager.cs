@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AudioManager: MonoBehaviour
 {
-    public static AudioSource GetAudioSourceByName(string name)
+    public AudioSource GetAudioSourceByName(string name)
     {
         var audioObject = GameObject.FindWithTag("audio");
         Transform childTrans = audioObject.transform.Find(name);
@@ -22,18 +22,42 @@ public class AudioManager: MonoBehaviour
         outdoor,
         indoor
     }
-    public static void ToggleMusic(MusicType musicType)
+    public void ToggleMusic(MusicType musicType)
     {
+        var outdoorMusic = GetAudioSourceByName("Outdoor Music");
+        var indoorMusic = GetAudioSourceByName("Indoor Music");
+
         if (musicType == MusicType.indoor)
         {
-            GetAudioSourceByName("Indoor Music").Play();
-            GetAudioSourceByName("Outdoor Music").Stop();
+            StartCoroutine(StartFade(outdoorMusic, 1f, 0));
+            StartCoroutine(StartFade(indoorMusic, 1f, 1));
         }
-        else
+        else if (musicType == MusicType.outdoor)
         {
-            GetAudioSourceByName("Outdoor Music").Play();
-            GetAudioSourceByName("Indoor Music").Stop();
-
+            StartCoroutine(StartFade(indoorMusic, 1f, 0));
+            StartCoroutine(StartFade(outdoorMusic, 1f, 1));
         }
     }
+    private IEnumerator StartFade(AudioSource audioSource, float duration, float newVolume)
+    {
+        float currentTime = 0;
+        float startVolume = audioSource.volume;
+
+        if (newVolume == 1)
+        {
+            audioSource.Play();
+        }
+        while (currentTime < duration)
+        {
+            currentTime += Time.deltaTime;
+            audioSource.volume = Mathf.Lerp(startVolume, newVolume, currentTime / duration);
+            yield return null;
+        }
+        if (newVolume == 0)
+        {
+            audioSource.Stop();
+        }
+        yield break;
+    }
+
 }

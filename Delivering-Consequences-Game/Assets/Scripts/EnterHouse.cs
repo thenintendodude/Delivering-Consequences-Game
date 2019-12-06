@@ -10,6 +10,13 @@ public class EnterHouse : MonoBehaviour
     [SerializeField] private Vector3 RoomSpawn;
     [SerializeField] private GameObject Player;
 
+    private AudioManager AudioManager;
+    private void Start()
+    {
+        AudioManager = GameObject.FindWithTag("audio").GetComponent<AudioManager>();
+    }
+
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.name == "Player")
