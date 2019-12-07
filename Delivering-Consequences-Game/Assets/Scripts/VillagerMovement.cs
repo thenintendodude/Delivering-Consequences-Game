@@ -5,16 +5,16 @@ using UnityEngine;
 public class VillagerMovement : MonoBehaviour
 {
     [SerializeField] private GameObject Player;
-    public float MoveSpeed = 2.0f;
+    [SerializeField] private float MoveSpeed = 2.0f;
+    [SerializeField] private bool IsWalking;
+    [SerializeField] private Animator VillagerAnimator;
     private Rigidbody2D VillagerRigidBody;
-    public bool IsWalking;
     private bool FacePlayer;
-    public Animator VillagerAnimator;
 
     // Random movement vars.
-    public float WalkTime = 1.0f;
+    [SerializeField] private float WalkTime = 1.0f;
+    [SerializeField] private float WaitTime = 3.0f;
     private float WalkCounter = 0.0f;
-    public float WaitTime = 3.0f;
     private float WaitCounter = 0.0f;
     private int WalkDirection;
 
@@ -22,10 +22,11 @@ public class VillagerMovement : MonoBehaviour
     private float UpperThreshold = .35f;
     private float LowerThreshold = .2f;
 
-    public Sprite LeftSprite;
-    public Sprite RightSprite;
-    public Sprite UpSprite;
-    public Sprite DownSprite;
+    // Villager direction sprites.
+    [SerializeField] private Sprite LeftSprite;
+    [SerializeField] private Sprite RightSprite;
+    [SerializeField] private Sprite UpSprite;
+    [SerializeField] private Sprite DownSprite;
     private SpriteRenderer SpriteRenderer;
 
     // Start is called before the first frame update
