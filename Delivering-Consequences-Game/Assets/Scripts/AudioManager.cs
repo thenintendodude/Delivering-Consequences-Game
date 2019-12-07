@@ -4,8 +4,22 @@ using UnityEngine;
 
 public class AudioManager: MonoBehaviour
 {
-    private Coroutine OutdoorFadeOut;
-    private Coroutine IndoorFadeOut;
+    private Coroutine MusicFadingOutCoroutine;
+    private AudioSource MusicFadingOut;
+    private AudioSource CurrentMusicPlaying;
+
+    private AudioSource OutdoorMusic;
+    private AudioSource IndoorMusic;
+    private AudioSource MainMenuMusic;
+
+    private void Start()
+    {
+        OutdoorMusic = GetAudioSourceByName("Outdoor Music");
+        IndoorMusic = GetAudioSourceByName("Indoor Music");
+        MainMenuMusic = GetAudioSourceByName("Main Menu Music");
+
+        CurrentMusicPlaying = OutdoorMusic;
+    }
 
     public AudioSource GetAudioSourceByName(string name)
     {
@@ -23,36 +37,77 @@ public class AudioManager: MonoBehaviour
 
     public enum MusicType {
         outdoor,
-        indoor
+        indoor,
+        mainMenu
     }
+
     public void ToggleMusic(MusicType musicType)
     {
-        var outdoorMusic = GetAudioSourceByName("Outdoor Music");
-        var indoorMusic = GetAudioSourceByName("Indoor Music");
+        AudioSource musicToPlay = ConvertToAudioSource(musicType);
 
+        if (musicToPlay == MusicFadingOut)
+        {
+            // Stop a previous coroutine if it was still fading out the music we're about to play again.
+            StopCoroutine(MusicFadingOutCoroutine);
+        }
+
+        MusicFadingOutCoroutine = StartCoroutine(StartFade(CurrentMusicPlaying, 1f, 0));
+        MusicFadingOut = CurrentMusicPlaying;
+
+        musicToPlay.Play();
+        CurrentMusicPlaying = musicToPlay;
+        StartCoroutine(StartFade(musicToPlay, 1f, 1));
+
+
+
+
+
+        //{
+        //    if (IndoorFadeOut != null)
+        //    {
+        //        // Stop a previous coroutine that was fading out the indoor music.
+        //        StopCoroutine(IndoorFadeOut);
+        //    }
+        //    var musicFadeOut = StartCoroutine(StartFade(CurrentMusicPlaying, 1f, 0));
+        //    SetWhichMusicIsFadingOut(musicFadeOut);
+        //    IndoorMusic.Play();
+        //    StartCoroutine(StartFade(IndoorMusic, 1f, 1));
+        //    CurrentMusicPlaying = IndoorMusic;
+        //}
+        //else if (musicType == MusicType.outdoor)
+        //{
+        //    if (OutdoorFadeOut != null)
+        //    {
+        //        // Stop a previous coroutine that was fading out the outdoor music.
+        //        StopCoroutine(OutdoorFadeOut);
+        //    }
+        //    IndoorFadeOut = StartCoroutine(StartFade(IndoorMusic, 1f, 0));
+        //    OutdoorMusic.Play();
+        //    StartCoroutine(StartFade(OutdoorMusic, 1f, 1));
+        //}
+        //else if (musicType == MusicType.mainMenu)
+        //{
+
+        //}
+
+    }
+
+    private AudioSource ConvertToAudioSource(MusicType musicType)
+    {
         if (musicType == MusicType.indoor)
         {
-            if (IndoorFadeOut != null)
-            {
-                // Stop a previous coroutine that was fading out the indoor music.
-                StopCoroutine(IndoorFadeOut);
-            }
-            OutdoorFadeOut = StartCoroutine(StartFade(outdoorMusic, 1f, 0));
-            indoorMusic.Play();
-            StartCoroutine(StartFade(indoorMusic, 1f, 1));
+            return IndoorMusic;
         }
         else if (musicType == MusicType.outdoor)
         {
-            if (OutdoorFadeOut != null)
-            {
-                // Stop a previous coroutine that was fading out the outdoor music.
-                StopCoroutine(OutdoorFadeOut);
-            }
-            IndoorFadeOut = StartCoroutine(StartFade(indoorMusic, 1f, 0));
-            outdoorMusic.Play();
-            StartCoroutine(StartFade(outdoorMusic, 1f, 1));
+            return OutdoorMusic;
+        }
+        else
+        {
+            return MainMenuMusic;
         }
     }
+
     private IEnumerator StartFade(AudioSource audioSource, float duration, float newVolume)
     {
         float currentTime = 0;
@@ -70,5 +125,4 @@ public class AudioManager: MonoBehaviour
         }
         yield break;
     }
-
 }

@@ -81,7 +81,7 @@ The second of the listed asset packages contains more tile squares that will be 
 The last asset package will be used for a bunny NPC. This package specifically contains premade sprites of an animated bunny, which will be placed to randomly move about on the main village map to help make the village appear more alive.
 
 ## Input
-Left Arrow: Move character left
+Left Arrow (or W): Move character left
 Right Arrow: Move character right
 Up Arrow: Move character up
 Down Arrow: Move character down
@@ -104,6 +104,7 @@ ___
 ## Audio
 Windless Slopes: For outdoor music, Source: https://bakudas.itch.io/generic-rpg-pack
 Our-Mountain_v003: For outdoor music, Source: https://soundimage.org/wp-content/uploads/2014/09/Our-Mountain_v003.mp3
+Fantasy_Game_Background: For menu screen music, Source: http://soundimage.org/wp-content/uploads/2014/04/Fantasy_Game_Background.mp3
 Red Carpet Wooden Floor: For indoor music, Source: https://bakudas.itch.io/generic-rpg-pack
 Squeaky Door Open: https://freesound.org/people/CastIronCarousel/sounds/216878/
 Door Close: https://freesound.org/people/InspectorJ/sounds/339677/
