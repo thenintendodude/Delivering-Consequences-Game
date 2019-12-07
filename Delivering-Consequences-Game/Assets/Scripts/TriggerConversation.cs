@@ -5,7 +5,6 @@ using UnityEngine;
 public class TriggerConversation : MonoBehaviour
 {
     [SerializeField] private GameObject NPC;
-    private bool TriggerPressed = false;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -17,9 +16,9 @@ public class TriggerConversation : MonoBehaviour
             {
                 NPC.GetComponent<VillagerMovement>().setFacePlayer(true);
             }
-            if(NPC.GetComponent<PlayerConversation>() != null)// && TriggerPressed)
+            if(NPC.GetComponent<PlayerConversation>() != null)
             {
-                //TODO: GET SCRIPT PUSHDETECTION AND DISABLE IT FOR THE CURRENT NPC 
+                NPC.GetComponent<PushDetection>().enabled = false;
                 NPC.GetComponent<PlayerConversation>().setWithinRadius(true);
             }
         }
@@ -36,15 +35,11 @@ public class TriggerConversation : MonoBehaviour
                 NPC.GetComponent<VillagerMovement>().setFacePlayer(false);
             }
 
-            //DISABLE WITHIN RADIUS HERE
-        }
-    }
-
-    private void Update()
-    {
-        if (Input.GetButtonDown("Jump"))// && within radius of NPC)
-        {
-            TriggerPressed = true;
+            if (NPC.GetComponent<PlayerConversation>() != null)
+            {
+                NPC.GetComponent<PushDetection>().enabled = true;
+                NPC.GetComponent<PlayerConversation>().setWithinRadius(false);
+            }
         }
     }
 

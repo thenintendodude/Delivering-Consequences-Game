@@ -4026,6 +4026,8 @@ GameObject:
   - component: {fileID: 199651368}
   - component: {fileID: 199651367}
   - component: {fileID: 199651371}
+  - component: {fileID: 199651373}
+  - component: {fileID: 199651372}
   m_Layer: 0
   m_Name: Graveyard_Guard_1
   m_TagString: Untagged
@@ -4221,6 +4223,36 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.0079622, y: 1.4593182}
   m_EdgeRadius: 0
+--- !u!114 &199651372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 199651364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 564158d142b0a402db9ebc92241fc563, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  empathyBar: {fileID: 1879468210}
+  powerBar: {fileID: 645412730}
+  charismaBar: {fileID: 468492454}
+  strategyBar: {fileID: 887308844}
+--- !u!114 &199651373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 199651364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d22771d1f3aae4b78936ff390ceba0ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NPC: {fileID: 199651364}
+  NextConversation: root1
 --- !u!1 &212864101
 GameObject:
   m_ObjectHideFlags: 0
@@ -26993,6 +27025,7 @@ GameObject:
   - component: {fileID: 240934394}
   - component: {fileID: 240934395}
   - component: {fileID: 240934396}
+  - component: {fileID: 240934397}
   m_Layer: 0
   m_Name: Character_C
   m_TagString: Untagged
@@ -27209,7 +27242,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d22771d1f3aae4b78936ff390ceba0ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  NPC: {fileID: 240934387}
   NextConversation: root1
+--- !u!114 &240934397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 240934387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 564158d142b0a402db9ebc92241fc563, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  empathyBar: {fileID: 1879468210}
+  powerBar: {fileID: 645412730}
+  charismaBar: {fileID: 468492454}
+  strategyBar: {fileID: 887308844}
 --- !u!1 &299823572
 GameObject:
   m_ObjectHideFlags: 0
@@ -29700,6 +29750,8 @@ GameObject:
   - component: {fileID: 322809750}
   - component: {fileID: 322809749}
   - component: {fileID: 322809754}
+  - component: {fileID: 322809756}
+  - component: {fileID: 322809755}
   m_Layer: 0
   m_Name: Male_2
   m_TagString: Untagged
@@ -29895,6 +29947,36 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5831013, y: 1.4763932}
   m_EdgeRadius: 0
+--- !u!114 &322809755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 322809747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 564158d142b0a402db9ebc92241fc563, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  empathyBar: {fileID: 1879468210}
+  powerBar: {fileID: 645412730}
+  charismaBar: {fileID: 468492454}
+  strategyBar: {fileID: 887308844}
+--- !u!114 &322809756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 322809747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d22771d1f3aae4b78936ff390ceba0ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NPC: {fileID: 322809747}
+  NextConversation: root1
 --- !u!1001 &335028607
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29990,6 +30072,8 @@ GameObject:
   - component: {fileID: 358416616}
   - component: {fileID: 358416615}
   - component: {fileID: 358416620}
+  - component: {fileID: 358416622}
+  - component: {fileID: 358416621}
   m_Layer: 0
   m_Name: Female_1
   m_TagString: Untagged
@@ -30185,6 +30269,36 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.6432309, y: 1.4783478}
   m_EdgeRadius: 0
+--- !u!114 &358416621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 358416613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 564158d142b0a402db9ebc92241fc563, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  empathyBar: {fileID: 1879468210}
+  powerBar: {fileID: 645412730}
+  charismaBar: {fileID: 468492454}
+  strategyBar: {fileID: 887308844}
+--- !u!114 &358416622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 358416613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d22771d1f3aae4b78936ff390ceba0ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NPC: {fileID: 358416613}
+  NextConversation: root1
 --- !u!1 &398273620
 GameObject:
   m_ObjectHideFlags: 0
@@ -30202,6 +30316,7 @@ GameObject:
   - component: {fileID: 398273627}
   - component: {fileID: 398273628}
   - component: {fileID: 398273629}
+  - component: {fileID: 398273630}
   m_Layer: 0
   m_Name: Character_E
   m_TagString: Untagged
@@ -30418,7 +30533,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d22771d1f3aae4b78936ff390ceba0ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  NPC: {fileID: 398273620}
   NextConversation: root1
+--- !u!114 &398273630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 398273620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 564158d142b0a402db9ebc92241fc563, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  empathyBar: {fileID: 1879468210}
+  powerBar: {fileID: 645412730}
+  charismaBar: {fileID: 468492454}
+  strategyBar: {fileID: 887308844}
 --- !u!1 &400979802
 GameObject:
   m_ObjectHideFlags: 0
@@ -34708,7 +34840,7 @@ RectTransform:
   - {fileID: 1167566560}
   - {fileID: 498639070}
   m_Father: {fileID: 1711415646}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
@@ -35094,6 +35226,8 @@ GameObject:
   - component: {fileID: 528847888}
   - component: {fileID: 528847889}
   - component: {fileID: 528847890}
+  - component: {fileID: 528847892}
+  - component: {fileID: 528847891}
   m_Layer: 0
   m_Name: Female_3
   m_TagString: Untagged
@@ -35192,6 +35326,36 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.8522682, y: 1.4698095}
   m_EdgeRadius: 0
+--- !u!114 &528847891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 528847887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 564158d142b0a402db9ebc92241fc563, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  empathyBar: {fileID: 1879468210}
+  powerBar: {fileID: 645412730}
+  charismaBar: {fileID: 468492454}
+  strategyBar: {fileID: 887308844}
+--- !u!114 &528847892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 528847887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d22771d1f3aae4b78936ff390ceba0ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NPC: {fileID: 528847887}
+  NextConversation: root1
 --- !u!1 &565263768
 GameObject:
   m_ObjectHideFlags: 0
@@ -35361,7 +35525,7 @@ RectTransform:
   - {fileID: 1806535366}
   - {fileID: 1609815346}
   m_Father: {fileID: 1711415646}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
@@ -45192,6 +45356,8 @@ GameObject:
   - component: {fileID: 678548148}
   - component: {fileID: 678548147}
   - component: {fileID: 678548151}
+  - component: {fileID: 678548153}
+  - component: {fileID: 678548152}
   m_Layer: 0
   m_Name: Male_1
   m_TagString: Untagged
@@ -45387,6 +45553,36 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.91594696, y: 1.6239243}
   m_EdgeRadius: 0
+--- !u!114 &678548152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 678548144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 564158d142b0a402db9ebc92241fc563, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  empathyBar: {fileID: 1879468210}
+  powerBar: {fileID: 645412730}
+  charismaBar: {fileID: 468492454}
+  strategyBar: {fileID: 887308844}
+--- !u!114 &678548153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 678548144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d22771d1f3aae4b78936ff390ceba0ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NPC: {fileID: 678548144}
+  NextConversation: root1
 --- !u!1 &711745359
 GameObject:
   m_ObjectHideFlags: 0
@@ -45895,6 +46091,8 @@ GameObject:
   - component: {fileID: 775096653}
   - component: {fileID: 775096654}
   - component: {fileID: 775096655}
+  - component: {fileID: 775096657}
+  - component: {fileID: 775096656}
   m_Layer: 0
   m_Name: Tax_Guard_2
   m_TagString: Untagged
@@ -45993,6 +46191,36 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.672945, y: 1.4595547}
   m_EdgeRadius: 0
+--- !u!114 &775096656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 775096652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 564158d142b0a402db9ebc92241fc563, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  empathyBar: {fileID: 1879468210}
+  powerBar: {fileID: 645412730}
+  charismaBar: {fileID: 468492454}
+  strategyBar: {fileID: 887308844}
+--- !u!114 &775096657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 775096652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d22771d1f3aae4b78936ff390ceba0ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NPC: {fileID: 775096652}
+  NextConversation: root1
 --- !u!1 &781670644
 GameObject:
   m_ObjectHideFlags: 0
@@ -46332,7 +46560,7 @@ RectTransform:
   - {fileID: 507620526}
   - {fileID: 1541095159}
   m_Father: {fileID: 1711415646}
-  m_RootOrder: 0
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
@@ -49368,6 +49596,8 @@ GameObject:
   - component: {fileID: 965940018}
   - component: {fileID: 965940017}
   - component: {fileID: 965940021}
+  - component: {fileID: 965940023}
+  - component: {fileID: 965940022}
   m_Layer: 0
   m_Name: Graveyard_Guard_2
   m_TagString: Untagged
@@ -49563,6 +49793,36 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.0032144, y: 1.5014496}
   m_EdgeRadius: 0
+--- !u!114 &965940022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 965940014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 564158d142b0a402db9ebc92241fc563, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  empathyBar: {fileID: 1879468210}
+  powerBar: {fileID: 645412730}
+  charismaBar: {fileID: 468492454}
+  strategyBar: {fileID: 887308844}
+--- !u!114 &965940023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 965940014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d22771d1f3aae4b78936ff390ceba0ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NPC: {fileID: 965940014}
+  NextConversation: root1
 --- !u!1 &973350994
 GameObject:
   m_ObjectHideFlags: 0
@@ -49693,6 +49953,8 @@ GameObject:
   - component: {fileID: 995616172}
   - component: {fileID: 995616173}
   - component: {fileID: 995616174}
+  - component: {fileID: 995616176}
+  - component: {fileID: 995616175}
   m_Layer: 0
   m_Name: Exit_Guard
   m_TagString: Untagged
@@ -49810,6 +50072,36 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &995616175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 995616170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 564158d142b0a402db9ebc92241fc563, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  empathyBar: {fileID: 1879468210}
+  powerBar: {fileID: 645412730}
+  charismaBar: {fileID: 468492454}
+  strategyBar: {fileID: 887308844}
+--- !u!114 &995616176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 995616170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d22771d1f3aae4b78936ff390ceba0ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NPC: {fileID: 995616170}
+  NextConversation: root1
 --- !u!1 &1018846745
 GameObject:
   m_ObjectHideFlags: 0
@@ -70771,6 +71063,7 @@ GameObject:
   - component: {fileID: 1286582878}
   - component: {fileID: 1286582879}
   - component: {fileID: 1286582880}
+  - component: {fileID: 1286582881}
   m_Layer: 0
   m_Name: Bunny
   m_TagString: Untagged
@@ -70975,6 +71268,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.59375, y: 0.8125}
   m_EdgeRadius: 0
+--- !u!114 &1286582881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1286582872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 564158d142b0a402db9ebc92241fc563, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  empathyBar: {fileID: 1879468210}
+  powerBar: {fileID: 645412730}
+  charismaBar: {fileID: 468492454}
+  strategyBar: {fileID: 887308844}
 --- !u!1 &1302431792
 GameObject:
   m_ObjectHideFlags: 0
@@ -70988,6 +71297,8 @@ GameObject:
   - component: {fileID: 1302431796}
   - component: {fileID: 1302431795}
   - component: {fileID: 1302431797}
+  - component: {fileID: 1302431799}
+  - component: {fileID: 1302431798}
   m_Layer: 0
   m_Name: Child_Animated
   m_TagString: Untagged
@@ -71126,6 +71437,36 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1302431798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1302431792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 564158d142b0a402db9ebc92241fc563, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  empathyBar: {fileID: 1879468210}
+  powerBar: {fileID: 645412730}
+  charismaBar: {fileID: 468492454}
+  strategyBar: {fileID: 887308844}
+--- !u!114 &1302431799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1302431792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d22771d1f3aae4b78936ff390ceba0ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NPC: {fileID: 1302431792}
+  NextConversation: root1
 --- !u!1 &1325741481
 GameObject:
   m_ObjectHideFlags: 0
@@ -71373,6 +71714,8 @@ GameObject:
   - component: {fileID: 1436309842}
   - component: {fileID: 1436309841}
   - component: {fileID: 1436309846}
+  - component: {fileID: 1436309848}
+  - component: {fileID: 1436309847}
   m_Layer: 0
   m_Name: Male_3
   m_TagString: Untagged
@@ -71568,6 +71911,36 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.612257, y: 1.510643}
   m_EdgeRadius: 0
+--- !u!114 &1436309847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1436309839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 564158d142b0a402db9ebc92241fc563, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  empathyBar: {fileID: 1879468210}
+  powerBar: {fileID: 645412730}
+  charismaBar: {fileID: 468492454}
+  strategyBar: {fileID: 887308844}
+--- !u!114 &1436309848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1436309839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d22771d1f3aae4b78936ff390ceba0ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NPC: {fileID: 1436309839}
+  NextConversation: root1
 --- !u!1 &1452780135
 GameObject:
   m_ObjectHideFlags: 0
@@ -71585,6 +71958,7 @@ GameObject:
   - component: {fileID: 1452780142}
   - component: {fileID: 1452780143}
   - component: {fileID: 1452780144}
+  - component: {fileID: 1452780145}
   m_Layer: 0
   m_Name: Character_D
   m_TagString: Untagged
@@ -71742,8 +72116,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1452780135}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 99.75, y: 37.34, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 99.75, y: 37.339996, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -71801,7 +72175,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d22771d1f3aae4b78936ff390ceba0ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  NPC: {fileID: 1452780135}
   NextConversation: root1
+--- !u!114 &1452780145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1452780135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 564158d142b0a402db9ebc92241fc563, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  empathyBar: {fileID: 1879468210}
+  powerBar: {fileID: 645412730}
+  charismaBar: {fileID: 468492454}
+  strategyBar: {fileID: 887308844}
 --- !u!1 &1467697446
 GameObject:
   m_ObjectHideFlags: 0
@@ -71969,6 +72360,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d22771d1f3aae4b78936ff390ceba0ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  NPC: {fileID: 0}
   NextConversation: 
 --- !u!61 &1467697454
 BoxCollider2D:
@@ -73961,6 +74353,8 @@ GameObject:
   - component: {fileID: 1593268381}
   - component: {fileID: 1593268380}
   - component: {fileID: 1593268385}
+  - component: {fileID: 1593268387}
+  - component: {fileID: 1593268386}
   m_Layer: 0
   m_Name: Child_Male
   m_TagString: Untagged
@@ -74156,6 +74550,36 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9319875, y: 1.4840633}
   m_EdgeRadius: 0
+--- !u!114 &1593268386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1593268378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 564158d142b0a402db9ebc92241fc563, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  empathyBar: {fileID: 1879468210}
+  powerBar: {fileID: 645412730}
+  charismaBar: {fileID: 468492454}
+  strategyBar: {fileID: 887308844}
+--- !u!114 &1593268387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1593268378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d22771d1f3aae4b78936ff390ceba0ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NPC: {fileID: 1593268378}
+  NextConversation: root1
 --- !u!1 &1595946416
 GameObject:
   m_ObjectHideFlags: 0
@@ -78310,6 +78734,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   empathyBar: {fileID: 1879468210}
+  powerBar: {fileID: 645412730}
+  charismaBar: {fileID: 468492454}
+  strategyBar: {fileID: 887308844}
 --- !u!1 &1711415645
 GameObject:
   m_ObjectHideFlags: 0
@@ -78339,10 +78766,10 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 887308843}
-  - {fileID: 468492453}
-  - {fileID: 645412729}
   - {fileID: 1879468209}
+  - {fileID: 645412729}
+  - {fileID: 468492453}
+  - {fileID: 887308843}
   m_Father: {fileID: 1242350372}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -81109,7 +81536,7 @@ RectTransform:
   - {fileID: 1018846746}
   - {fileID: 1922368547}
   m_Father: {fileID: 1711415646}
-  m_RootOrder: 3
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
@@ -113015,6 +113442,8 @@ GameObject:
   - component: {fileID: 1929668877}
   - component: {fileID: 1929668878}
   - component: {fileID: 1929668879}
+  - component: {fileID: 1929668881}
+  - component: {fileID: 1929668880}
   m_Layer: 0
   m_Name: Tax_Guard_1
   m_TagString: Untagged
@@ -113113,6 +113542,36 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.6922016, y: 1.4525414}
   m_EdgeRadius: 0
+--- !u!114 &1929668880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1929668876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 564158d142b0a402db9ebc92241fc563, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  empathyBar: {fileID: 1879468210}
+  powerBar: {fileID: 645412730}
+  charismaBar: {fileID: 468492454}
+  strategyBar: {fileID: 887308844}
+--- !u!114 &1929668881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1929668876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d22771d1f3aae4b78936ff390ceba0ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NPC: {fileID: 1929668876}
+  NextConversation: root1
 --- !u!1 &1959579741
 GameObject:
   m_ObjectHideFlags: 0
@@ -113250,6 +113709,8 @@ GameObject:
   - component: {fileID: 2032441987}
   - component: {fileID: 2032441986}
   - component: {fileID: 2032441991}
+  - component: {fileID: 2032441993}
+  - component: {fileID: 2032441992}
   m_Layer: 0
   m_Name: Female_2
   m_TagString: Untagged
@@ -113445,6 +113906,36 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.6777706, y: 1.4824429}
   m_EdgeRadius: 0
+--- !u!114 &2032441992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2032441984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 564158d142b0a402db9ebc92241fc563, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  empathyBar: {fileID: 1879468210}
+  powerBar: {fileID: 645412730}
+  charismaBar: {fileID: 468492454}
+  strategyBar: {fileID: 887308844}
+--- !u!114 &2032441993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2032441984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d22771d1f3aae4b78936ff390ceba0ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NPC: {fileID: 2032441984}
+  NextConversation: root1
 --- !u!1 &2044142322
 GameObject:
   m_ObjectHideFlags: 0
@@ -113460,6 +113951,8 @@ GameObject:
   - component: {fileID: 2044142325}
   - component: {fileID: 2044142324}
   - component: {fileID: 2044142329}
+  - component: {fileID: 2044142331}
+  - component: {fileID: 2044142330}
   m_Layer: 0
   m_Name: Child_Female
   m_TagString: Untagged
@@ -113655,6 +114148,36 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.7883345, y: 1.522064}
   m_EdgeRadius: 0
+--- !u!114 &2044142330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2044142322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 564158d142b0a402db9ebc92241fc563, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  empathyBar: {fileID: 1879468210}
+  powerBar: {fileID: 645412730}
+  charismaBar: {fileID: 468492454}
+  strategyBar: {fileID: 887308844}
+--- !u!114 &2044142331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2044142322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d22771d1f3aae4b78936ff390ceba0ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NPC: {fileID: 2044142322}
+  NextConversation: root1
 --- !u!1 &2053744217
 GameObject:
   m_ObjectHideFlags: 0

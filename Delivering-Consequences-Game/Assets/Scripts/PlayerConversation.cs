@@ -5,13 +5,12 @@ using Conversation;
 
 public class PlayerConversation : MonoBehaviour
 {
+    [SerializeField] private GameObject NPC;
     private bool IsTalking = false;
     private TextNode TextObject;
     private List<string> TextScreens;
     private int TextIndex;
     private bool DisplayingLastTextScreen = false;
-    private string PlayerName;
-    //private GameObject Npc;
     private int NumCharsPerLine = 550;
     public string NextConversation;
     private bool WithinRadius = false;
@@ -38,23 +37,19 @@ public class PlayerConversation : MonoBehaviour
     {
         if (!IsTalking && WithinRadius && Input.GetButtonDown("Jump"))
         {
-            //&& physics.npccollisionoccurred()) {
-            //Player.immobilize();
             StartTalking();
-            //WithinRadius = false;
         }
         else if (IsTalking && Input.GetButtonDown("Jump") && !DisplayingLastTextScreen)
         {
             DisplayNextTextScreen();
         }
-        else if (DisplayingLastTextScreen && Input.GetButtonDown("Jump") && TextObject.choice1 == "") //means they do not have any choices available on screen
+        else if (DisplayingLastTextScreen && Input.GetButtonDown("Jump") && TextObject.choice1 == "") // Means they do not have any choices available on screen.
         {
             DisplayingLastTextScreen = false;
 
             if (IsConversationOver())
             {
                 IsTalking = false;
-                //Npc.conversationID = TextNode.NextConversation
                 modalPanel.ClosePanel();
             }
             else // Else we know they just pressed Jump and there is still more to the conversation. 
@@ -62,18 +57,6 @@ public class PlayerConversation : MonoBehaviour
                 GetAndStartDisplayingText(TextObject.choice1id);
             }
         }
-        /*else if(DisplayingLastTextScreen && (TextObject.character == "name" && Input.GetButtonDown("Jump") || TextObject.character == "NPCNAME" /*Npc.name*/ /*&&
-            (Input.GetButtonDown("Jump") && IsConversationOver())))
-        {
-            DisplayingLastTextScreen = false;
-
-            if(IsConversationOver())
-            {
-                IsTalking = false;
-                //Npc.conversationID = TextNode.NextConversation
-                GetAndStartDisplayingText(TextObject.choice1id);
-            }
-        }*/
     }
 
     public void setWithinRadius(bool b)
@@ -89,8 +72,7 @@ public class PlayerConversation : MonoBehaviour
     private void StartTalking()
     {
         this.IsTalking = true;
-        //this.Npc = Physics.GetInteractionNPC();
-        GetAndStartDisplayingText("root1"); // "1" should be this.Npc.conversationID
+        GetAndStartDisplayingText(NextConversation); 
     }
 
     private void GetAndStartDisplayingText(string conversationID)
@@ -101,7 +83,7 @@ public class PlayerConversation : MonoBehaviour
         DisplayNextTextScreen();
     }
 
-    //each screen can only hold up to 84 characters per line x 4 lines = 336 characters
+    // Each screen can only hold up to 84 characters per line x 4 lines = 336 characters.
     private void Parse()
     {
         TextScreens = new List<string>();
@@ -151,10 +133,11 @@ public class PlayerConversation : MonoBehaviour
             if (TextIndex == TextScreens.Count - 1)
             {
                 DisplayingLastTextScreen = true;
-                if (TextObject.choice1 != "") //there are choices to display
+                if (TextObject.choice1 != "") // There are choices to display.
                 {
                     DisplayChoices();
                 }
+                NextConversation = TextObject.nextConversation;
             }
             TextIndex++;
         }
@@ -181,6 +164,13 @@ public class PlayerConversation : MonoBehaviour
         {
             modalPanel.ClosePanel();
         }
+        if (NPC.GetComponent<UpdateBars>() != null)
+        {
+            NPC.GetComponent<UpdateBars>().updateEmpathy(10); // make these based off the text node values! 
+            NPC.GetComponent<UpdateBars>().updatePower(10);
+            NPC.GetComponent<UpdateBars>().updateCharisma(10);
+            NPC.GetComponent<UpdateBars>().updateStrategy(10);
+        }
     }
 
     private void Choice2Function()
@@ -192,6 +182,13 @@ public class PlayerConversation : MonoBehaviour
         else
         {
             modalPanel.ClosePanel();
+        }
+        if (NPC.GetComponent<UpdateBars>() != null)
+        {
+            NPC.GetComponent<UpdateBars>().updateEmpathy(10); // make these based off the text node values! 
+            NPC.GetComponent<UpdateBars>().updatePower(10);
+            NPC.GetComponent<UpdateBars>().updateCharisma(10);
+            NPC.GetComponent<UpdateBars>().updateStrategy(10);
         }
     }
 }
