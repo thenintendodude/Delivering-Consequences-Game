@@ -37,6 +37,7 @@ public class PlayerConversation : MonoBehaviour
     {
         if (!IsTalking && WithinRadius && Input.GetButtonDown("Jump"))
         {
+            NPC.GetComponent<InteractionPanel>().setInteractionPanel(false);
             StartTalking();
         }
         else if (IsTalking && Input.GetButtonDown("Jump") && !DisplayingLastTextScreen)
@@ -50,6 +51,7 @@ public class PlayerConversation : MonoBehaviour
             if (IsConversationOver())
             {
                 IsTalking = false;
+                NPC.GetComponent<InteractionPanel>().setInteractionPanel(true);
                 modalPanel.ClosePanel();
                 AudioManager.Get().TriggerSoundEffect(SoundEffect.gainedEmpathy);
             }
@@ -163,6 +165,7 @@ public class PlayerConversation : MonoBehaviour
         }
         else
         {
+            NPC.GetComponent<InteractionPanel>().setInteractionPanel(true);
             modalPanel.ClosePanel();
         }
         if (NPC.GetComponent<UpdateBars>() != null)
@@ -182,6 +185,7 @@ public class PlayerConversation : MonoBehaviour
         }
         else
         {
+            NPC.GetComponent<InteractionPanel>().setInteractionPanel(true);
             modalPanel.ClosePanel();
         }
         if (NPC.GetComponent<UpdateBars>() != null)

@@ -14,7 +14,7 @@ public class main_menu_script : MonoBehaviour
     public void QuitGame()
     {
         Debug.Log("Quit!");
-        // the below statement will not happen in the unity editor so debug.log to make sure working right now
+        // The below statement will not happen in the unity editor so debug.log to make sure working right now.
         Application.Quit();
     }
 }

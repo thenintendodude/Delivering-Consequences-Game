@@ -21,6 +21,10 @@ public class TriggerConversation : MonoBehaviour
                 NPC.GetComponent<PushDetection>().enabled = false;
                 NPC.GetComponent<PlayerConversation>().setWithinRadius(true);
             }
+            if(NPC.GetComponent<InteractionPanel>() != null)
+            {
+                NPC.GetComponent<InteractionPanel>().setInteractionPanel(true);
+            }
         }
     }
 
@@ -39,6 +43,10 @@ public class TriggerConversation : MonoBehaviour
             {
                 NPC.GetComponent<PushDetection>().enabled = true;
                 NPC.GetComponent<PlayerConversation>().setWithinRadius(false);
+            }
+            if (NPC.GetComponent<InteractionPanel>() != null)
+            {
+                NPC.GetComponent<InteractionPanel>().setInteractionPanel(false);
             }
         }
     }

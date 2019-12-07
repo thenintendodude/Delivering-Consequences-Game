@@ -36,11 +36,9 @@ public class ModalPanel : MonoBehaviour
 
         Choice1.onClick.RemoveAllListeners();
         Choice1.onClick.AddListener(choice1Event);
-        //Choice1.onClick.AddListener(ClosePanel);
 
         Choice2.onClick.RemoveAllListeners();
         Choice2.onClick.AddListener(choice2Event);
-        //Choice2.onClick.AddListener(ClosePanel);
 
         this.Content.text = content;
         Choice1Text.text = choice1Content;
@@ -57,8 +55,6 @@ public class ModalPanel : MonoBehaviour
     // Only displaying text. 
     public void Display(string content)
     {
-        //Choice1.gameObject.SetActive(false);
-        //Choice2.gameObject.SetActive(false);
         ModalPanelObject.SetActive(true);
         this.Content.text = content;
 
