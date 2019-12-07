@@ -51,6 +51,7 @@ public class PlayerConversation : MonoBehaviour
             {
                 IsTalking = false;
                 modalPanel.ClosePanel();
+                AudioManager.Get().TriggerSoundEffect(SoundEffect.gainedEmpathy);
             }
             else // Else we know they just pressed Jump and there is still more to the conversation. 
             {

@@ -34682,7 +34682,7 @@ GameObject:
   - component: {fileID: 455583564}
   - component: {fileID: 455583565}
   m_Layer: 0
-  m_Name: Beat the Game
+  m_Name: Beat The Game
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
