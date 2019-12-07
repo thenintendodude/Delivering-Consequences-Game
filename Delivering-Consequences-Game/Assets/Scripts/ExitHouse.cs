@@ -13,7 +13,7 @@ public class ExitHouse : MonoBehaviour
     private AudioManager AudioManager;
     private void Start()
     {
-        AudioManager = GameObject.FindWithTag("audio").GetComponent<AudioManager>();
+        AudioManager = AudioManager.Get();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -24,7 +24,8 @@ public class ExitHouse : MonoBehaviour
             this.RoomCamera.SetActive(false);
             this.MainCamera.SetActive(true);
             Player.transform.position = this.OutdoorSpawn;
-            AudioManager.ToggleMusic(AudioManager.MusicType.outdoor);
+            AudioManager.ToggleMusic(MusicType.outdoor);
+            AudioManager.TriggerSoundEffect(SoundEffect.closeDoor);
         }
     }
 }

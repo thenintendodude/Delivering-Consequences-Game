@@ -13,7 +13,7 @@ public class EnterHouse : MonoBehaviour
     private AudioManager AudioManager;
     private void Start()
     {
-        AudioManager = GameObject.FindWithTag("audio").GetComponent<AudioManager>();
+        AudioManager = AudioManager.Get();
     }
 
 
@@ -25,7 +25,8 @@ public class EnterHouse : MonoBehaviour
             this.MainCamera.SetActive(false);
             this.RoomCamera.SetActive(true);
             Player.transform.position = RoomSpawn;
-            AudioManager.ToggleMusic(AudioManager.MusicType.indoor);
+            AudioManager.ToggleMusic(MusicType.indoor);
+            AudioManager.TriggerSoundEffect(SoundEffect.openDoor);
         }
     }
 }

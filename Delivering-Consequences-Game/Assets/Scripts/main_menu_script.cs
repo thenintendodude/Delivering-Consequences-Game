@@ -8,6 +8,7 @@ public class main_menu_script : MonoBehaviour
     public void PlayGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        AudioManager.Get().ToggleMusic(MusicType.outdoor);
     }
 
     public void QuitGame()

@@ -12,16 +12,31 @@ public class AudioManager: MonoBehaviour
     private AudioSource IndoorMusic;
     private AudioSource MainMenuMusic;
 
+    private AudioSource OpenDoor;
+    private AudioSource CloseDoor;
+    private AudioSource GainedEmpathy;
+    private AudioSource BeatTheGame;
+
+    /// Gets the shared instance of AudioManager
+    public static AudioManager Get()
+    {
+        return GameObject.FindWithTag("audio").GetComponent<AudioManager>();
+    }
+
     private void Start()
     {
         OutdoorMusic = GetAudioSourceByName("Outdoor Music");
         IndoorMusic = GetAudioSourceByName("Indoor Music");
         MainMenuMusic = GetAudioSourceByName("Main Menu Music");
+        OpenDoor = GetAudioSourceByName("Open Door");
+        CloseDoor = GetAudioSourceByName("Close Door");
+        GainedEmpathy = GetAudioSourceByName("Gained Empathy");
+        BeatTheGame = GetAudioSourceByName("Beat The Game");
 
         CurrentMusicPlaying = OutdoorMusic;
     }
 
-    public AudioSource GetAudioSourceByName(string name)
+    private AudioSource GetAudioSourceByName(string name)
     {
         var audioObject = GameObject.FindWithTag("audio");
         Transform childTrans = audioObject.transform.Find(name);
@@ -35,10 +50,23 @@ public class AudioManager: MonoBehaviour
         }
     }
 
-    public enum MusicType {
-        outdoor,
-        indoor,
-        mainMenu
+    public void TriggerSoundEffect(SoundEffect soundEffect)
+    {
+        switch (soundEffect)
+        {
+            case SoundEffect.openDoor:
+                OpenDoor.Play();
+                break;
+            case SoundEffect.closeDoor:
+                CloseDoor.Play();
+                break;
+            case SoundEffect.gainedEmpathy:
+                GainedEmpathy.Play();
+                break;
+            case SoundEffect.beatTheGame:
+                BeatTheGame.Play();
+                break;
+        }
     }
 
     public void ToggleMusic(MusicType musicType)
@@ -57,39 +85,6 @@ public class AudioManager: MonoBehaviour
         musicToPlay.Play();
         CurrentMusicPlaying = musicToPlay;
         StartCoroutine(StartFade(musicToPlay, 1f, 1));
-
-
-
-
-
-        //{
-        //    if (IndoorFadeOut != null)
-        //    {
-        //        // Stop a previous coroutine that was fading out the indoor music.
-        //        StopCoroutine(IndoorFadeOut);
-        //    }
-        //    var musicFadeOut = StartCoroutine(StartFade(CurrentMusicPlaying, 1f, 0));
-        //    SetWhichMusicIsFadingOut(musicFadeOut);
-        //    IndoorMusic.Play();
-        //    StartCoroutine(StartFade(IndoorMusic, 1f, 1));
-        //    CurrentMusicPlaying = IndoorMusic;
-        //}
-        //else if (musicType == MusicType.outdoor)
-        //{
-        //    if (OutdoorFadeOut != null)
-        //    {
-        //        // Stop a previous coroutine that was fading out the outdoor music.
-        //        StopCoroutine(OutdoorFadeOut);
-        //    }
-        //    IndoorFadeOut = StartCoroutine(StartFade(IndoorMusic, 1f, 0));
-        //    OutdoorMusic.Play();
-        //    StartCoroutine(StartFade(OutdoorMusic, 1f, 1));
-        //}
-        //else if (musicType == MusicType.mainMenu)
-        //{
-
-        //}
-
     }
 
     private AudioSource ConvertToAudioSource(MusicType musicType)
@@ -125,4 +120,18 @@ public class AudioManager: MonoBehaviour
         }
         yield break;
     }
+}
+public enum SoundEffect
+{
+    openDoor,
+    closeDoor,
+    gainedEmpathy,
+    beatTheGame
+}
+
+public enum MusicType
+{
+    outdoor,
+    indoor,
+    mainMenu
 }
