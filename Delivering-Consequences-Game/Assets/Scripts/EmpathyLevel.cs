@@ -11,6 +11,7 @@ public class EmpathyLevel : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        empathyBar.enabled = false;
         empathyBar.value = 0;
         empathyBar.maxValue = maxEmpathy;
     }
@@ -18,12 +19,6 @@ public class EmpathyLevel : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.H))
-        {
-            empathyBar.value++;
-        } else if(Input.GetKeyDown(KeyCode.G))
-        {
-            empathyBar.value--;
-        }
+        
     }
 }

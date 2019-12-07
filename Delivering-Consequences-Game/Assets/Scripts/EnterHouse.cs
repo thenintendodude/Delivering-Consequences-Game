@@ -25,7 +25,7 @@ public class EnterHouse : MonoBehaviour
             this.MainCamera.SetActive(false);
             this.RoomCamera.SetActive(true);
             Player.transform.position = RoomSpawn;
-            AudioManager.ToggleMusic(AudioManager.MusicType.indoor);
+            //AudioManager.ToggleMusic(AudioManager.MusicType.indoor);
         }
     }
 }
