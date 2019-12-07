@@ -24,7 +24,7 @@ public class ExitHouse : MonoBehaviour
             this.RoomCamera.SetActive(false);
             this.MainCamera.SetActive(true);
             Player.transform.position = this.OutdoorSpawn;
-            //AudioManager.ToggleMusic(AudioManager.MusicType.outdoor);
+            AudioManager.ToggleMusic(AudioManager.MusicType.outdoor);
         }
     }
 }
