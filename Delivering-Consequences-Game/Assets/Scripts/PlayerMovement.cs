@@ -5,9 +5,9 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private float MoveSpeed = 5f;
-    public Rigidbody2D CharRigidBody;
+    [SerializeField] private Rigidbody2D CharRigidBody;
+    [SerializeField] private Animator CharAnimator;
     Vector2 Movement;
-    public Animator CharAnimator;
 
     // Update is called once per frame
     void Update()
