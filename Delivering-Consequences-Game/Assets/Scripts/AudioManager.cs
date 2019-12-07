@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class AudioManager: MonoBehaviour
 {
+    private Coroutine OutdoorFadeOut;
+    private Coroutine IndoorFadeOut;
+
     public AudioSource GetAudioSourceByName(string name)
     {
         var audioObject = GameObject.FindWithTag("audio");
@@ -29,12 +32,24 @@ public class AudioManager: MonoBehaviour
 
         if (musicType == MusicType.indoor)
         {
-            StartCoroutine(StartFade(outdoorMusic, 1f, 0));
+            if (IndoorFadeOut != null)
+            {
+                // Stop a previous coroutine that was fading out the indoor music.
+                StopCoroutine(IndoorFadeOut);
+            }
+            OutdoorFadeOut = StartCoroutine(StartFade(outdoorMusic, 1f, 0));
+            indoorMusic.Play();
             StartCoroutine(StartFade(indoorMusic, 1f, 1));
         }
         else if (musicType == MusicType.outdoor)
         {
-            StartCoroutine(StartFade(indoorMusic, 1f, 0));
+            if (OutdoorFadeOut != null)
+            {
+                // Stop a previous coroutine that was fading out the outdoor music.
+                StopCoroutine(OutdoorFadeOut);
+            }
+            IndoorFadeOut = StartCoroutine(StartFade(indoorMusic, 1f, 0));
+            outdoorMusic.Play();
             StartCoroutine(StartFade(outdoorMusic, 1f, 1));
         }
     }
@@ -43,10 +58,6 @@ public class AudioManager: MonoBehaviour
         float currentTime = 0;
         float startVolume = audioSource.volume;
 
-        if (newVolume == 1)
-        {
-            audioSource.Play();
-        }
         while (currentTime < duration)
         {
             currentTime += Time.deltaTime;
