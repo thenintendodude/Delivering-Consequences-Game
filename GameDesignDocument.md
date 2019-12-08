@@ -165,6 +165,8 @@ Gameplay testing will begin once the game is nearing the end of production.
 ## Narrative Design
 
 
+## Press Kit and Trailer
+
 #### Press Kit
 [Press Kit](https://github.com/thenintendodude/Delivering-Consequences-Game/blob/master/README.md) - The press kit is available here in the GitHub repository, posted in the README.md file
 
