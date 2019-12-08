@@ -81,10 +81,10 @@ The second of the listed asset packages contains more tile squares that will be 
 The last asset package will be used for a bunny NPC. This package specifically contains premade sprites of an animated bunny, which will be placed to randomly move about on the main village map to help make the village appear more alive.
 
 ## Input
-Left Arrow (or W): Move character left
-Right Arrow: Move character right
-Up Arrow: Move character up
-Down Arrow: Move character down
+Left Arrow (or A): Move character left
+Right Arrow (or D): Move character right
+Up Arrow (or W): Move character up
+Down Arrow (or S): Move character down
 
 Hold j with Arrow Key: Sprint in corresonding direction
 
@@ -102,15 +102,20 @@ ___
 # SUB-ROLES
 
 ## Audio
-Windless Slopes: For outdoor music, Source: https://bakudas.itch.io/generic-rpg-pack
 Our-Mountain_v003: For outdoor music, Source: https://soundimage.org/wp-content/uploads/2014/09/Our-Mountain_v003.mp3
 Fantasy_Game_Background: For menu screen music, Source: http://soundimage.org/wp-content/uploads/2014/04/Fantasy_Game_Background.mp3
 Red Carpet Wooden Floor: For indoor music, Source: https://bakudas.itch.io/generic-rpg-pack
 Squeaky Door Open: https://freesound.org/people/CastIronCarousel/sounds/216878/
 Door Close: https://freesound.org/people/InspectorJ/sounds/339677/
-Orchestral-victory-fanfare: Gained empathy, Source: https://freesound.org/people/Sheyvan/sounds/470083/
 UI Confirmation Beep: https://freesound.org/people/paep3nguin/sounds/388046/
 victory-fanfare: Beat the game, Source: https://freesound.org/people/humanoide9000/sounds/466133/
+
+### Unused Audio, but may use in the future:
+Windless Slopes: For outdoor music, Source: https://bakudas.itch.io/generic-rpg-pack
+Orchestral-victory-fanfare: Made Progress in some way, Source: https://freesound.org/people/Sheyvan/sounds/470083/
+Short Beep: For Input Confirmation, Source:https://www.partnersinrhyme.com/soundfx/PUBLIC-DOMAIN-SOUNDS/beep_sounds/beep_beep-pure_wav.shtml
+Double Short Bee: For Input Confirmation, Source: https://www.partnersinrhyme.com/soundfx/PUBLIC-DOMAIN-SOUNDS/beep_sounds/beep_beep-doub_wav.shtml
+Long Beep: For Input Confirmation, Source: https://www.partnersinrhyme.com/soundfx/PUBLIC-DOMAIN-SOUNDS/beep_sounds/beep_beep-fm_wav.shtml
 
 ## Gameplay Testing
 Gameplay testing will begin once the game is nearing the end of production.

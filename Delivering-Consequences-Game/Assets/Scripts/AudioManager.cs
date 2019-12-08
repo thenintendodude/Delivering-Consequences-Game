@@ -14,8 +14,9 @@ public class AudioManager: MonoBehaviour
 
     private AudioSource OpenDoor;
     private AudioSource CloseDoor;
-    private AudioSource GainedEmpathy;
+    private AudioSource MadeProgress;
     private AudioSource BeatTheGame;
+    private AudioSource UIConfirmation;
 
     /// Gets the shared instance of AudioManager
     public static AudioManager Get()
@@ -30,8 +31,9 @@ public class AudioManager: MonoBehaviour
         MainMenuMusic = GetAudioSourceByName("Main Menu Music");
         OpenDoor = GetAudioSourceByName("Open Door");
         CloseDoor = GetAudioSourceByName("Close Door");
-        GainedEmpathy = GetAudioSourceByName("Gained Empathy");
+        MadeProgress = GetAudioSourceByName("Made Progress");
         BeatTheGame = GetAudioSourceByName("Beat The Game");
+        UIConfirmation = GetAudioSourceByName("UI Confirmation");
 
         CurrentMusicPlaying = OutdoorMusic;
     }
@@ -60,11 +62,14 @@ public class AudioManager: MonoBehaviour
             case SoundEffect.closeDoor:
                 CloseDoor.Play();
                 break;
-            case SoundEffect.gainedEmpathy:
-                GainedEmpathy.Play();
+            case SoundEffect.madeProgress:
+                MadeProgress.Play();
                 break;
             case SoundEffect.beatTheGame:
                 BeatTheGame.Play();
+                break;
+            case SoundEffect.uiConfirmation:
+                UIConfirmation.Play();
                 break;
         }
     }
@@ -120,13 +125,32 @@ public class AudioManager: MonoBehaviour
         }
         yield break;
     }
+    private IEnumerator Fade(AudioSource audioSource, float duration, float newVolume)
+    {
+        float currentTime = 0;
+        float startVolume = audioSource.volume;
+
+        while (currentTime < duration)
+        {
+            currentTime += Time.deltaTime;
+            audioSource.volume = Mathf.Lerp(startVolume, newVolume, currentTime / duration);
+            yield return null;
+        }
+        if (newVolume == 0)
+        {
+            audioSource.Stop();
+        }
+        yield break;
+    }
+
 }
 public enum SoundEffect
 {
     openDoor,
     closeDoor,
-    gainedEmpathy,
-    beatTheGame
+    madeProgress,
+    beatTheGame,
+    uiConfirmation
 }
 
 public enum MusicType
