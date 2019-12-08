@@ -1,41 +1,3 @@
-# GAME DESIGN
-
-## SUMMARY
-[A paragraph-length pitch for your game.]
-
-## GAMEPLAY EXPLANATION
-[In this section, explain how the game should be played. Treat this like a manual within a game. It is encouraged to explain the button mappings and the most optimal gameplay strategy.]
-
-## Character Creation
-You sort-of "create your character" as you play the game, since your responses
-to npc interactions shape your character's personality.
-
-However, there is no visual customization of your character.
-
-## Leveling Up
-
-## Success
-You move closer to winning the game by making the correct decisions in your
-conversations with other NPCs. If you earn enough empathy, then you can speak
-with the character blocking the exit to the village and you will be able to
-leave (ALEX correct this if this description is wrong...)
-
-## Failure
-You lose the game if you do not earn enough empathy during your conversations
-with other players. When you go to talk to the character blocking the exit to
-village, (ALEX, please fill in what will happen...)
-
-## Player Actions
-
-## Environments
-
-## Story
-
-## NPC Types
-
-## Other Assets
-
-___
 # MAIN ROLES
 
 ## User Interface
@@ -105,9 +67,45 @@ ___
 
 ### Why I picked the audio
 
-### Audio Systems
+### Music Style
+For the music, I wanted to choose mostly tracks that sounded serious, somber, and mysterious. This was particularly true for the main menu screen and background,
+since these are the player's first impressions of the game. The reason I wanted
+to portray these feelings is because our story is of a character who has just
+fallen from great power and is now unsure of his state in the world.
 
-### Audio Track Used
+The only place where'd I say the music isn't as somber is in the houses of the
+npcs, and this is becoming I wanted the player to feel like the homes were safe
+and welcoming places for them to go, since it is these places where they can
+actually progress in the game.
+
+### Sound Effects
+Since I know that sound effects provide nice interactivity and satisfcation when
+playing games, I wanted to make sure to include some sound effects in our game
+as well. Specifically, I chose sound effects related to opening and closing
+doors, initiating conversation with characters, and beating the game. I found
+that these "transition" sound effects were very impactful in the flow of the
+game.
+
+### Audio System
+The Audio system for the main menu and backstory scenes was fairly simple, as I
+just had to play one song in the background on loop. However, the Audio system
+for the main game was much more complicated.
+
+I organized all audio for the main game under an Audio object in the scene,
+which contained child objects that each held one audio track that would be
+played during the game. Then, attached to the Audio object I had a script called
+AudioManager, so that all playing of sound effects and switching between
+music tracks could be easily abstracted away and handled elegantly.
+
+Specifically, the AudioManager deals with all the details of gathering together
+all the audio tracks, triggering sound effects, toggling music between different
+tracks in a smooth way that fades from one track to the next, and providing an easy
+interface for the rest of the scripts to deal with audio. By providing
+Enums to list all possible Sound Effects and Music, it makes it easy to see
+what audio options you have and causes less mistakes for the programmers using
+AudioManager.
+
+### Audio Tracks Used (All are royalty-free)
 Our-Mountain_v003: For outdoor music, Source: https://soundimage.org/wp-content/uploads/2014/09/Our-Mountain_v003.mp3
 Fantasy_Game_Background: For menu screen music, Source: http://soundimage.org/wp-content/uploads/2014/04/Fantasy_Game_Background.mp3
 The Foyer: For Backstory,Source: https://www.playonloop.com/2019-music-loops/the-foyer/#free-download
@@ -117,7 +115,7 @@ Door Close: https://freesound.org/people/InspectorJ/sounds/339677/
 UI Confirmation Beep: https://freesound.org/people/paep3nguin/sounds/388046/
 victory-fanfare: Beat the game, Source: https://freesound.org/people/humanoide9000/sounds/466133/
 
-### Unused Audio, but were potential candidates:
+### Unused Audio, but wanted to link them here since they could be useful should we continue our game in the future):
 Windless Slopes: For outdoor music, Source: https://bakudas.itch.io/generic-rpg-pack
 Orchestral-victory-fanfare: Made Progress in some way, Source: https://freesound.org/people/Sheyvan/sounds/470083/
 Long Beep: For Main Menu Select Confirmation, Source: https://www.partnersinrhyme.com/soundfx/PUBLIC-DOMAIN-SOUNDS/beep_sounds/beep_beep-fm_wav.shtml

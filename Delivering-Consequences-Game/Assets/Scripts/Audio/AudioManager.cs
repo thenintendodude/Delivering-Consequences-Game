@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AudioManagerGame: MonoBehaviour
+public class AudioManager : MonoBehaviour
 {
     private Coroutine MusicFadingOutCoroutine;
     private AudioSource MusicFadingOut;
@@ -17,9 +17,9 @@ public class AudioManagerGame: MonoBehaviour
     private AudioSource UIConfirmation;
 
     /// Gets the shared instance of AudioManager
-    public static AudioManagerGame Get()
+    public static AudioManager Get()
     {
-        return GameObject.FindWithTag("audio").GetComponent<AudioManagerGame>();
+        return GameObject.FindWithTag("audio").GetComponent<AudioManager>();
     }
 
     private void Start()
@@ -68,9 +68,9 @@ public class AudioManagerGame: MonoBehaviour
         }
     }
 
-    public void ToggleMusic(MusicType musicType)
+    public void ToggleMusic(Music music)
     {
-        AudioSource musicToPlay = ConvertToAudioSource(musicType);
+        AudioSource musicToPlay = ConvertToAudioSource(music);
 
         if (musicToPlay == MusicFadingOut)
         {
@@ -86,9 +86,9 @@ public class AudioManagerGame: MonoBehaviour
         StartCoroutine(StartFade(musicToPlay, 1f, 1));
     }
 
-    private AudioSource ConvertToAudioSource(MusicType musicType)
+    private AudioSource ConvertToAudioSource(Music music)
     {
-        if (musicType == MusicType.indoor)
+        if (music == Music.indoor)
         {
             return IndoorMusic;
         }
@@ -115,34 +115,19 @@ public class AudioManagerGame: MonoBehaviour
         }
         yield break;
     }
-    private IEnumerator Fade(AudioSource audioSource, float duration, float newVolume)
-    {
-        float currentTime = 0;
-        float startVolume = audioSource.volume;
-
-        while (currentTime < duration)
-        {
-            currentTime += Time.deltaTime;
-            audioSource.volume = Mathf.Lerp(startVolume, newVolume, currentTime / duration);
-            yield return null;
-        }
-        if (newVolume == 0)
-        {
-            audioSource.Stop();
-        }
-        yield break;
-    }
-    public enum SoundEffect
-    {
-        openDoor,
-        closeDoor,
-        beatTheGame,
-        uiConfirmation
-    }
-
-    public enum MusicType
-    {
-        outdoor,
-        indoor,
-    }
 }
+
+public enum SoundEffect
+{
+    openDoor,
+    closeDoor,
+    beatTheGame,
+    uiConfirmation
+}
+
+public enum Music
+{
+    outdoor,
+    indoor,
+}
+

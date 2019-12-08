@@ -37,7 +37,7 @@ public class PlayerConversation : MonoBehaviour
     {
         if (!IsTalking && WithinRadius && Input.GetButtonDown("Jump"))
         {
-            AudioManagerGame.Get().TriggerSoundEffect(AudioManagerGame.SoundEffect.uiConfirmation);
+            AudioManager.Get().TriggerSoundEffect(SoundEffect.uiConfirmation);
             NPC.GetComponent<InteractionPanel>().setInteractionPanel(false);
             StartTalking();
         }
