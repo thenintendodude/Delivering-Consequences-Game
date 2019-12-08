@@ -113,7 +113,7 @@
         {
             "id": "Wait 2",
             "character": "Fie Ronndly",
-            "script": "Hi, my name is Fie, Fie Ronndly. It's good to see you calm down a bit. What's your name?",
+            "script": "It's good to see you calm down a bit. Look, I couldn't introduce myself earlier, but I'm Fie... Oops, Fie Ronndly is my full name. What's your name?",
             "choice1": "Answer her curtly.",
             "choice2": "Ignore everything else she has to say.",
             "choice1id": "Wait 3",
@@ -134,7 +134,7 @@
             "id": "Wait 4",
             "character": "Narrator",
             "script": "Luckily, it occurs to Demanim that revealing to Fie his full name poses significant risk in his current state. After deliberating he decides to...",
-            "choice1": "Tell her his name anyway",
+            "choice1": "Tell her your real name anyway",
             "choice2": "Tell her a fake name of some kind. Anything will do.",
             "choice1id": "RealName1",
             "choice2id": "FakeName0",
@@ -163,7 +163,7 @@
         {
             "id": "FakeName0",
             "character": "Demanim",
-            "script": "My name is... Anim Testa.",
+            "script": "My name is... Anim Tesda.",
             "choice1": "",
             "choice2": "",
             "choice1id": "FakeName2",
@@ -183,7 +183,7 @@
         {
             "id": "FakeName2",
             "character": "Fie Ronndly",
-            "script": "Hmm... okay. Nice to meet you Anim.",
+            "script": "Hmm... okay. Nice to meet you Anim. (You aren't entirely sure she trusts you.)",
             "choice1": "",
             "choice2": "",
             "choice1id": "",
@@ -198,7 +198,27 @@
             "choice2": "",
             "choice1id": "",
             "choice2id": "",
-            "nextConversation": "temp"
+            "nextConversation": "Second Introduction"
+        },
+        {
+            "id": "Second Introduction",
+            "character": "Fie Ronndly",
+            "script": "Hey... I'm glad you're feeling better now. Umm, I don't know if you heard earlier, but my name is Fie Ronndly. What's your name?",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "Second Introduction 2",
+            "choice2id": "",
+            "nextConversation": ""
+        },
+        {
+            "id": "Second Introduction 2",
+            "character": "Demanim",
+            "script": "(Damn, we made eye contact. I guess it'd be strange if I didn't reply.)",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "",
+            "choice2id": "",
+            "nextConversation": "Wait 3"
         },
         {
             "id": "Errer Grunt 1",
@@ -244,16 +264,26 @@
             "id": "Urrir Grunt 3",
             "character": "Narrator",
             "script": "When Demanim processed what Errer told him, he decided to...",
-            "choice1": "feign understanding and turn away. These mooks aren't worth spending any more time with.",
-            "choice2": "retort 'you deign to give ME orders!?! Who do you think you are!'",
-            "choice1id": "",
+            "choice1": "feign understanding and turn away.",
+            "choice2": "retort 'you deign to give ME orders!?!'",
+            "choice1id": "Urrir Grunt Feign",
             "choice2id": "Urrir Grunt Angry",
+            "nextConversation": ""
+        },
+        {
+            "id": "Urrir Grunt Feign",
+            "character": "Demanim",
+            "script": "(These mooks aren't worth spending any more time with.)",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "",
+            "choice2id": "",
             "nextConversation": "Urrir Grunt 4"
         },
         {
             "id": "Urrir Grunt 4",
             "character": "Urrir Grunt",
-            "script": "Urrrr-rir.",
+            "script": "I am Gruuut. (small chuckle)",
             "choice1": "",
             "choice2": "",
             "choice1id": "Urrir Grunt 5",
@@ -302,23 +332,23 @@
         },
         {
             "id": "Eirar Grunt 1",
-            "character": "Errer Grunt",
-            "script": "I am Errer.",
+            "character": "Eirar Grunt",
+            "script": "I am Eirar.",
             "choice1": "",
             "choice2": "",
-            "choice1id": "Errer Grunt 1",
+            "choice1id": "",
             "choice2id": "",
-            "nextConversation": ""
+            "nextConversation": "Eirar Grunt 1"
         },
         {
-            "id": "Airer Grunt 1",
-            "character": "Airer Grunt",
-            "script": "I am Airer.",
+            "id": "Airur Grunt 1",
+            "character": "Airur Grunt",
+            "script": "I am Airur.",
             "choice1": "",
             "choice2": "",
-            "choice1id": "Errer Grunt 1",
+            "choice1id": "",
             "choice2id": "",
-            "nextConversation": ""
+            "nextConversation": "Airur Grunt 1"
         },
         {
             "id": "Ayror Grunt 1",
@@ -416,6 +446,16 @@
             "script": "Hi, my name is Greyor Camph.",
             "choice1": "",
             "choice2": "",
+            "choice1id": "",
+            "choice2id": "",
+            "nextConversation": "temp"
+        },
+        {
+            "id": "Reymur Camph 1",
+            "character": "Reymur Camph",
+            "script": "Hello! . . . . . Oh, my name is Reymur Camph! What's your name mister?",
+            "choice1": "Even the kids introduce themselves with last name? Ignore him.",
+            "choice2": "Shoot... what was that name I made up?",
             "choice1id": "",
             "choice2id": "",
             "nextConversation": "temp"
