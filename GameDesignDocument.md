@@ -70,6 +70,8 @@ Right Arrow (or D): Move character right
 Up Arrow (or W): Move character up
 Down Arrow (or S): Move character down
 
+Hold Mouse Right-Click (while moving): Run
+
 Walk up to NPC and press Spacebar: Initiate Conversation
 When in conversation (or backstory), press Spacebar: View next bit of text
 When in conversation, press Left UI Button: Make choice 1 in conversation
@@ -93,10 +95,11 @@ However, we soon realized it was much more intuitive to have UI buttons for
 the user to select with their cursor.
 
 ### Some side notes on my role
-Since overall my Input role wasn't very large, I decided to help some other
+Since overall the Input role isn't very large, I decided to help some other
 teammates with their roles. For instance, I created a detailed pseudocode
 for the PlayerConversation.cs script [here](https://github.com/thenintendodude/Delivering-Consequences-Game/blob/master/Conversation%20Handler%20and%20Communication%20with%20Other%20Classes.pdf),
-and I made some footage that went into the Trailer.
+ I made some footage that went into the Trailer, and I implemented the logic
+ that made run happen (changing movement and animation speed).
 
 ## Game Logic
 
