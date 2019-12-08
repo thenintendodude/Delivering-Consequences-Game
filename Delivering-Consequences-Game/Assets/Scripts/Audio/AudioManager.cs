@@ -32,7 +32,7 @@ public class AudioManager : MonoBehaviour
         BeatTheGame = GetAudioSourceByName("Beat The Game");
         UIConfirmation = GetAudioSourceByName("UI Confirmation");
 
-        CurrentMusicPlaying = OutdoorMusic;
+        CurrentMusicPlaying = IndoorMusic;
     }
 
     private AudioSource GetAudioSourceByName(string name)
