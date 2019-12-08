@@ -7,40 +7,60 @@ There will be an "empathy" value measurement on the screen that indicates to the
 
 ## Movement/Physics
 
-#### H4 Initial Player / NPC Movement Design
+#### Initial Player / NPC Movement Design
 
 This portion was implemented initially by our animator. (JOANNE explain why you implemented this in your role as animator here: probably mention inspiration from Zee's Final Combat game)
 
-#### H4 Collision Detection and Natural Boundaries
+#### Collision Detection and Natural Boundaries
 Physics and animation worked closely on placement of 2D sprites witin the town to tell an implicit story as well as give the town more realism. For example, the graveyard in the middle of town hints at the town's grim past. 
 
 In implementing collisions I had to determine which sprites would make sense to collide with. The collidable town border is intended to give the player an illusion of an infinite game world as well as keep them safely within the designed portion of the town. Collidable objects encompass all objects we would naturally not be able to walk over in a standard physics model (i.e. ponds, rocks, houses, etc.). By setting the box collider to only the Player's feet and setting it to a higher layer than all other sprites, we allow the Player to realistically stand in front of objects in the town. 
 
-#### H4 Camera Design
+#### Camera Design
 The Main Camera, which is utilized while the player traverses the outside town, follows a position lock lerp camera controller script called **CameraController** which is locked on the Player. This camera is clamped to specific X and Y values so the player never sees beyond the edges of the designed game world and the infinite game world illusion is preserved.  
 
 Upon colliding with the door of each of the three NPC's homes, a camera switch to the respective home. An empty game object with a 2D Box Collider (RedDoor, CastleDoor, BarrelDoor) is positioned on each door step to trigger this camera switch in the **EnterHouse** script. The player is transported to the inside of the house they attempted to answer. The camera positioned on each house are fixed (not lerp) because the inside of houses are smaller than the camera size. 
 
 Upon colliding with the doormat of each of the three NPC's homes, the game switches back to the main camera and transports the player just outside the door of the house they entered before. Similar to entry, an empty game object with a 2D Box Collider (RedDoormat, CastleDoormat, BarrelDoormat) is positioned on the doormat of each home that triggers a camera switch in the **ExitHouse** script. The size of these colliders were finetuned so that the entrance places the player at a reasonable distance inside the home without triggering the exit collider while it still appears the player has just entered the home. The separation of the **EnterHouse** and **ExitHouse** house scripts allows different behaviors, such as sound effects, to be associated with entering and exiting a home. 
 
-#### H4 Conversation Triggers
+#### Conversation Triggers
 Once within a certain circular radius of NPCs that can be talked to, a conversation can be triggered. To implement this I created empty gameobjects with 2D circle colliders for each NPC that can be talked to (CCharacterRadius, GuardRadius, etc.). The **TriggerConversation** script ensures this gameobject snaps to it's respective NPC each frame. The **TriggerConversation** script provides the framing that allows us to trigger certain behavior when the Player enters the circle collider and when they exit. In the main use case, only when a Player has entered and remains within the circle collider, they will be able to trigger a conversation with the NPC.
 
+
 ## Animation and Visuals
-To keep the art style consistent, the main asset packages used will all be of the Liberated Pixel Cup (LPC) art style. More about the LPC can be found here: http://lpc.opengameart.org. More specifically, the following asset packages will be used for tilemaps and character sprites for this game:
+
+#### Asset Sources and Licenses
+To keep the art style consistent, the main asset packages used are all of the Liberated Pixel Cup (LPC) art style. More about the LPC can be found here: http://lpc.opengameart.org. More specifically, the following asset packages used are for tilemaps and character sprites in this game:
 * "Liberated Pixel Cup (LPC) Base Assets (sprites & map tiles)" by Lanea Zimmerman (AKA Sharm), Stephen Challener (AKA Redshrike), Charles Sanchez (AKA CharlesGabriel), Manuel Riecke (AKA MrBeast), and Daniel Armstrong (AKA HughSpectrum) licensed CC-BY-SA 3.0 or GPL 3.0: https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles.
-* “Bunny Rabbit LPC style for PixelFarm” by Stephen Challener (AKA Redshrike) licensed CC-BY 3.0, CC-BY-SA 3.0, or OGA-BY 3.0: https://opengameart.org/content/bunny-rabbit-lpc-style-for-pixelfarm.
 * "LPC Tile Atlas2" by Barbara Rivera, Casper Nilsson, Chris Phillips, Daniel Eddeland, Anamaris and Krusmira (AKA Emilio J Sanchez), Jonas Klinger, Joshua Taylor, Leo Villeveygoux, Mark Weyer, Matthew Nash, Skyler Robert Colladay, Lanea Zimmerman (AKA Sharm), Stephen Challener (AKA Redshrike), Charles Sanchez (AKA CharlesGabriel), Manuel Riecke (AKA MrBeast), and Daniel Armstrong (AKA HughSpectrum) licensed CC-BY-SA 3.0 or GPL 3.0: https://opengameart.org/content/lpc-tile-atlas2.
+* “Bunny Rabbit LPC style for PixelFarm” by Stephen Challener (AKA Redshrike) licensed CC-BY 3.0, CC-BY-SA 3.0, or OGA-BY 3.0: https://opengameart.org/content/bunny-rabbit-lpc-style-for-pixelfarm.
 
-The first of these packages includes environmental 32x32 pixel tile squares that will be used to draw out maps of the village and houses that the player character will be able to explore. The tiles will be drawn on different layers to separate the maps’ visual representation from collidable objects for physics. The main village will contain three houses that the player character will be able to enter and meet different NPCs in. The interiors of each of these three houses will be similar in appearance but decorated with different furnitures and wall colors to give the impression that these houses are inhabited by different people.
+#### Visual Style Guide
+As previously mentioned, every asset used of the LPC art style in order to look visually consistent throughout the entire game. As a top-down 2D semi-open world game, explorable areas are necessary, and thus visuals are especially important as that is what the player will primarily be focusing on to navigate through the game. For this purpose, I used the 32x32 pixel tile squares found in the "Liberated Pixel Cup (LPC) Base Assets (sprites & map tiles)" package and the "LPC Tile Atlas2" package to draw out maps of the village and houses that the player character will be able to explore in. These maps are all drawn at different locations on the same Unity Scene so that the game will only have to load once after starting. 
 
-For this game, we want to have a player character and five non-playable characters. Although the LPC Base Assets package only contains two premade character sprites, the package does include blank character templates to make additional male and female characters. So, using the provided “base walkcycle” and “hairstyle” files, four custom character sprites will be created to present visually different looking NPCs in the game.
+The main map is a large village area with various explorable areas and three buildings that the player character is able to enter and also explore in. In each of these areas and buildings, there are many different non-player characters that the player character should be able to interact with. To make the explorable areas in the village seem diverse yet connected, each of these areas are drawn with a different theme in mind. For example, one area is meant to be a workers’ camp while another area is meant to be a workers’ field, in which the visual implication of the logs, dead trees, and carts is that these workers are lumberjacks. 
 
-To animate each of these characters, the “walkcycle” sprites of each character will be spliced up and then used to create Left / Right / Up / Down animations. Code will be written to decide which animation to display depending on which direction (X or Y direction) the character is moving in on the map. The player character’s movement will be based on player input, while the NPCs will be set to randomly move about the map upon the game’s start to give the feel that the village is alive with living people.
+Meanwhile, the interiors of each of three buildings have been made to be similar in appearance but decorated with different furniture and wall colors to give the impression that these three buildings are inhabited by different people of the same village. A black background has also been drawn behind each of these buildings’ rooms so that an empty or blue screen cannot be seen by the camera outside of these rooms while playing the game. 
 
-The second of the listed asset packages contains more tile squares that will be used to further decorate the village map with additional village-related objects and explorable areas, such as a graveyard. These tiles will all contribute to making the village feel more like an actual village.
+To indicate the village’s exit, the border of rocks surrounding the village is implied to enclose a route beyond the village on the right side of the map that is blocked off by wooden fencing. As a further hint to the player that this is where the game ends, a non-player character has been placed in front of this wooden fencing to “guard” the exit. 
 
-The last asset package will be used for a bunny NPC. This package specifically contains premade sprites of an animated bunny, which will be placed to randomly move about on the main village map to help make the village appear more alive.
+#### Collaboration with Physics
+Working with the physics role, we decided what tiles would be drawn on different layers in order to separate the maps’ visual representations from collidable objects. Collidable objects includes any tile that represents things that a person would realistically not be able to walk through, such as building walls, fences, boulders, trees, ponds, and so on. Meanwhile, although these characters should be able to walk over ground tiles, I did not want the characters to be able to walk over tiles that represent overhangings, such as tree tops and gate arcs. Thus, I had the separate these two main types of tiles into separate tilemaps of different layer levels, with the ground tiles being at a layer level below the characters and the overhanging tiles being at a layer above the characters. 
+
+#### In-game Characters
+As an explorable top-down 2D game, interactable characters are required in order to make the game not appear empty and lifeless. For this game, we wanted to initially have at least one playable character and five non-playable characters. Although the "Liberated Pixel Cup (LPC) Base Assets (sprites & map tiles)" package only contains two premade character sprites, the package does include blank character templates to make additional male and female characters. So, using the provided “base walkcycle” and “hairstyle” files, four custom character sprites with drawn walking cycles were created for usage alongside the two already premade characters. One of these custom characters is used to represent the main playable character, while the other three custom characters are to be used to represent more prominent side characters in the game’s story. 
+
+We decided that these were not enough characters for the game, though. So, to further populate the village, I created eight more custom character sprites to present more visually different looking NPCs in the game and had these NPCs placed in random locations scattered across the village’s map. Unlike the initial four custom characters, however, these new non-moving NPCs only have one sprite drawn of them each. Thus, to ensure that the player character can only approach each of these new NPCs from one direction, I added in more tiles to the layers containing collidable objects in order to block off any other direction that these new NPCs are not facing. For example, a villager NPC that only has a sprite facing left will have collidable objects placed above, below, and to the right of that NPC so that the player can only approach that NPC from the NPC’s left side. For organization, these additional NPCs have also been placed on a separate layer apart from the other characters, under Grid in the Hierarchy tab. 
+
+To depict child NPCs in the game, a couple of the character sprites were made smaller and placed in a specific building to represent an orphanage. Next, for even more stationary NPCs, the premade soldier sprites from the "Liberated Pixel Cup (LPC) Base Assets (sprites & map tiles)" package were also used multiple times to represent guards in the village. Then, to make the village feel more alive, the premade bunny sprites from the “Bunny Rabbit LPC style for PixelFarm” package are used to implement an animated bunny whose purpose is to just randomly hop around the main village map. The following section discusses how I did the animations for this game more in-depthly. 
+
+#### Animation Scripts
+To animate each of these characters, the “walkcycle” sprites of each premade and custom character was spliced up into 64x64 pixel tiles and then used to create Left / Right / Up / Down animation files. Afterwards, I wanted to see if the animations I had implemented and created actually worked beyond the preview that the Animation tab showed. 
+
+Thus, I created two scripts called **PlayerMovement** and **VillagerMovement** for the custom characters with custom walking cycles that I had made earlier. In the **PlayerMovement** script, an X value and an Y value is obtained based on player input and these values are passed along to the player character’s Animator. Similarly, in the **VillagerMovement** script, a direction that a particular NPC should move in and the speed in which that NPC should move at are randomly generated and then passed to that NPC’s Animator. The point of this random movement for the main villagers is to give the feel that the village is alive with living people. The single bunny in the game also uses the VillagerMovement script. Afterwards, in the Animator controller of each of these movable characters, I implemented a State Machine to decide which animation to display depending on which direction (X or Y direction) the character should be moving in on the map. 
+
+I later worked with the person in charge of physics and movement to further improve these movement scripts so that the moving NPCs would stop realistically when in close proximity to the player character. For this task, once the player character is detected to be very close to an NPC on the map, then the animator for that NPC is turned off and the NPC sprite is replaced with a sprite facing in the direction of the player character. This is described more in-depthly in the Game Feel section of the documentation, as the person tasked with physics and movement was also the one in charge of game feel. 
+
 
 ## Input
 
@@ -144,25 +164,40 @@ Gameplay testing will begin once the game is nearing the end of production.
 
 ## Narrative Design
 
+
 ## Press Kit and Trailer
+[Include links to your press kit materials and trailer. 
+Describe how you showcased your work. How did you choose what to show in the trailer? Why did you choose your screenshots?
+You are responsible for creating a press kit for your game that includes screenshots and a 1-minute trailer. You should document the choices you made in the press kit and the goals of your trailer in the design document.]
+
+#### Press Kit
+[Press Kit](https://docs.google.com/document/d/1vamzHzgRjBwiJJrI3wUr8orJj3k8Uq8qslihC3vqEJg/) - The press kit is available here as a PDF. 
+
+For this press kit, I chose to… because… 
+
+#### Trailer
+[Trailer](http://www.youtube.com/) - The trailer is available as an unlisted video on YouTube. 
+
+The main goal of the trailer is to hook the audience into wanting to play the game. As this is a top-down 2D game with an emphasis on story, the trailer starts out dramatically in order to engage the audience with the game’s story. Since this is a game, I also wanted to feature each of the core mechanics of the game, including exploration, dialogue choices, and character interactions. So, in between a supercut of gameplay clips, I flashed text emphasizing each main feature of the game in the center of the screen. At the end of the trailer, I then flashed the game’s title to remind the audience what game they were watching a trailer about. The music used in this trailer is all in-game music, as listed in the Audio section of this game design document. 
+
 
 ## Game Feel
 
-#### H4 Camera + Visual Improvements 
+#### Camera + Visual Improvements 
 As mentioned before, in addition to lerping, I tweaked the camera script to clamp and ensure that players could never view beyond the edges of the designed map to preserve the illusion of an infinite world. I also worked with the animator to add additional assets that filled the town map and tell an implicit story. 
 
 When entering an NPC home, where we switch to a fixed camera, the home is always smaller than the camera size. To give this a more complete look I give the scene a fitted black background. This style of adjusting the scene is similar to many topdown 2D games such as Stardew Valley.
 
 ![alt text](https://i.pinimg.com/originals/33/e9/e6/33e9e6a8505092cc233bfac4dedb8864.jpg)
 
-#### H4 NPC Acknowledgement
+#### NPC Acknowledgement
 Also as mentioned before, the **TriggerConversation** script can be reused to both enable and disable behaviors when a Player is near an NPC. To add to the realism and make it appear that an NPC is actively acknowledging your player, the NPC turns to face your player. This also means that whenever a conversation is triggered that the NPC will be facing the player. When the **TriggerConversation** script is triggered we set a bool that enables this NPC facing player behavior in the **VillagerMovement** script. By modifying the random movement behavior and adding an UpdateToFacePlayer() function I ensure that the NPC stops random movement as soon as the Player is close enough and turns to face the Player. 
 
 This behavior takes inspiration many 2D games where NPCs actively acknowledge the Player and their movement. One prime example is Pokemon, where an NPC is actively looking to find the player to start a battle encounter.
 
 ![alt text](https://vignette.wikia.nocookie.net/pokemon/images/b/bc/HGSS_-_Route_30_5.png/revision/latest?cb=20100411034322)
 
-#### H4 Hey! Stop Pushing Me!  
+#### Hey! Stop Pushing Me!  
 
 While colliding with furniture or a rock may have no more meaning than not being able to walk over it, there are other purposeful collisions that should be more meaningful. If you push around an NPC they are bound to get frustrated eventually! This is implemented by adding extra box colliders set to "isTrigger" to the walking NPCs (house characters and bunny), and implementing a script called **PushDetection**. When a Player starts pushing an NPC a timer starts that triggers behavior once the Player has exhausted the NPCs patience completely. When a timer has run out the NPC might just force a conversation. All NPCs have different weights and different levels of patience. If you push an NPCs patience long enough you may just get an adverse reaction... and what if that had some effect on your stats? 
 
