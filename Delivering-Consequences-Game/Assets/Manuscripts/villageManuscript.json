@@ -1,54 +1,494 @@
 {
     "nodes": [
         {
-            "id": "root1",
-            "character": "Fie",
-            "script": "This is my first example sentence.",
-            "choice1": "I choose left!",
-            "choice2": "I choose right!",
-            "choice1id": "left1",
-            "choice2id": "right1",
-            "nextConversation": "root2"
-        },
-        {
-            "id": "left1",
-            "character": "Fie",
-            "script": "Left is a great choice!",
+            "id": "AwakenInTown0",
+            "character": "Narrator",
+            "script": "Demanim begins to awaken. As he begins to regain consciousness, he rolls out of bed ineffectively and lands on the ground. Not used to raised bedding, the impact was startling. His wounds seared with pain intense enough for him to momentarily pass out again. ",
             "choice1": "",
             "choice2": "",
-            "choice1id": "",
+            "choice1id": "AwakenInTown4",
             "choice2id": "",
-            "nextConversation": "root2"
+            "nextConversation": ""
         },
         {
-            "id": "right1",
+            "id": "AwakenInTown1",
+            "character": "Girl",
+            "script": "Hey the man we found is trying to get out of bed! \nAre you alright? Take it easy now, you're hurt!",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "AwakenInTown2",
+            "choice2id": "",
+            "nextConversation": ""
+        },
+        {
+            "id": "AwakenInTown2",
             "character": "Demanim",
-            "script": "I will perform diabolical actions now! Mwahahaha!",
-            "choice1": "Scream loudly",
-            "choice2": "Attempt to scream, but actually cough uncontrollably",
-            "choice1id": "",
-            "choice2id": "right2",
-            "nextConversation": "root2"
-        },
-        {
-            "id": "right2",
-            "character": "Fie",
-            "script": "Real impressive display of physical prowess...",
+            "script": "(grogilly, after a long pause) Ughh.... What...",
             "choice1": "",
             "choice2": "",
-            "choice1id": "",
-            "choice2id": "right2",
-            "nextConversation": "root2"
+            "choice1id": "AwakenInTown2.5",
+            "choice2id": "",
+            "nextConversation": ""
         },
         {
-            "id": "root2",
-            "character": "Fie",
-            "script": "I have nothing left to say to you.",
+            "id": "AwakenInTown2.5",
+            "character": "Upset girl",
+            "script": "Don't move or you'll tear open the cuts under your bandages.",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "AwakenInTown4",
+            "choice2id": "",
+            "nextConversation": ""
+        },
+        {
+            "id": "AwakenInTown3",
+            "character": "Demanim",
+            "script": "Who... where...",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "AwakenInTown4",
+            "choice2id": "",
+            "nextConversation": ""
+        },
+        {
+            "id": "AwakenInTown4",
+            "character": "Narrator",
+            "script": "Demanim slowly shirks off the pain of his injuries and the cloudiness of his mind. He gradually becomes aware of his surroundings as the people around him tend to his needs.",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "AwakenInTown5",
+            "choice2id": "",
+            "nextConversation": ""
+        },
+        {
+            "id": "AwakenInTown5",
+            "character": "Calm girl",
+            "script": "Calm down... No one is going to hurt you here. You have nothing to worry about...",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "AwakenInTown6",
+            "choice2id": "",
+            "nextConversation": ""
+        },
+        {
+            "id": "AwakenInTown6",
+            "character": "Narrator",
+            "script": "Demanim's mind sharpens to awareness midway through the woman's words. He immediately attempts to jump through the roof to get an aerial view of the area to get a better idea of where he is, but he finds his legs stiff and weak before he can even stand.",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "AwakenInTown7",
+            "choice2id": "",
+            "nextConversation": ""
+        },
+        {
+            "id": "AwakenInTown7",
+            "character": "Again upset girl",
+            "script": "What did I just say!?! You can't move like that right now!",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "AwakenInTown8",
+            "choice2id": "",
+            "nextConversation": ""
+        },
+        {
+            "id": "AwakenInTown8",
+            "character": "Narrator",
+            "script": "Demanim glares at the girl and attempts to move again, but the girl holds him down. After a few attempts, weakness and fatigue set in. Demanim is furious with his inability to simply kill the woman and leave. Unable to do anything else, Demanim lies still.",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "Wait1",
+            "choice2id": "",
+            "nextConversation": ""
+        },
+        {
+            "id": "Wait1",
+            "character": "Narrator",
+            "script": "Once it becomes clear to her that Demanim will not resist, she begins speaking to him again as he contemplates the number of different ways he could kill her later.",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "Wait 2",
+            "choice2id": "",
+            "nextConversation": ""
+        },
+        {
+            "id": "Wait 2",
+            "character": "Fie Ronndly",
+            "script": "Hi, my name is Fie, Fie Ronndly. It's good to see you calm down a bit. What's your name?",
+            "choice1": "Answer her curtly.",
+            "choice2": "Ignore everything else she has to say.",
+            "choice1id": "Wait 3",
+            "choice2id": "IgnoreFie",
+            "nextConversation": ""
+        },
+        {
+            "id": "Wait 3",
+            "character": "Demanim",
+            "script": "Dem- *cough* ... erm...",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "Wait 4",
+            "choice2id": "",
+            "nextConversation": ""
+        },
+        {
+            "id": "Wait 4",
+            "character": "Narrator",
+            "script": "Luckily, it occurs to Demanim that revealing to Fie his full name poses significant risk in his current state. After deliberating he decides to...",
+            "choice1": "Tell her his name anyway",
+            "choice2": "Tell her a fake name of some kind. Anything will do.",
+            "choice1id": "RealName1",
+            "choice2id": "FakeName0",
+            "nextConversation": ""
+        },
+        {
+            "id": "RealName1",
+            "character": "Demanim",
+            "script": "I am your overlord Demanim, serve me peasant and bring me back to my lair or die.",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "RealName2",
+            "choice2id": "",
+            "nextConversation": ""
+        },
+        {
+            "id": "RealName2",
+            "character": "Fie Ronndly",
+            "script": "Yeah, right! (laughs) Haha... that was funny! You nailed the evil tone too. But come on, I wanna know who you really are.",
+            "choice1": "Insist you are who you say you are.",
+            "choice2": "Give up. The situation calls for diplomacy, not force.",
+            "choice1id": "RealName2",
+            "choice2id": "FakeName1",
+            "nextConversation": ""
+        },
+        {
+            "id": "FakeName0",
+            "character": "Demanim",
+            "script": "My name is... Anim Testa.",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "FakeName2",
+            "choice2id": "",
+            "nextConversation": ""
+        },
+        {
+            "id": "FakeName1",
+            "character": "Demanim",
+            "script": "erm... my name is... ",
+            "choice1": "Anim... Tesda...",
+            "choice2": "Dema Noman?",
+            "choice1id": "FakeName2",
+            "choice2id": "WrongName",
+            "nextConversation": ""
+        },
+        {
+            "id": "FakeName2",
+            "character": "Fie Ronndly",
+            "script": "Hmm... okay. Nice to meet you Anim.",
             "choice1": "",
             "choice2": "",
             "choice1id": "",
             "choice2id": "",
-            "nextConversation": "root2"
+            "nextConversation": "temp"
+        },
+        {
+            "id": "IgnoreFie",
+            "character": "Narrator",
+            "script": "Demanim ponders the loss of his powers and what difficulties this is likely to cause in the long run. He tests his other faculties, as much as he can, without moving. He is certain his powers will return. There could be no other alternative.",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "",
+            "choice2id": "",
+            "nextConversation": "temp"
+        },
+        {
+            "id": "Errer Grunt 1",
+            "character": "Errer Grunt",
+            "script": "I am Errer. I won't tell you again, so don't ask. Unless you want to know how its spelled.",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "",
+            "choice2id": "",
+            "nextConversation": "Errer Grunt 2"
+        },
+        {
+            "id": "Errer Grunt 2",
+            "character": "Errer Grunt",
+            "script": "This is the graveyard, you probably have no reason to go inside since you are a stranger to this village. But if you wanna chill by the graves, I won't judge... much.",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "",
+            "choice2id": "",
+            "nextConversation": "Errer Grunt 2"
+        },
+        {
+            "id": "Urrir Grunt 1",
+            "character": "Ur...rir...r Gr...runt?",
+            "script": "... Uh, I am-m Urrrrirrrrrrrrrrrrrrrr.",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "Urrir Grunt 2",
+            "choice2id": "",
+            "nextConversation": ""
+        },
+        {
+            "id": "Urrir Grunt 2",
+            "character": "Errer Grunt",
+            "script": "Hey! New guy, don't mind my brother there. He has a hard time speaking, but he's the smartest of the Grunt family, so don't even think about giving him a hard time!",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "Urrir Grunt 3",
+            "choice2id": "",
+            "nextConversation": ""
+        },
+        {
+            "id": "Urrir Grunt 3",
+            "character": "Narrator",
+            "script": "When Demanim processed what Errer told him, he decided to...",
+            "choice1": "feign understanding and turn away. These mooks aren't worth spending any more time with.",
+            "choice2": "retort 'you deign to give ME orders!?! Who do you think you are!'",
+            "choice1id": "",
+            "choice2id": "Urrir Grunt Angry",
+            "nextConversation": "Urrir Grunt 4"
+        },
+        {
+            "id": "Urrir Grunt 4",
+            "character": "Urrir Grunt",
+            "script": "Urrrr-rir.",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "Urrir Grunt 5",
+            "choice2id": "",
+            "nextConversation": ""
+        },
+        {
+            "id": "Urrir Grunt 5",
+            "character": "Narrator",
+            "script": "Demanim manages to conceal his thoughtless disdain.",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "",
+            "choice2id": "",
+            "nextConversation": "Urrir Grunt 4"
+        },
+        {
+            "id": "Urrir Grunt Angry",
+            "character": "Narrator",
+            "script": "Demanim takes in a breath, ready to take out his anger on the unsuspecting man. However, Demanim supresses the reaction at the last second, realizing that he is not in a position where he can antagonize the villagers. Urrir sees the flash of anger and silently notes Demanim's apparent prejudice.",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "",
+            "choice2id": "",
+            "nextConversation": "Urrir Grunt Quiet"
+        },
+        {
+            "id": "Urrir Grunt Quiet",
+            "character": "Urrir Grunt",
+            "script": "...",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "Urrir Grunt Errer",
+            "choice2id": "",
+            "nextConversation": "Urrir Grunt Quiet"
+        },
+        {
+            "id": "Urrir Grunt Errer",
+            "character": "Errer Grunt",
+            "script": "Hey! Don't be botherin' my brother!",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "",
+            "choice2id": "",
+            "nextConversation": "Urrir Grunt Quiet"
+        },
+        {
+            "id": "Eirar Grunt 1",
+            "character": "Errer Grunt",
+            "script": "I am Errer.",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "Errer Grunt 1",
+            "choice2id": "",
+            "nextConversation": ""
+        },
+        {
+            "id": "Airer Grunt 1",
+            "character": "Airer Grunt",
+            "script": "I am Airer.",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "Errer Grunt 1",
+            "choice2id": "",
+            "nextConversation": ""
+        },
+        {
+            "id": "Ayror Grunt 1",
+            "character": "Ayror Grunt",
+            "script": "Hi, my name is Ayror Grunt",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "",
+            "choice2id": "",
+            "nextConversation": "temp"
+        },
+        {
+            "id": "Chir Collec 1",
+            "character": "Chir Collec",
+            "script": "Hi I am the mine overseer! Chir Collec, at your service! Make sure to chat with my wife, Reova. She's absolutely enchanting! If not for her intellect and diplomatic skill, the government (if you can even call it that) would be much harsher towards our little no name town.",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "Chir Collec 2",
+            "choice2id": "",
+            "nextConversation": "Chir Collec 1"
+        },
+        {
+            "id": "Chir Collec 2",
+            "character": "Demanim",
+            "script": "(hmm... I should make sure to be careful around her then...)",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "",
+            "choice2id": "",
+            "nextConversation": "temp"
+        },
+        {
+            "id": "Reova Collec 1",
+            "character": "",
+            "script": "Hi, my name is Reova Collec. You should make sure to speak to my husband, he's a fascinating man, the overseer of the mine!",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "",
+            "choice2id": "",
+            "nextConversation": "temp"
+        },
+        {
+            "id": "Forria Dovven 1",
+            "character": "Foria Dovven",
+            "script": "Hi, my name is Forria Dovven. I am the gravekeeper.",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "",
+            "choice2id": "",
+            "nextConversation": "temp"
+        },
+        {
+            "id": "Aria Camph 1",
+            "character": "Aria Camph",
+            "script": "Hi, my name is Aria Camph!",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "",
+            "choice2id": "",
+            "nextConversation": "temp"
+        },
+        {
+            "id": "Dimarr Camph 1",
+            "character": "Dimarr Camph",
+            "script": "Hi, I'm Dimarr Camph! ",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "",
+            "choice2id": "",
+            "nextConversation": "temp"
+        },
+        {
+            "id": "Gredor Minch 1",
+            "character": "Gredor Minch",
+            "script": "Hi, my name is Gredor Minch. Don't talk to me.",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "",
+            "choice2id": "",
+            "nextConversation": "temp"
+        },
+        {
+            "id": "Leddor Minch 1",
+            "character": "Leddor Minch",
+            "script": "Hi, my name is Leddor Minch... Please don't tell anyone I'm hiding here.",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "",
+            "choice2id": "",
+            "nextConversation": "temp"
+        },
+        {
+            "id": "Greyor Camph 1",
+            "character": "Greyor Camph",
+            "script": "Hi, my name is Greyor Camph.",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "",
+            "choice2id": "",
+            "nextConversation": "temp"
+        },
+        {
+            "id": "Laea Camph 1",
+            "character": "Laea Camph",
+            "script": "Hi, my name is Laea Camph, but you can call me La! I like to sing!",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "",
+            "choice2id": "",
+            "nextConversation": "temp"
+        },
+        {
+            "id": "Gredor Camph 1",
+            "character": "Gredor Camph",
+            "script": "Hi, my name is Gredor Camph. My adopted father's name is really close to mine... sigh...",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "",
+            "choice2id": "",
+            "nextConversation": "temp"
+        },
+        {
+            "id": "Dalia Phan 1",
+            "character": "Dalia Phan",
+            "script": "Hi, my name is Dalia Phan, its super fun to play here!",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "",
+            "choice2id": "",
+            "nextConversation": "temp"
+        },
+        {
+            "id": "Hollia Phan 1",
+            "character": "Hollia Phan",
+            "script": "Hi, my name is Hollia Phan. I wish my daughter would spend a little less time playing with the kids at the orphanage... But... I guess its okay to let her have a little more childhood while she still can...",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "",
+            "choice2id": "",
+            "nextConversation": "temp"
+        },
+        {
+            "id": "Sumar Phan 1",
+            "character": "Sumar Phan",
+            "script": "Hi, my name is Sumar Phan",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "",
+            "choice2id": "",
+            "nextConversation": "temp"
+        },
+        {
+            "id": "bunny",
+            "character": "bunny",
+            "script": "pew pew!",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "",
+            "choice2id": "",
+            "nextConversation": "bunny"
+        },
+        {
+            "id": "temp",
+            "character": "Alex Miller who is not in the game",
+            "script": "SO MUCH WRITING... IT NEVER ENDS... By the way this shouldn't be in the end game lol",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "",
+            "choice2id": "",
+            "nextConversation": "temp"
         }
     ]
 }

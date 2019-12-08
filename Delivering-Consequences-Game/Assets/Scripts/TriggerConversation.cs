@@ -12,16 +12,20 @@ public class TriggerConversation : MonoBehaviour
         {
             Debug.Log("Trigger Conversation :)");
             // Trigger behavior that happens when Player within radius of NPC. 
-            if(NPC.GetComponent<VillagerMovement>() != null)
+            if (NPC.GetComponent<VillagerMovement>() != null)
             {
                 NPC.GetComponent<VillagerMovement>().setFacePlayer(true);
             }
-            if(NPC.GetComponent<PlayerConversation>() != null)
+            if (NPC.GetComponent<PlayerConversation>() != null)
             {
-                NPC.GetComponent<PushDetection>().enabled = false;
-                NPC.GetComponent<PlayerConversation>().setWithinRadius(true);
+                // Does not exist if stationary character!
+                if (NPC.GetComponent<PushDetection>() != null)
+                {
+                    NPC.GetComponent<PushDetection>().enabled = false;
+                    NPC.GetComponent<PlayerConversation>().setWithinRadius(true);
+                }
             }
-            if(NPC.GetComponent<InteractionPanel>() != null)
+            if (NPC.GetComponent<InteractionPanel>() != null)
             {
                 NPC.GetComponent<InteractionPanel>().setInteractionPanel(true);
             }
@@ -41,8 +45,12 @@ public class TriggerConversation : MonoBehaviour
 
             if (NPC.GetComponent<PlayerConversation>() != null)
             {
-                NPC.GetComponent<PushDetection>().enabled = true;
-                NPC.GetComponent<PlayerConversation>().setWithinRadius(false);
+                // Does not exist if stationary character!
+                if (NPC.GetComponent<PushDetection>() != null)
+                {
+                    NPC.GetComponent<PushDetection>().enabled = true;
+                    NPC.GetComponent<PlayerConversation>().setWithinRadius(false);
+                }
             }
             if (NPC.GetComponent<InteractionPanel>() != null)
             {
