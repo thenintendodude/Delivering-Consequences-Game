@@ -128,6 +128,19 @@ Gameplay testing will begin once the game is nearing the end of production.
 ## Narrative Design
 
 ## Press Kit and Trailer
+[Include links to your press kit materials and trailer. 
+Describe how you showcased your work. How did you choose what to show in the trailer? Why did you choose your screenshots?
+You are responsible for creating a press kit for your game that includes screenshots and a 1-minute trailer. You should document the choices you made in the press kit and the goals of your trailer in the design document.]
+
+#### Press Kit
+[Press Kit](https://docs.google.com/document/d/1vamzHzgRjBwiJJrI3wUr8orJj3k8Uq8qslihC3vqEJg/) - The press kit is available here as a PDF. 
+
+For this press kit, I chose to… because… 
+
+#### Trailer
+[Trailer](http://www.youtube.com/) - The trailer is available as an unlisted video on YouTube. 
+
+The main goal of the trailer is to hook the audience into wanting to play the game. As this is a top-down 2D game with an emphasis on story, the trailer starts out dramatically in order to engage the audience with the game’s story. Since this is a game, I also wanted to feature each of the core mechanics of the game, including exploration, dialogue choices, and character interactions. So, in between a supercut of gameplay clips, I flashed text emphasizing each main feature of the game in the center of the screen. At the end of the trailer, I then flashed the game’s title to remind the audience what game they were watching a trailer about. The music used in this trailer is all in-game music, as listed in the Audio section of this game design document. 
 
 ## Game Feel
 
