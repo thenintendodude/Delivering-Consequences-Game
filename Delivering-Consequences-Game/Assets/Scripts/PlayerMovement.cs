@@ -14,14 +14,25 @@ public class PlayerMovement : MonoBehaviour
     {
         Movement.x = Input.GetAxisRaw("Horizontal");
         Movement.y = Input.GetAxisRaw("Vertical");
-        
+
         CharAnimator.SetFloat("Horizontal", Movement.x);
         CharAnimator.SetFloat("Vertical", Movement.y);
         CharAnimator.SetFloat("Speed", Movement.sqrMagnitude);
+        CharAnimator.speed = pressingRun() ? 1.5f : 1f;
     }
 
     void FixedUpdate() 
     {
-        CharRigidBody.MovePosition(CharRigidBody.position + Movement * MoveSpeed * Time.fixedDeltaTime);
+        var currentMoveSpeed = MoveSpeed;
+        if (pressingRun())
+        {
+            currentMoveSpeed = 1.5f * MoveSpeed;
+        }
+        CharRigidBody.MovePosition(CharRigidBody.position + Movement * currentMoveSpeed * Time.fixedDeltaTime);
+    }
+
+    bool pressingRun()
+    {
+        return Input.GetMouseButton(1); // Right Click
     }
 }
