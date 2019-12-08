@@ -10,10 +10,10 @@ public class ExitHouse : MonoBehaviour
     [SerializeField] private Vector3 OutdoorSpawn;
     [SerializeField] private GameObject Player;
 
-    private AudioManager AudioManager;
+    private AudioManagerGame AudioManager;
     private void Start()
     {
-        AudioManager = AudioManager.Get();
+        AudioManager = AudioManagerGame.Get();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -24,8 +24,8 @@ public class ExitHouse : MonoBehaviour
             this.RoomCamera.SetActive(false);
             this.MainCamera.SetActive(true);
             Player.transform.position = this.OutdoorSpawn;
-            AudioManager.ToggleMusic(MusicType.outdoor);
-            AudioManager.TriggerSoundEffect(SoundEffect.closeDoor);
+            AudioManager.ToggleMusic(AudioManagerGame.MusicType.outdoor);
+            AudioManager.TriggerSoundEffect(AudioManagerGame.SoundEffect.closeDoor);
         }
     }
 }

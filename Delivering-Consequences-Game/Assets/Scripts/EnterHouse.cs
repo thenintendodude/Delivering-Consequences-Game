@@ -10,10 +10,10 @@ public class EnterHouse : MonoBehaviour
     [SerializeField] private Vector3 RoomSpawn;
     [SerializeField] private GameObject Player;
 
-    private AudioManager AudioManager;
+    private AudioManagerGame AudioManager;
     private void Start()
     {
-        AudioManager = AudioManager.Get();
+        AudioManager = AudioManagerGame.Get();
     }
 
 
@@ -25,8 +25,8 @@ public class EnterHouse : MonoBehaviour
             this.MainCamera.SetActive(false);
             this.RoomCamera.SetActive(true);
             Player.transform.position = RoomSpawn;
-            AudioManager.ToggleMusic(MusicType.indoor);
-            AudioManager.TriggerSoundEffect(SoundEffect.openDoor);
+            AudioManager.ToggleMusic(AudioManagerGame.MusicType.indoor);
+            AudioManager.TriggerSoundEffect(AudioManagerGame.SoundEffect.openDoor);
         }
     }
 }

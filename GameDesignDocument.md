@@ -102,20 +102,27 @@ ___
 # SUB-ROLES
 
 ## Audio
+
+### Why I picked the audio
+
+### Audio Systems
+
+### Audio Track Used
 Our-Mountain_v003: For outdoor music, Source: https://soundimage.org/wp-content/uploads/2014/09/Our-Mountain_v003.mp3
 Fantasy_Game_Background: For menu screen music, Source: http://soundimage.org/wp-content/uploads/2014/04/Fantasy_Game_Background.mp3
+The Foyer: For Backstory,Source: https://www.playonloop.com/2019-music-loops/the-foyer/#free-download
 Red Carpet Wooden Floor: For indoor music, Source: https://bakudas.itch.io/generic-rpg-pack
 Squeaky Door Open: https://freesound.org/people/CastIronCarousel/sounds/216878/
 Door Close: https://freesound.org/people/InspectorJ/sounds/339677/
 UI Confirmation Beep: https://freesound.org/people/paep3nguin/sounds/388046/
 victory-fanfare: Beat the game, Source: https://freesound.org/people/humanoide9000/sounds/466133/
 
-### Unused Audio, but may use in the future:
+### Unused Audio, but were potential candidates:
 Windless Slopes: For outdoor music, Source: https://bakudas.itch.io/generic-rpg-pack
 Orchestral-victory-fanfare: Made Progress in some way, Source: https://freesound.org/people/Sheyvan/sounds/470083/
+Long Beep: For Main Menu Select Confirmation, Source: https://www.partnersinrhyme.com/soundfx/PUBLIC-DOMAIN-SOUNDS/beep_sounds/beep_beep-fm_wav.shtml
 Short Beep: For Input Confirmation, Source:https://www.partnersinrhyme.com/soundfx/PUBLIC-DOMAIN-SOUNDS/beep_sounds/beep_beep-pure_wav.shtml
 Double Short Bee: For Input Confirmation, Source: https://www.partnersinrhyme.com/soundfx/PUBLIC-DOMAIN-SOUNDS/beep_sounds/beep_beep-doub_wav.shtml
-Long Beep: For Input Confirmation, Source: https://www.partnersinrhyme.com/soundfx/PUBLIC-DOMAIN-SOUNDS/beep_sounds/beep_beep-fm_wav.shtml
 
 ## Gameplay Testing
 Gameplay testing will begin once the game is nearing the end of production.
