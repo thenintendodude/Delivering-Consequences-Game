@@ -43,20 +43,40 @@ The second of the listed asset packages contains more tile squares that will be 
 The last asset package will be used for a bunny NPC. This package specifically contains premade sprites of an animated bunny, which will be placed to randomly move about on the main village map to help make the village appear more alive.
 
 ## Input
+
+### The Input Scheme
 Left Arrow (or A): Move character left
 Right Arrow (or D): Move character right
 Up Arrow (or W): Move character up
 Down Arrow (or S): Move character down
 
-Hold j with Arrow Key: Sprint in corresonding direction
+Walk up to NPC and press Spacebar: Initiate Conversation
+When in conversation (or backstory), press Spacebar: View next bit of text
+When in conversation, press Left UI Button: Make choice 1 in conversation
+When in conversation, press Right UI Button: Make choice 2 in conversation
 
-Walk into door from outside: Character enters house
-Walk into door from inside: Character leaves house
+When viewing Main Menu scene, click on UI Button "Play" to start the game.
+When viewing Main Menu scene, click on UI Button "Quit" to exit the game.
 
-Walk up to NPC and press Fire1: Initiate Conversation
-When in conversation, press Fire1: View next bit of text
-When in conversation, press 1: Make choice 1 in conversation
-When in conversation, press 2: Make choice 2 in conversation
+### Input Scheme Reasoning
+We chose a very standard input scheme for 2D movement of our character, using
+WASD or the arrow keys to move around in 8 directions. Complex movement wasn't
+very important for our game as it is primariliy story-focused.
+
+To intitiate conversations with characters, as well as to continue seeing more
+text in the conversation, we found it convenient to simply use
+the spacebar.
+
+For making choices about how to respond to NPCs, we at first thought to
+use the 1 and 2 keys on the keyboard to make choices 1 and 2, respectively.
+However, we soon realized it was much more intuitive to have UI buttons for
+the user to select with their cursor.
+
+### Some side notes on my role
+Since overall my Input role wasn't very large, I decided to help some other
+teammates with their roles. For instance, I created a detailed pseudocode
+for the PlayerConversation.cs script [here](https://github.com/thenintendodude/Delivering-Consequences-Game/blob/master/Conversation%20Handler%20and%20Communication%20with%20Other%20Classes.pdf),
+and I made some footage that went into the Trailer.
 
 ## Game Logic
 
@@ -65,8 +85,6 @@ ___
 
 ## Audio
 
-### Why I picked the audio
-
 ### Music Style
 For the music, I wanted to choose mostly tracks that sounded serious, somber, and mysterious. This was particularly true for the main menu screen and background,
 since these are the player's first impressions of the game. The reason I wanted
@@ -74,35 +92,34 @@ to portray these feelings is because our story is of a character who has just
 fallen from great power and is now unsure of his state in the world.
 
 The only place where'd I say the music isn't as somber is in the houses of the
-npcs, and this is becoming I wanted the player to feel like the homes were safe
+NPCs, since I wanted the player to feel like the homes were safe
 and welcoming places for them to go, since it is these places where they can
 actually progress in the game.
 
 ### Sound Effects
 Since I know that sound effects provide nice interactivity and satisfcation when
-playing games, I wanted to make sure to include some sound effects in our game
-as well. Specifically, I chose sound effects related to opening and closing
+playing games, I wanted to make sure to include some sound effects in our game. Specifically, I chose sound effects related to opening and closing
 doors, initiating conversation with characters, and beating the game. I found
 that these "transition" sound effects were very impactful in the flow of the
 game.
 
 ### Audio System
-The Audio system for the main menu and backstory scenes was fairly simple, as I
-just had to play one song in the background on loop. However, the Audio system
-for the main game was much more complicated.
+The Audio systems for the main menu and backstory scenes were fairly simple, as
+I just had to play one song in the background on a continuous loop. However, the
+Audio system for the main gameplay was much more complicated...
 
-I organized all audio for the main game under an Audio object in the scene,
-which contained child objects that each held one audio track that would be
-played during the game. Then, attached to the Audio object I had a script called
-AudioManager, so that all playing of sound effects and switching between
+I organized all audio for the main gameplay under an Audio GameObject in the
+scene, which contained child objects that each held one audio track that would
+be played during the game. Then, attached to the Audio object I had a script
+called AudioManager, so that all sound effects and switching between
 music tracks could be easily abstracted away and handled elegantly.
 
-Specifically, the AudioManager deals with all the details of gathering together
+Specifically, the AudioManager deals with the details of gathering together
 all the audio tracks, triggering sound effects, toggling music between different
-tracks in a smooth way that fades from one track to the next, and providing an easy
+tracks in a smooth way that fades from one track to another, and providing an easy
 interface for the rest of the scripts to deal with audio. By providing
-Enums to list all possible Sound Effects and Music, it makes it easy to see
-what audio options you have and causes less mistakes for the programmers using
+Enums to list all possible Sound Effects and Music, it made it easy to see
+what audio options you had and caused less mistakes for the programmers using
 AudioManager.
 
 ### Audio Tracks Used (All are royalty-free)
