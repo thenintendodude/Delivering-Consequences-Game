@@ -181,6 +181,16 @@
             "nextConversation": ""
         },
         {
+            "id": "WrongName",
+            "character": "Fie Ronndly",
+            "script": "Quiet. Pulling. My. Leg! If you don't want to tell me your name just say so!",
+            "choice1": "Make reparations, she could be useful",
+            "choice2": "Leave her be. She will understand when you rule again.",
+            "choice1id": "FakeName1",
+            "choice2id": "",
+            "nextConversation": "temp"
+        },
+        {
             "id": "FakeName2",
             "character": "Fie Ronndly",
             "script": "Hmm... okay. Nice to meet you Anim. (You aren't entirely sure she trusts you.)",
@@ -456,9 +466,189 @@
             "script": "Hello! . . . . . Oh, my name is Reymur Camph! What's your name mister?",
             "choice1": "Even the kids introduce themselves with last name? Ignore him.",
             "choice2": "Shoot... what was that name I made up?",
+            "choice1id": "Reymur Camph Ignore",
+            "choice2id": "Reymur Camph 2",
+            "nextConversation": ""
+        },
+        {
+            "id": "Reymur Camph Ignore",
+            "character": "Narrator",
+            "script": "The child ignores you. You hurt his feelings.",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "",
+            "choice2id": "",
+            "nextConversation": "Reymur Camph Ignore"
+        },
+        {
+            "id": "Reymur Camph 2",
+            "character": "Demanim",
+            "script": "Well... my name is...",
+            "choice1": "(Crap! I completely forgot!)",
+            "choice2": "I remember!",
+            "choice1id": "Reymur Camph Forgot",
+            "choice2id": "Reymur Camph Remember",
+            "nextConversation": ""
+        },
+        {
+            "id": "Reymur Camph Forgot",
+            "character": "Demanim",
+            "script": "Heh... Heh... it's...",
+            "choice1": "Alduous Huxley",
+            "choice2": "George Orwell",
+            "choice1id": "Reymur Camph React",
+            "choice2id": "Reymur Camph React",
+            "nextConversation": ""
+        },
+        {
+            "id": "Reymur Camph React",
+            "character": "Reymur Camph",
+            "script": "That's not a real name! It doesn't end with an 'r!' Everyone knows all boy names end in 'r!' You're what Mrs. Camph calls a 'liar!'",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "Reymur Camph React 2",
+            "choice2id": "",
+            "nextConversation": ""
+        },
+        {
+            "id": "Reymur Camph React 2",
+            "character": "Demanim",
+            "script": "(My real name doesn't end with an 'r.' Stupid brat. If I was in my normal state right now this kid wouldn't live long enough to ask why I destroyed his village.)",
+            "choice1": "",
+            "choice2": "",
             "choice1id": "",
             "choice2id": "",
             "nextConversation": "temp"
+        },
+        {
+            "id": "Reymur Camph Remember",
+            "character": "Reymur Camph",
+            "script": "Most people always remember their own name, silly! *chuckles*",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "Reymur Camph Remember 2",
+            "choice2id": "",
+            "nextConversation": "temp"
+        },
+        {
+            "id": "Reymur Camph Remember 2",
+            "character": "Demanim",
+            "script": "(man this kid pisses me off. Why are all children so abonimable? And there's so many of them... Ugh...)",
+            "choice1": "Tell him you are Demanim, here to reap his soul personally.",
+            "choice2": "Tell him your fake name.",
+            "choice1id": "Reymur Camph Truth",
+            "choice2id": "Reymur Camph Alias",
+            "nextConversation": ""
+        },
+        {
+            "id": "Reymur Camph Truth",
+            "character": "Reymur Camph",
+            "script": "Oh no! I'm scared! Mister! If you wanna play we can go outside!",
+            "choice1": "(Hell no, get away from the kid right now!)",
+            "choice2": "Tell the kid you aren't able to play right now.",
+            "choice1id": "Reymur Camph Aww",
+            "choice2id": "Reymur Camph Aww",
+            "nextConversation": ""
+        },
+        {
+            "id": "Reymur Camph Aww",
+            "character": "Reymur Camph",
+            "script": "Awwwww maaaaan! I thought you might be NOT boring for a second...",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "",
+            "choice2id": "",
+            "nextConversation": "Reymur Camph Bored"
+        },
+        {
+            "id": "Reymur Camph Bored",
+            "character": "Reymur Camph",
+            "script": "I'm bored mister...",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "",
+            "choice2id": "",
+            "nextConversation": "Reymur Camph Bored"
+        },
+        {
+            "id": "Reymur Camph Alias",
+            "character": "Demanim",
+            "script": "My name is... ",
+            "choice1": "Anim Tesda",
+            "choice2": "Anir Tesra",
+            "choice1id": "Reymur Correct Alias 1",
+            "choice2id": "Reymur Incorrect Alias",
+            "nextConversation": ""
+        },
+        {
+            "id": "Reymur Correct Alias 1",
+            "character": "Reymur Camph",
+            "script": "That's not a real name! It doesn't end with an 'r' like all boy names do! Boooo! You suck!",
+            "choice1": "Kill the damn child. You've put up with enough.",
+            "choice2": "Maintain composure. MAINTAIN COMPOSURE.",
+            "choice1id": "Reymur Gets Killed",
+            "choice2id": "Reymur Greyor Correction",
+            "nextConversation": ""
+        },
+        {
+            "id": "Reymur Gets Killed",
+            "character": "Narrator",
+            "script": "As you reach above the kid to murder him, you realize his father is watching. Then you back off.",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "",
+            "choice2id": "",
+            "nextConversation": "Reymur Camph Bored"
+        },
+        {
+            "id": "Reymur Greyor Correction",
+            "character": "Narrator",
+            "script": "From the other side of the room, you hear the child's father.",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "Reymur Greyor Correction 2",
+            "choice2id": "",
+            "nextConversation": ""
+        },
+        {
+            "id": "Reymur Greyor Correction 2",
+            "character": "Greyor Camph",
+            "script": "Reymur! Now don't you go making trouble! Just because the good man has a name that isn't from here, that doesn't mean that he's lying. Didn't I tell you that we should be nice, even to strangers?",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "Reymur Greyor Correction 3",
+            "choice2id": "",
+            "nextConversation": ""
+        },
+        {
+            "id": "Reymur Greyor Correction 3",
+            "character": "Reymur Camph",
+            "script": "Yes Papa... I'm sorry Mister Tesda...",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "",
+            "choice2id": "",
+            "nextConversation": "Reymur Greyor Success"
+        },
+        {
+            "id": "Reymur Greyor Success",
+            "character": "Reymur Camph",
+            "script": "Hi Mister Tesda! Have a nice day!",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "Reymur Greyor Success 2",
+            "choice2id": "",
+            "nextConversation": ""
+        },
+        {
+            "id": "Reymur Greyor Success 2",
+            "character": "Demanim",
+            "script": "(Now this is a step in the right direction! Only a bit further before he grovels at my feet as he should.)",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "",
+            "choice2id": "",
+            "nextConversation": "Reymur Greyor Success 2"
         },
         {
             "id": "Laea Camph 1",
