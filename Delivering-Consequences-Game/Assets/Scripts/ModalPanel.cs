@@ -11,6 +11,7 @@ public class ModalPanel : MonoBehaviour
     public Text Choice1Text;
     public Button Choice2;
     public Text Choice2Text;
+    public Text LeftCommand;
     public GameObject ModalPanelObject;
 
     private static ModalPanel modalPanel;
@@ -45,6 +46,7 @@ public class ModalPanel : MonoBehaviour
         Choice2Text.text = choice2Content;
         Choice1.gameObject.SetActive(true);
         Choice2.gameObject.SetActive(true);
+        LeftCommand.gameObject.SetActive(false);
     }
 
     public void ClosePanel()
@@ -63,5 +65,6 @@ public class ModalPanel : MonoBehaviour
 
         Choice1.gameObject.SetActive(false);
         Choice2.gameObject.SetActive(false);
+        LeftCommand.gameObject.SetActive(true);
     }
 }
