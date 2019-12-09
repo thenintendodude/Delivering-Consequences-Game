@@ -78,6 +78,7 @@ Down Arrow (or S): Move character down
 Hold Mouse Right-Click (while moving): Run
 
 Walk up to NPC and press Spacebar: Initiate Conversation
+When in conversation, press C to show next text in a conversation.
 When in conversation (or backstory), press Spacebar: View next bit of text
 When in conversation, press Left UI Button: Make choice 1 in conversation
 When in conversation, press Right UI Button: Make choice 2 in conversation
