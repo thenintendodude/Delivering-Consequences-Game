@@ -130,6 +130,10 @@ NPCs, since I wanted the player to feel like the homes were safe
 and welcoming places for them to go, since it is these places where they can
 actually progress in the game.
 
+### Editing Music
+I edited the outdoor music audio track so that the looping was a
+bit tighter compared to the original track.
+
 ### Sound Effects
 Since I know that sound effects provide nice interactivity and satisfcation when
 playing games, I wanted to make sure to include some sound effects in our game. Specifically, I chose sound effects related to opening and closing
