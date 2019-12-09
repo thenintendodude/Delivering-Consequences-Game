@@ -27,6 +27,7 @@ public class PlayerConversation : MonoBehaviour
         modalPanel = ModalPanel.Instance();
         PlayerMovement =
             GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
+        player = GameObject.FindWithTag("Player");
     }
 
     // Start is called before the first frame update
@@ -35,17 +36,17 @@ public class PlayerConversation : MonoBehaviour
         //for testing getting a text object
         MyConversations = new ConversationContainer();
         MyConversations.LoadJsonData("Manuscripts/villageManuscript.json");
-        player = GameObject.FindWithTag("Player");
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (!IsTalking && WithinRadius && Input.GetButtonDown("Jump"))
+        if (!IsTalking && WithinRadius && Input.GetButtonDown("Jump") && !player.GetComponent<PlayerInteraction>().isTalkingToNPC())
         {
             AudioManager.Get().TriggerSoundEffect(SoundEffect.uiConfirmation);
             NPC.GetComponent<InteractionPanel>().setInteractionPanel(false);
             PlayerMovement.AllowMovement(false);
+            player.GetComponent<PlayerInteraction>().setTalkingToNPC(true);
             StartTalking();
         }
         else if (IsTalking && Input.GetButtonDown("Jump") && !DisplayingLastTextScreen)
@@ -69,11 +70,6 @@ public class PlayerConversation : MonoBehaviour
                 GetAndStartDisplayingText(TextObject.choice1id);
             }
         }
-    }
-
-    public bool getIsTalking()
-    {
-        return IsTalking;
     }
 
     public void setWithinRadius(bool b)

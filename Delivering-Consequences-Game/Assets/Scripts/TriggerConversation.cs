@@ -32,7 +32,7 @@ public class TriggerConversation : MonoBehaviour
 
                 if (player.GetComponent<PlayerInteraction>() != null && !player.GetComponent<PlayerInteraction>().isTalkingToNPC())
                 {
-                    player.GetComponent<PlayerInteraction>().setTalkingToNPC(true);
+                    //player.GetComponent<PlayerInteraction>().setTalkingToNPC(true);
                     NPC.GetComponent<PlayerConversation>().setWithinRadius(true);
                 }
             }
