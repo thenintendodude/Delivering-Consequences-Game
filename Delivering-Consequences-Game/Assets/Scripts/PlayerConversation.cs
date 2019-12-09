@@ -96,7 +96,7 @@ public class PlayerConversation : MonoBehaviour
         DisplayNextTextScreen();
     }
 
-    // Each screen can only hold up to 84 characters per line x 4 lines = 336 characters.
+    // Each screen can only hold up to 84 characters per line x 4 lines = ~300 characters.
     private void Parse()
     {
         TextScreens = new List<string>();
