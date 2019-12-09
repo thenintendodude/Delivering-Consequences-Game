@@ -371,14 +371,74 @@
             "nextConversation": "Urrir Grunt Quiet"
         },
         {
-            "id": "Eirar Grunt 1",
+            "id": "Eirar Grunt 0",
             "character": "Eirar Grunt",
-            "script": "I am Eirar.",
+            "script": "AHEM. I saaaid... ",
             "choice1": "",
             "choice2": "",
-            "choice1id": "",
+            "choice1id": "Eirar Grunt Monologue",
             "choice2id": "",
-            "nextConversation": "Eirar Grunt 1"
+            "nextConversation": ""
+        },
+        {
+            "id": "Eirar Grunt Monologue",
+            "character": "Demanim",
+            "script": "(Oh, god, not again. It was bad enough listening the first time...",
+            "choice1": "Dig your feet in and brace yourself.",
+            "choice2": "Walk away, light as a feather, free from it all.",
+            "choice1id": "Eirar Grunt 1",
+            "choice2id": "",
+            "nextConversation": "Eirar Grunt 0"
+        },
+        {
+            "id": "Eirar Grunt 1",
+            "character": "Eirar Grunt",
+            "script": "I am Eirar. I am he-yure.",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "Eirar Grunt 2",
+            "choice2id": "",
+            "nextConversation": ""
+        },
+        {
+            "id": "Eirar Grunt 2",
+            "character": "Eirar Grunt",
+            "script": "He is Ayror. He is they-yure.",
+            "choice1": "Continue listening. Its so stupid it entertains.",
+            "choice2": "You've had enough of this, time to move on.",
+            "choice1id": "Eirar Grunt 3",
+            "choice2id": "",
+            "nextConversation": "Eirar Grunt 0"
+        },
+        {
+            "id": "Eirar Grunt 3",
+            "character": "Eirar Grunt",
+            "script": "I wey-yure blue. He wey-yures red.",
+            "choice1": "Continue listening. But, its charm is waning.",
+            "choice2": "You've had enough of this, time to move on.",
+            "choice1id": "Eirar Grunt 4",
+            "choice2id": "",
+            "nextConversation": "Eirar Grunt 0"
+        },
+        {
+            "id": "Eirar Grunt 4",
+            "character": "Eirar Grunt",
+            "script": "If you cay-yure, he is fay-yure",
+            "choice1": "Ask him what he even means.",
+            "choice2": "Leave the fool to himeself.",
+            "choice1id": "Eirar Grunt 5",
+            "choice2id": "",
+            "nextConversation": "Eirar Grunt 0"
+        },
+        {
+            "id": "Eirar Grunt 5",
+            "character": "Demanim",
+            "script": "What is all this nonsense? And why do all you guards have the same name?",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "Eirar Grunt 6",
+            "choice2id": "",
+            "nextConversation": ""
         },
         {
             "id": "Airur Grunt 1",
