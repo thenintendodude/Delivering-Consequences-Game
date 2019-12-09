@@ -8,10 +8,15 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Rigidbody2D CharRigidBody;
     [SerializeField] private Animator CharAnimator;
     Vector2 Movement;
+    bool CanMove = true;
 
     // Update is called once per frame
     void Update()
     {
+        if (!CanMove)
+        {
+            return;
+        }
         Movement.x = Input.GetAxisRaw("Horizontal");
         Movement.y = Input.GetAxisRaw("Vertical");
 
@@ -34,5 +39,10 @@ public class PlayerMovement : MonoBehaviour
     bool pressingRun()
     {
         return Input.GetMouseButton(1); // Right Click
+    }
+
+    public void AllowMovement(bool canMove)
+    {
+        CanMove = canMove;
     }
 }

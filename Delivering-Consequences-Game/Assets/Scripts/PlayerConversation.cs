@@ -6,6 +6,8 @@ using Conversation;
 public class PlayerConversation : MonoBehaviour
 {
     [SerializeField] private GameObject NPC;
+    private PlayerMovement PlayerMovement;
+
     private bool IsTalking = false;
     private TextNode TextObject;
     private List<string> TextScreens;
@@ -22,6 +24,8 @@ public class PlayerConversation : MonoBehaviour
     private void Awake()
     {
         modalPanel = ModalPanel.Instance();
+        PlayerMovement =
+            GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
     }
 
     // Start is called before the first frame update
@@ -39,6 +43,7 @@ public class PlayerConversation : MonoBehaviour
         {
             AudioManager.Get().TriggerSoundEffect(SoundEffect.uiConfirmation);
             NPC.GetComponent<InteractionPanel>().setInteractionPanel(false);
+            PlayerMovement.AllowMovement(false);
             StartTalking();
         }
         else if (IsTalking && Input.GetButtonDown("Jump") && !DisplayingLastTextScreen)
@@ -53,6 +58,7 @@ public class PlayerConversation : MonoBehaviour
             {
                 IsTalking = false;
                 NPC.GetComponent<InteractionPanel>().setInteractionPanel(true);
+                PlayerMovement.AllowMovement(true);
                 modalPanel.ClosePanel();
             }
             else // Else we know they just pressed Jump and there is still more to the conversation. 
