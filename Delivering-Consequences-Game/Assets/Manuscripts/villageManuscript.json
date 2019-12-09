@@ -403,7 +403,7 @@
         {
             "id": "Eirar Grunt 2",
             "character": "Eirar Grunt",
-            "script": "He is Ayror. He is they-yure.",
+            "script": "He is Airur. He is they-yure.",
             "choice1": "Continue listening. Its so stupid it entertains.",
             "choice2": "You've had enough of this, time to move on.",
             "choice1id": "Eirar Grunt 3",
@@ -441,14 +441,184 @@
             "nextConversation": ""
         },
         {
-            "id": "Airur Grunt 1",
+            "id": "Eirar Grunt 6",
             "character": "Airur Grunt",
-            "script": "I am Airur.",
+            "script": "We're part of the same family, all named after our grandfather Error. He and his brother Bagu guarded the only drawbridge across the Rutonian River in their youth. Error became famous when he decided to let the Hero of Legends cross without authority to do so. The choice got him in a lot of trouble until the Hero of Legends spoke up for him after his adventure. Altice's biography of Error was an inspirational story and a wide success in cities. There's much more that he did as a guardsman for such an important site, the bridge that connects the two continents. The entire Grunt family likes to reference our relation to him every chance we get. This town is pretty disconnected from everything and I think it's quite boring to live here myself.",
+            "choice1": "This monologue is worse than the 'poetry'. Leave.",
+            "choice2": "Not fascinating, but without better options, you listen.",
+            "choice1id": "Eirar Grunt 7",
+            "choice2id": "",
+            "nextConversation": ""
+        },
+        {
+            "id": "Eirar Grunt 7",
+            "character": "Demanim",
+            "script": "You're awfully talkative.",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "Eirar Grunt 8",
+            "choice2id": "",
+            "nextConversation": ""
+        },
+        {
+            "id": "Eirar Grunt 8",
+            "character": "Eirar Grunt",
+            "script": "Nothing true-yure!",
+            "choice1": "Punch the 'poet' for his insolence.",
+            "choice2": "Shrug off the forced rhyme.",
+            "choice1id": "Eirar Grunt 9",
+            "choice2id": "",
+            "nextConversation": ""
+        },
+        {
+            "id": "Eirar Grunt 9",
+            "character": "Airur Grunt",
+            "script": "Quite being a jackass Eirar. I'm trying to talk to Mr. Tesda.",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "Eirar Grunt 10",
+            "choice2id": "",
+            "nextConversation": ""
+        },
+        {
+            "id": "Eirar Grunt 10",
+            "character": "Eirur Grunt",
+            "script": "Fine. But just cause you think my rhymes are cringy, that doesn't mean everyone does. Someday I'll be a poet and you'll come to me to praise my creativity with the flowing fountain pen!",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "Eirar Grunt 11",
+            "choice2id": "",
+            "nextConversation": ""
+        },
+        {
+            "id": "Eirar Grunt 11",
+            "character": "Airur Grunt",
+            "script": "Sure. Likely. I just wish I had enough saved to go out and find a better place than this...",
             "choice1": "",
             "choice2": "",
             "choice1id": "",
             "choice2id": "",
-            "nextConversation": "Airur Grunt 1"
+            "nextConversation": "Eirar Grunt Dime"
+        },
+        {
+            "id": "Eirar Grunt Dime",
+            "character": "Eirar Grunt",
+            "script": "Mind giving me a dime for my rhyme?",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "",
+            "choice2id": "",
+            "nextConversation": "Eirar Grunt Fine"
+        },
+        {
+            "id": "Eirar Grunt Fine",
+            "character": "Eirar Grunt",
+            "script": "It'll be fine! Just bide your time! (Oh shoot, that wasn't a perfect rhyme...)I'll just stay here in line...",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "",
+            "choice2id": "",
+            "nextConversation": "Eirar Grunt Dime"
+        },
+        {
+            "id": "Airur Grunt 1",
+            "character": "Airur Grunt",
+            "script": "Hey, you're the traveler Sumar found while evacuating the mines. Can you tell me what your travels are like? You see, I want to leave this village in a few years when I'm old enough for my father to approve. He's Ayror, the man keeping guard by the village entrance to the east. He keeps the monsters from coming near the village. One time, he defeated a scaled wyvern with just a knife and a pot lid, just to prove to an adventurer that equipment isn't everything! I want to be just like him! Do you have any amazing stories like that!?!",
+            "choice1": "Eventually respond, once this guy shuts up.",
+            "choice2": "Tell him you're busy, even though you're not.",
+            "choice1id": "Airur Grunt 2",
+            "choice2id": "Airur Grunt Busy",
+            "nextConversation": ""
+        },
+        {
+            "id": "Airur Grunt Busy",
+            "character": "Demanim",
+            "script": "I'm busy right now.",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "Airur Grunt Busy 2",
+            "choice2id": "",
+            "nextConversation": ""
+        },
+        {
+            "id": "Airur Grunt Busy 2",
+            "character": "Airur Grunt",
+            "script": "Doing what? There's not exactly much to do except talk unless you wanna apply for work. But you still look a little worse for ware.",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "Airur Grunt Busy 3",
+            "choice2id": "",
+            "nextConversation": ""
+        },
+        {
+            "id": "Airur Grunt Busy 3",
+            "character": "Narrator",
+            "script": "Demanim considers. He realizes that despite his superior ability to ignore pain, his physical body is not in a state that can handle much exertion beyond moving the short distances between the houses. An excuse may be required to alleviate the... bald teenager's questioning mind.",
+            "choice1": "Explain you are scouting the village.",
+            "choice2": "Walk away with no explanation.",
+            "choice1id": "Airur Grunt 2",
+            "choice2id": "Airur Grunt Walk Away",
+            "nextConversation": ""
+        },
+        {
+            "id": "Airur Grunt 2",
+            "character": "Demanim",
+            "script": "Look, I'm just trying to get a better idea of where I am by walking around the village. I don't have any stories and I don't have anything on my mind more important than recovering. Just let me into the house here so I can see if it has someone worth talking to.",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "Airur Grunt 3",
+            "choice2id": "",
+            "nextConversation": ""
+        },
+        {
+            "id": "Airur Grunt 3",
+            "character": "Airur Grunt",
+            "script": "Okay, I get that you aren't feeling well. It's fine for you to take it out on me, I won't hold a grudge. But you should think more of the situation you are in right now. A traveler like you should know how to guage his position. You could have died if we didn't find you.",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "Airur Grunt Busy 4",
+            "choice2id": "",
+            "nextConversation": ""
+        },
+        {
+            "id": "Airur Grunt 4",
+            "character": "Narrator",
+            "script": "Demanim is at first annoyed by the teenagers remarks, but upon reflecting on his weakened state, he is taken aback by how suddenly the teenagers words are making complete sense. With a nod, Demanim acknowledges Airur's words and moves on.",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "",
+            "choice2id": "",
+            "nextConversation": "Airur Grunt Feel Better"
+        },
+        {
+            "id": "Airur Grunt Walk Away",
+            "character": "Demanim",
+            "script": "I'm busy right now. Just Leave me be.",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "",
+            "choice2id": "",
+            "nextConversation": "Airur Grunt Feel Better"
+        },
+        {
+            "id": "Airur Grunt Feel Better",
+            "character": "Airur Grunt",
+            "script": "Hey, Fie told me your name is Anim. I hope you recover quickly!",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "Airur Grunt Feel Better 2",
+            "choice2id": "",
+            "nextConversation": ""
+        },
+        {
+            "id": "Airur Grunt Feel Better 2",
+            "character": "Demanim",
+            "script": "(Me too)",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "",
+            "choice2id": "",
+            "nextConversation": "Airur Grunt Feel Better"
         },
         {
             "id": "Ayror Grunt 1",
