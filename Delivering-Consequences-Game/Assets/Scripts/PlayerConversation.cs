@@ -49,11 +49,11 @@ public class PlayerConversation : MonoBehaviour
             player.GetComponent<PlayerInteraction>().setTalkingToNPC(true);
             StartTalking();
         }
-        else if (IsTalking && Input.GetKeyDown(KeyCode.LeftCommand) && !DisplayingLastTextScreen)
+        else if (IsTalking && Input.GetKeyDown(KeyCode.C) && !DisplayingLastTextScreen)
         {
             DisplayNextTextScreen();
         }
-        else if (DisplayingLastTextScreen && Input.GetKeyDown(KeyCode.LeftCommand) && TextObject.choice1 == "") // Means they do not have any choices available on screen.
+        else if (DisplayingLastTextScreen && Input.GetKeyDown(KeyCode.C) && TextObject.choice1 == "") // Means they do not have any choices available on screen.
         {
             DisplayingLastTextScreen = false;
 
@@ -96,7 +96,6 @@ public class PlayerConversation : MonoBehaviour
         DisplayNextTextScreen();
     }
 
-    // Each screen can only hold up to 84 characters per line x 4 lines = ~300 characters.
     private void Parse()
     {
         TextScreens = new List<string>();
