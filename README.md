@@ -33,12 +33,12 @@ Interactions with NPCs result in *consequences*! This is indicated by four statu
 ## ABOUT US
 We are a group of five students in a Gameplay Programming class at UC Davis. The roles involved for making this game were delegated as follows:
 
-| Role                  | Developer        |
-|:---------------------:|:----------------:|
-| User Interface        | Alannah Woodward |
-| Movement/Physics      | Emily Brickey    |
-| Animation and Visuals | Joanne Chang     |
-| Input                 | Elias Heffan     |
-| Game Logic            | Alexander Miller |
+| Role                  | Sub-Role              | Developer        |
+|:---------------------:|:---------------------:|:----------------:|
+| User Interface        | Gameplay Testing      | Alannah Woodward |
+| Movement/Physics      | Game Feel             | Emily Brickey    |
+| Animation and Visuals | Press Kit and Trailer | Joanne Chang     |
+| Input                 | Audio                 | Elias Heffan     |
+| Game Logic            | Narrative Design      | Alexander Miller |
 
 More information about what these roles entailed can be found in the Game Design document [here](https://github.com/thenintendodude/Delivering-Consequences-Game/blob/master/GameDesignDocument.md)! 
