@@ -156,7 +156,37 @@
             "script": "Yeah, right! (laughs) Haha... that was funny! You nailed the evil tone too. But come on, I wanna know who you really are.",
             "choice1": "Insist you are who you say you are.",
             "choice2": "Give up. The situation calls for diplomacy, not force.",
-            "choice1id": "RealName2",
+            "choice1id": "RealName2.1",
+            "choice2id": "FakeName1",
+            "nextConversation": ""
+        },
+        {
+            "id": "RealName2.1",
+            "character": "Fie Ronndly",
+            "script": "Hey... Cut it out. Its not funny more than once... I wanna know who you really are.",
+            "choice1": "Insist you are Demanim.",
+            "choice2": "Give up. The situation calls for diplomacy, not force.",
+            "choice1id": "RealName2.2",
+            "choice2id": "FakeName1",
+            "nextConversation": ""
+        },
+        {
+            "id": "RealName2.2",
+            "character": "Fie Ronndly",
+            "script": "Ugh. you're a jerk, you know that?",
+            "choice1": "STILL Insist you are Demanim.",
+            "choice2": "Give up. The situation calls for diplomacy, not force.",
+            "choice1id": "RealName2.3",
+            "choice2id": "FakeName1",
+            "nextConversation": ""
+        },
+        {
+            "id": "RealName2.3",
+            "character": "Fie Ronndly",
+            "script": "(glare)",
+            "choice1": "STILL Insist you are Demanim.",
+            "choice2": "Give up. The situation calls for diplomacy, not force.",
+            "choice1id": "RealName2.3",
             "choice2id": "FakeName1",
             "nextConversation": ""
         },
