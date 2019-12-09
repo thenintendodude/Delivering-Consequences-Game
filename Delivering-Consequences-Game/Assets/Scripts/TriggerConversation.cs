@@ -5,6 +5,12 @@ using UnityEngine;
 public class TriggerConversation : MonoBehaviour
 {
     [SerializeField] private GameObject NPC;
+    private GameObject player;
+
+    private void Start()
+    {
+        player = GameObject.FindWithTag("Player");
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -22,11 +28,15 @@ public class TriggerConversation : MonoBehaviour
                 if (NPC.GetComponent<PushDetection>() != null)
                 {
                     NPC.GetComponent<PushDetection>().enabled = false;
-                    //NPC.GetComponent<PlayerConversation>().setWithinRadius(true);
                 }
-                NPC.GetComponent<PlayerConversation>().setWithinRadius(true);
+
+                if (player.GetComponent<PlayerInteraction>() != null && !player.GetComponent<PlayerInteraction>().isTalkingToNPC())
+                {
+                    player.GetComponent<PlayerInteraction>().setTalkingToNPC(true);
+                    NPC.GetComponent<PlayerConversation>().setWithinRadius(true);
+                }
             }
-            if (NPC.GetComponent<InteractionPanel>() != null)
+            if (NPC.GetComponent<InteractionPanel>() != null && !NPC.GetComponent<InteractionPanel>().isIPActive())
             {
                 NPC.GetComponent<InteractionPanel>().setInteractionPanel(true);
             }
@@ -54,7 +64,7 @@ public class TriggerConversation : MonoBehaviour
                 }
                 NPC.GetComponent<PlayerConversation>().setWithinRadius(false);
             }
-            if (NPC.GetComponent<InteractionPanel>() != null)
+            if (NPC.GetComponent<InteractionPanel>() != null && NPC.GetComponent<InteractionPanel>().isIPActive())
             {
                 NPC.GetComponent<InteractionPanel>().setInteractionPanel(false);
             }

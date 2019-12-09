@@ -27,6 +27,15 @@ public class InteractionPanel : MonoBehaviour
         }*/
     }
 
+    public bool isIPActive()
+    {
+        if(interactionPanel.active)
+        {
+            return true;
+        }
+        return false;
+    }
+
     public void setInteractionPanel(bool b)
     {
         if(b)

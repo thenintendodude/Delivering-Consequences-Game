@@ -7,6 +7,7 @@ public class PlayerConversation : MonoBehaviour
 {
     [SerializeField] private GameObject NPC;
     private PlayerMovement PlayerMovement;
+    private GameObject player;
 
     private bool IsTalking = false;
     private TextNode TextObject;
@@ -34,6 +35,7 @@ public class PlayerConversation : MonoBehaviour
         //for testing getting a text object
         MyConversations = new ConversationContainer();
         MyConversations.LoadJsonData("Manuscripts/villageManuscript.json");
+        player = GameObject.FindWithTag("Player");
     }
 
     // Update is called once per frame
@@ -57,6 +59,7 @@ public class PlayerConversation : MonoBehaviour
             if (IsConversationOver())
             {
                 IsTalking = false;
+                player.GetComponent<PlayerInteraction>().setTalkingToNPC(false);
                 NPC.GetComponent<InteractionPanel>().setInteractionPanel(true);
                 PlayerMovement.AllowMovement(true);
                 modalPanel.ClosePanel();
@@ -66,6 +69,11 @@ public class PlayerConversation : MonoBehaviour
                 GetAndStartDisplayingText(TextObject.choice1id);
             }
         }
+    }
+
+    public bool getIsTalking()
+    {
+        return IsTalking;
     }
 
     public void setWithinRadius(bool b)
