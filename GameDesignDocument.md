@@ -1,9 +1,14 @@
 # MAIN ROLES
 
 ## User Interface
-There is a popup dialogue panel that will appear whenever your character tries to talk to an NPC. The text will be parsed to show up without overflowing accordingly. If the player has a choice to make from the conversation, then the choice buttons will pop up on the screen. We have IDs that accordingly indicate what is the next conversation the player will have with the NPC.
+#### Dialogue popup panel
+There is a popup dialogue panel that will appear whenever your character tries to talk to an NPC. The text will be parsed to show up without overflowing accordingly. If the player has a choice to make from the conversation, then the choice buttons will pop up on the screen. We have IDs that accordingly indicate what is the next conversation the player will have with the NPC. In implementing this panel that shows up, I had to create 2 separate panels, one for where the text would be displayed and one for where the buttons for the choices would be displayed. These panels were then hidden at the start of the game since no talking would happen at the beginning. I wrote the PlayerConversation script, which keeps track of which text node to display, whether there were choices to display or not and keep track of what the next conversation should be after the previous conversation had ended with the NPC. I added the appropriate scripts to each NPC and the reference objects needed. I also added a player interaction script which makes sure you do not go through two conversations at once if you are within the radius of two different npcs. You use left command now to progress through the game to make sure you do not interact with two npcs at once.
 
-There will be an "empathy" value measurement on the screen that indicates to the player how much closer they are to moving on in the game.
+#### Stats bars
+There will be an "empathy" value measurement on the screen that indicates to the player how much closer they are to moving on in the game. There is also a power, charisma, and strategy bar that appears on the UI. This is done by having references to the bars for each NPC so that the values can be updated with each conversation the player has with them (through the InteractionPanel scipt). Whenever the player is trying to talk to an NPC, they have to be within a certain radius, and whenever they are in this radius, the phrase "press space to interact" appears and disappears from the screen accordingly. I added the appropriate scripts to each NPC and the reference objects needed.
+
+#### Opening menu and dialogue scene
+I also created the play menu and also opening dialogue scenes at the very beginning of the game. These rely on their respective scripts, which manage the buttons on the screen. 
 
 ## Movement/Physics
 
@@ -168,7 +173,9 @@ Short Beep: For Input Confirmation, Source:https://www.partnersinrhyme.com/sound
 Double Short Bee: For Input Confirmation, Source: https://www.partnersinrhyme.com/soundfx/PUBLIC-DOMAIN-SOUNDS/beep_sounds/beep_beep-doub_wav.shtml
 
 ## Gameplay Testing
-Gameplay testing will begin once the game is nearing the end of production.
+
+The first few gameplay testers happened once the game was not quite finished and the storyline had not been implemented yet. These were simply to test out what else we could implement without the story being involved, such as did the controls feel good and how did the music sound. 
+
 
 ## Narrative Design
 
