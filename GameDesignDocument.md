@@ -85,6 +85,11 @@ We chose a very standard input scheme for 2D movement of our character, using
 WASD or the arrow keys to move around in 8 directions. Complex movement wasn't
 very important for our game as it is primariliy story-focused.
 
+I decided to make the control for running to be right-clicking the mouse because
+the player would already have their hand on the mouse for when making decisions
+during conversations. So, it seemed like an easy button for them to press
+without making them change their finger positions.
+
 To intitiate conversations with characters, as well as to continue seeing more
 text in the conversation, we found it convenient to simply use
 the spacebar.
