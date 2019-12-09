@@ -49,11 +49,11 @@ public class PlayerConversation : MonoBehaviour
             player.GetComponent<PlayerInteraction>().setTalkingToNPC(true);
             StartTalking();
         }
-        else if (IsTalking && Input.GetButtonDown("Jump") && !DisplayingLastTextScreen)
+        else if (IsTalking && Input.GetKeyDown(KeyCode.LeftCommand) && !DisplayingLastTextScreen)
         {
             DisplayNextTextScreen();
         }
-        else if (DisplayingLastTextScreen && Input.GetButtonDown("Jump") && TextObject.choice1 == "") // Means they do not have any choices available on screen.
+        else if (DisplayingLastTextScreen && Input.GetKeyDown(KeyCode.LeftCommand) && TextObject.choice1 == "") // Means they do not have any choices available on screen.
         {
             DisplayingLastTextScreen = false;
 
