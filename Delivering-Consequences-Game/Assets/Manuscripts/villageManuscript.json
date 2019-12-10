@@ -1001,6 +1001,16 @@
             "nextConversation": "bunny"
         },
         {
+            "id": "end",
+            "character": "Villager",
+            "script": "Fie is waiting for you on the east end of the village. She wants to talk to you.",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "",
+            "choice2id": "",
+            "nextConversation": "end"
+        },
+        {
             "id": "temp",
             "character": "Alex Miller who is not in the game",
             "script": "SO MUCH WRITING... IT NEVER ENDS... By the way this shouldn't be in the end game lol",
