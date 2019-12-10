@@ -23,9 +23,9 @@ public class EmpathyLevel : MonoBehaviour
         strategyBar.enabled = false;
         empathyBar.value = 0;
         empathyBar.maxValue = maxEmpathy;
-        powerBar.value = 0;
+        powerBar.value = 100;
         powerBar.maxValue = maxPower;
-        charismaBar.value = 0;
+        charismaBar.value = 50;
         charismaBar.maxValue = maxCharisma;
         strategyBar.value = 0;
         strategyBar.maxValue = maxStrategy;

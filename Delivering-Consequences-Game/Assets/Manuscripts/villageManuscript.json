@@ -1079,6 +1079,16 @@
             "choice1id": "",
             "choice2id": "",
             "nextConversation": "temp"
+        },
+        {
+            "id": "winGame",
+            "character": "Fie",
+            "script": "You have come a long way from where you started. Please continue on your journey now.",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "",
+            "choice2id": "",
+            "nextConversation": "winGame"
         }
     ]
 }

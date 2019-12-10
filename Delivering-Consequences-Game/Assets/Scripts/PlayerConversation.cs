@@ -41,9 +41,13 @@ public class PlayerConversation : MonoBehaviour
     void Update()
     {
         // This only happens when we are able to move on in the game and the empathy bar is full. 
-        if(NPC.GetComponent<UpdateBars>() != null && NPC.GetComponent<UpdateBars>().isEmpathyFull())
+        if(NPC.GetComponent<UpdateBars>() != null && NPC.GetComponent<UpdateBars>().isEmpathyFull() && NPC.gameObject.tag != "Fie")
         {
             NextConversation = "end";
+        }
+        else if(NPC.GetComponent<UpdateBars>() != null && NPC.GetComponent<UpdateBars>().isEmpathyFull() && NPC.gameObject.tag == "Fie")
+        {
+            NextConversation = "winGame";
         }
 
         // We always want Fie to have the first conversation and we do not need the player to press space; we always want it to happen.
@@ -196,9 +200,9 @@ public class PlayerConversation : MonoBehaviour
         }
         if (NPC.GetComponent<UpdateBars>() != null)
         {
-            NPC.GetComponent<UpdateBars>().updateEmpathy(7); // make these based off the text node values! 
-            NPC.GetComponent<UpdateBars>().updatePower(7);
-            NPC.GetComponent<UpdateBars>().updateCharisma(7);
+            NPC.GetComponent<UpdateBars>().updateEmpathy(10); // make these based off the text node values! 
+            NPC.GetComponent<UpdateBars>().updatePower(-10);
+            NPC.GetComponent<UpdateBars>().updateCharisma(5);
             NPC.GetComponent<UpdateBars>().updateStrategy(7);
         }
     }
@@ -219,9 +223,9 @@ public class PlayerConversation : MonoBehaviour
         }
         if (NPC.GetComponent<UpdateBars>() != null)
         {
-            NPC.GetComponent<UpdateBars>().updateEmpathy(7); // Make these based off the text node values! 
-            NPC.GetComponent<UpdateBars>().updatePower(7);
-            NPC.GetComponent<UpdateBars>().updateCharisma(7);
+            NPC.GetComponent<UpdateBars>().updateEmpathy(10); // Make these based off the text node values! 
+            NPC.GetComponent<UpdateBars>().updatePower(-10);
+            NPC.GetComponent<UpdateBars>().updateCharisma(5);
             NPC.GetComponent<UpdateBars>().updateStrategy(7);
         }
     }
