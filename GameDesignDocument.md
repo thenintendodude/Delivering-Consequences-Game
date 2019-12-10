@@ -1,3 +1,16 @@
+# Game Basic Information
+
+# Summary
+
+# Gameplay explanation
+Use WASD or the arrow key to move around the village. Press spacebar to initiate
+a conversation with an NPC, and 'C' to continue your conversation with them.
+Make decisions during your conversation by using your cursor to click the
+appropriate decision box on screen.
+
+Your goal is to go around the village and talk to NPCs, and make decisions
+during your conversations that you think will raise your empathy.
+
 # MAIN ROLES
 
 ## User Interface
