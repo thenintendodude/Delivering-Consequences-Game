@@ -1,5 +1,5 @@
 # DELIVERING CONSEQUENCES
-[game summary / description]
+*Delivering Consequences* is a top-down 2D role-playing game that takes place in a world once ruled over by a superpowered tyrant. Play as this former villain as you navigate through the world from an overhead perspective and unlock the game's lore through conversations with other characters in the game. 
 
 Check out our game pitch [here](https://github.com/thenintendodude/Delivering-Consequences-Game/blob/master/Press%20Kit%20Materials/Understanding%20Consequences%20Pitch.pdf)! 
 
@@ -9,7 +9,7 @@ Check out our game pitch [here](https://github.com/thenintendodude/Delivering-Co
 
 
 ## THE STORY
-[story summary]  
+Wake up in this world as a former villain who has lost all power - Demamin! As you traverse through a village you once ravaged, decide how you will now act without the powers you once had. How will you face the consequences of your past deeds and present actions? How will you move forward? 
 
 
 ## FEATURES & SCREENSHOTS
