@@ -42,7 +42,7 @@ public class PlayerConversation : MonoBehaviour
     {
         if(NPC.GetComponent<UpdateBars>() != null && NPC.GetComponent<UpdateBars>().isEmpathyFull())
         {
-            //NextConversation = NODE ABOUT FIE WAITING FOR YOU
+            NextConversation = "end";
         }
         if (!IsTalking && WithinRadius && Input.GetButtonDown("Jump") && !player.GetComponent<PlayerInteraction>().isTalkingToNPC())
         {
