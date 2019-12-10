@@ -82,32 +82,55 @@ I later worked with the person in charge of physics and movement to further impr
 
 ## Input
 
-### The Input Scheme
+### Standard Movement
+We chose a very standard input scheme for 2D movement of our character, using
+WASD or the arrow keys to move around in 8 directions. Complex movement wasn't
+very important for our game as it is primariliy story-focused. More explicitly,
+here is our movement scheme:
+
 Left Arrow (or A): Move character left
 Right Arrow (or D): Move character right
 Up Arrow (or W): Move character up
 Down Arrow (or S): Move character down
 
+We implemented the [movement commands](https://github.com/thenintendodude/Delivering-Consequences-Game/blob/master/Delivering-Consequences-Game/Assets/Scripts/PlayerMovement.cs)
+using the the GetAxisRaw("Horizontal") and GetAxisRaw("Vertical") functions for
+left/right and up/down, respectively. Then, we determined direction using
+whether the returned values were positive or negative.
+
+The input also factored into the direction of our animation, using the
+Animator.SetFloat() function to set the direction of our animated character
+movement.
+
+### Running
+We also wanted to allow our player to walk faster since the village can seem
+quite large after a while. So, we decided to implement a [run mechanic](https://github.com/thenintendodude/Delivering-Consequences-Game/blob/d6f8be30549d386b693db44fa5cd4597ed0c6129/Delivering-Consequences-Game/Assets/Scripts/PlayerMovement.cs#L26).
+Here is the input command explicitly:
 Hold Mouse Right-Click (while moving): Run
-
-Walk up to NPC and press Spacebar: Initiate Conversation
-When in conversation, press C to show next text in a conversation.
-When in conversation (or backstory), press Spacebar: View next bit of text
-When in conversation, press Left UI Button: Make choice 1 in conversation
-When in conversation, press Right UI Button: Make choice 2 in conversation
-
-When viewing Main Menu scene, click on UI Button "Play" to start the game.
-When viewing Main Menu scene, click on UI Button "Quit" to exit the game.
-
-### Input Scheme Reasoning
-We chose a very standard input scheme for 2D movement of our character, using
-WASD or the arrow keys to move around in 8 directions. Complex movement wasn't
-very important for our game as it is primariliy story-focused.
 
 I decided to make the control for running to be right-clicking the mouse because
 the player would already have their hand on the mouse for when making decisions
 during conversations. So, it seemed like an easy button for them to press
 without making them change their finger positions.
+
+### Conversations with NPCs
+Since our game is centered around walking and talking with NPCs, I wanted to make
+sure that the player would not have to move their hand position much to
+initiate, continue, and make decisions during conversations.
+
+Walk up to NPC and press Spacebar: Initiate Conversation
+When in conversation, press C to show next text in a conversation.
+When in conversation (or backstory), press Spacebar: View next bit of text
+When in conversation, click Left UI Button with mouse: Make choice 1 in conversation
+When in conversation, click Right UI Button with mouse: Make choice 2 in conversation
+
+When viewing Main Menu scene, click on UI Button "Play" to start the game.
+When viewing Main Menu scene, click on UI Button "Quit" to exit the game.
+
+### Input Scheme Reasoning
+
+
+
 
 To intitiate conversations with characters, as well as to continue seeing more
 text in the conversation, we found it convenient to simply use
@@ -122,8 +145,8 @@ the user to select with their cursor.
 Since overall the Input role isn't very large, I decided to help some other
 teammates with their roles. For instance, I created a detailed pseudocode
 for the PlayerConversation.cs script [here](https://github.com/thenintendodude/Delivering-Consequences-Game/blob/master/Conversation%20Handler%20and%20Communication%20with%20Other%20Classes.pdf),
- I made some footage that went into the Trailer, and I implemented the logic
- that made run happen (changing movement and animation speed).
+ I made some footage that went into the Trailer, and I implemented the [logic](https://github.com/thenintendodude/Delivering-Consequences-Game/blob/master/Delivering-Consequences-Game/Assets/Scripts/PlayerMovement.cs)
+ that made walking happen (changing movement and animation speed).
 
 ## Game Logic
 
