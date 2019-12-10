@@ -14,7 +14,7 @@ public class PlayerConversation : MonoBehaviour
     private List<string> TextScreens;
     private int TextIndex;
     private bool DisplayingLastTextScreen = false;
-    private int NumCharsPerLine = 490;
+    private int NumCharsPerLine = 300;
     public string NextConversation;
     private bool WithinRadius = false;
 
