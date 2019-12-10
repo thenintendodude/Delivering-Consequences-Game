@@ -116,36 +116,43 @@ without making them change their finger positions.
 ### Conversations with NPCs
 Since our game is centered around walking and talking with NPCs, I wanted to make
 sure that the player would not have to move their hand position much to
-initiate, continue, and make decisions during conversations.
+initiate, continue, and make decisions during conversations. So, here is the
+input scheme we came up with:
 
 Walk up to NPC and press Spacebar: Initiate Conversation
 When in conversation, press C to show next text in a conversation.
-When in conversation (or backstory), press Spacebar: View next bit of text
 When in conversation, click Left UI Button with mouse: Make choice 1 in conversation
 When in conversation, click Right UI Button with mouse: Make choice 2 in conversation
 
-When viewing Main Menu scene, click on UI Button "Play" to start the game.
-When viewing Main Menu scene, click on UI Button "Quit" to exit the game.
-
-### Input Scheme Reasoning
-
-
-
-
-To intitiate conversations with characters, as well as to continue seeing more
-text in the conversation, we found it convenient to simply use
-the spacebar.
+Since C and Spacebar are very close to the WASD buttons, it seemed to make sense
+to use these to move the conversation along. Since our input scheme is so simple
+and concentrated in certain scripts, we didn't think it was necessary to make
+an ICommand script, and simply checked that the plyaer was pressing 'C' or
+"jump" (spacebar).
 
 For making choices about how to respond to NPCs, we at first thought to
 use the 1 and 2 keys on the keyboard to make choices 1 and 2, respectively.
 However, we soon realized it was much more intuitive to have UI buttons for
-the user to select with their cursor.
+the user to select with their cursor. Since Alannah was in charge of UI, it made
+most sense for these on-screen buttons to fall under her role.
+
+### Main Menu and Backstory
+For the Main Menu and Backstory scenes, we found it made most sense to use
+UI Buttons to navigate between scenes. Here are the UI Buttons we used:
+When viewing Main Menu scene, click on UI Button "Play" to start the game (head
+to first backstory scene).
+When viewing Main Menu scene, click on UI Button "Quit" to exit the game.
+When viewing any backstory scene, click on  UI Button "Continue" to continue to
+the next piece of backstory (or if you're on the final backstory scene, it
+brings you to the main game scene.
+
+Again, since Alannah was in charge of UI, it made most sense for these on-screen buttons to fall under her role.
 
 ### Some side notes on my role
-Since overall the Input role isn't very large, I decided to help some other
-teammates with their roles. For instance, I created a detailed pseudocode
+Since overall the Input role wasn't very very large, I decided to help some other
+teammates with their main roles. For instance, I created a detailed pseudocode
 for the PlayerConversation.cs script [here](https://github.com/thenintendodude/Delivering-Consequences-Game/blob/master/Conversation%20Handler%20and%20Communication%20with%20Other%20Classes.pdf),
- I made some footage that went into the Trailer, and I implemented the [logic](https://github.com/thenintendodude/Delivering-Consequences-Game/blob/master/Delivering-Consequences-Game/Assets/Scripts/PlayerMovement.cs)
+ I made much of the footage that went into the Trailer, and I implemented the [physics logic](https://github.com/thenintendodude/Delivering-Consequences-Game/blob/master/Delivering-Consequences-Game/Assets/Scripts/PlayerMovement.cs)
  that made walking happen (changing movement and animation speed).
 
 ## Game Logic
@@ -197,14 +204,14 @@ what audio options you had and caused less mistakes for the programmers using
 AudioManager.
 
 ### Audio Tracks Used (All are royalty-free)
-Our-Mountain_v003: For outdoor music, Source: https://soundimage.org/wp-content/uploads/2014/09/Our-Mountain_v003.mp3
-Fantasy_Game_Background: For menu screen music, Source: http://soundimage.org/wp-content/uploads/2014/04/Fantasy_Game_Background.mp3
-The Foyer: For Backstory,Source: https://www.playonloop.com/2019-music-loops/the-foyer/#free-download
-Red Carpet Wooden Floor: For indoor music, Source: https://bakudas.itch.io/generic-rpg-pack
-Squeaky Door Open: https://freesound.org/people/CastIronCarousel/sounds/216878/
-Door Close: https://freesound.org/people/InspectorJ/sounds/339677/
-UI Confirmation Beep: https://freesound.org/people/paep3nguin/sounds/388046/
-victory-fanfare: Beat the game, Source: https://freesound.org/people/humanoide9000/sounds/466133/
+Our-Mountain_v003: For outdoor music, [Source]( https://soundimage.org/wp-content/uploads/2014/09/Our-Mountain_v003.mp3), CC0 license.
+Fantasy_Game_Background: For menu screen music, [Source](http://soundimage.org/wp-content/uploads/2014/04/Fantasy_Game_Background.mp3), CC0 license.
+The Foyer: For Backstory, [Source]( https://www.playonloop.com/2019-music-loops/the-foyer/#free-download), CC0 license.
+Red Carpet Wooden Floor: For indoor music, [Source](https://bakudas.itch.io/generic-rpg-pack), CC0 license.
+Squeaky Door Open: For going into building, [Source]( https://freesound.org/people/CastIronCarousel/sounds/216878/), CC0 license.
+Door Close: For exiting buildings, [Source](https://freesound.org/people/InspectorJ/sounds/339677/), CC0 license.
+UI Confirmation Beep: For when user initiates a conversation, [Source]( https://freesound.org/people/paep3nguin/sounds/388046/), CC0 license.
+victory-fanfare: Beat the game, [Source]( https://freesound.org/people/humanoide9000/sounds/466133/).
 
 ### Unused Audio, but wanted to link them here since they could be useful should we continue our game in the future):
 Windless Slopes: For outdoor music, Source: https://bakudas.itch.io/generic-rpg-pack
