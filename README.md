@@ -9,7 +9,7 @@ Check out our game pitch [here](https://github.com/thenintendodude/Delivering-Co
 
 
 ## THE STORY
-Wake up in this world as a former villain who has lost all power - Demamin! As you traverse through a village you once ravaged, decide how you will now act without the powers you once had. How will you face the consequences of your past deeds and present actions? How will you move forward? 
+Wake up in this world as a former villain who has lost all power - Demanim! As you traverse through a village you once ravaged, decide how you will now act without the powers you once had. How will you face the consequences of your past deeds and present actions? How will you move forward? 
 
 
 ## FEATURES & SCREENSHOTS
@@ -27,7 +27,7 @@ Interactions with NPCs result in *consequences*! This is indicated by four statu
 
 
 ## WATCH THE TRAILER
-[![Delivering Consequences Trailer](https://raw.githubusercontent.com/thenintendodude/Delivering-Consequences-Game/master/Press%20Kit%20Materials/Video%20Thumbnail.png?token=AFQ6X7EYO5YM2AV73TGVN2K562B5O)](https://www.youtube.com/ "Delivering Consequences Trailer")  
+[![Delivering Consequences Trailer](https://raw.githubusercontent.com/thenintendodude/Delivering-Consequences-Game/master/Press%20Kit%20Materials/Video%20Thumbnail.png?token=AFQ6X7EYO5YM2AV73TGVN2K562B5O)](https://youtu.be/8EdiNcTnL-Q/ "Delivering Consequences Trailer")  
 
 
 ## ABOUT US
