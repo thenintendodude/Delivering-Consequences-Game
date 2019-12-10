@@ -68,7 +68,15 @@
             "choice2": "",
             "choice1id": "AwakenInTown4",
             "choice2id": "",
-            "nextConversation": ""
+            "nextConversation": "",
+            "c1e": "",
+            "c1p": "",
+            "c1c": "",
+            "c1s": "",
+            "c2e": "",
+            "c2p": "",
+            "c2c": "",
+            "c2s": ""
         },
         {
             "id": "AwakenInTown1",
