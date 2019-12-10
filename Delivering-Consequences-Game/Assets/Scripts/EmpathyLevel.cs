@@ -30,25 +30,5 @@ public class EmpathyLevel : MonoBehaviour
         strategyBar.value = 0;
         strategyBar.maxValue = maxStrategy;
     }
-
-    /*public void updateEmpathy(int change)
-    {
-        empathyBar.value += change;
-    }
-
-    public void updatePower(int change)
-    {
-        powerBar.value += change;
-    }
-
-    public void updateCharisma(int change)
-    {
-        charismaBar.value += change;
-    }
-
-    public void updateStrategy(int change)
-    {
-        strategyBar.value += change;
-    }*/
 }
 
