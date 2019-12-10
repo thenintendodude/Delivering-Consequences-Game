@@ -10,6 +10,11 @@ public class UpdateBars : MonoBehaviour
     public Slider charismaBar;
     public Slider strategyBar;
 
+    public bool isEmpathyFull()
+    {
+        return ((int)empathyBar.value == (int)empathyBar.maxValue);
+    }
+
     public void updateEmpathy(int change)
     {
         empathyBar.value += change;

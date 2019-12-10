@@ -14,7 +14,7 @@ public class PlayerConversation : MonoBehaviour
     private List<string> TextScreens;
     private int TextIndex;
     private bool DisplayingLastTextScreen = false;
-    private int NumCharsPerLine = 550;
+    private int NumCharsPerLine = 490;
     public string NextConversation;
     private bool WithinRadius = false;
 
@@ -33,7 +33,6 @@ public class PlayerConversation : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //for testing getting a text object
         MyConversations = new ConversationContainer();
         MyConversations.LoadJsonData("Manuscripts/villageManuscript.json");
     }
@@ -41,6 +40,10 @@ public class PlayerConversation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(NPC.GetComponent<UpdateBars>() != null && NPC.GetComponent<UpdateBars>().isEmpathyFull())
+        {
+            //NextConversation = NODE ABOUT FIE WAITING FOR YOU
+        }
         if (!IsTalking && WithinRadius && Input.GetButtonDown("Jump") && !player.GetComponent<PlayerInteraction>().isTalkingToNPC())
         {
             AudioManager.Get().TriggerSoundEffect(SoundEffect.uiConfirmation);
