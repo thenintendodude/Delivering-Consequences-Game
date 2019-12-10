@@ -213,7 +213,7 @@
         {
             "id": "WrongName",
             "character": "Fie Ronndly",
-            "script": "Quiet. Pulling. My. Leg! If you don't want to tell me your name just say so!",
+            "script": "Quit. Pulling. My. Leg! If you don't want to tell me your name just say so!",
             "choice1": "Make reparations, she could be useful",
             "choice2": "Leave her be. She will understand when you rule again.",
             "choice1id": "FakeName1",
@@ -407,8 +407,18 @@
             "choice1": "Continue listening. Its so stupid it entertains.",
             "choice2": "You've had enough of this, time to move on.",
             "choice1id": "Eirar Grunt 3",
-            "choice2id": "",
+            "choice2id": "Eirar Grunt Disengage",
             "nextConversation": "Eirar Grunt 0"
+        },
+        {
+            "id": "Eirar Grunt Disengage",
+            "character": "Narrator",
+            "script": "Like a tamer with a wild beast, you manage to slowly walk away without threatening the man or showing weakness.",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "",
+            "choice2id": "",
+            "nextConversation": "Eirar Grunt Monologue"
         },
         {
             "id": "Eirar Grunt 3",
@@ -464,8 +474,28 @@
             "id": "Eirar Grunt 8",
             "character": "Eirar Grunt",
             "script": "Nothing true-yure!",
-            "choice1": "Punch the 'poet' for his insolence.",
+            "choice1": "Punch the 'poet'",
             "choice2": "Shrug off the forced rhyme.",
+            "choice1id": "Eirar Grunt Punch",
+            "choice2id": "Eirar Grunt Shrug",
+            "nextConversation": ""
+        },
+        {
+            "id": "Eirar Grunt Punch",
+            "character": "Narrator",
+            "script": "As you cock your arm back to brace for the next moment where you clobber the guard, Airur begins reprimanding him instead. You hold in your anger, for the time being.",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "Eirar Grunt 9",
+            "choice2id": "",
+            "nextConversation": ""
+        },
+        {
+            "id": "Eirar Grunt Shrug",
+            "character": "Narrator",
+            "script": "You hold in your anger, for the time being. Seeing your restraint, Airur reprimands the 'poet'",
+            "choice1": "",
+            "choice2": "",
             "choice1id": "Eirar Grunt 9",
             "choice2id": "",
             "nextConversation": ""
@@ -473,7 +503,7 @@
         {
             "id": "Eirar Grunt 9",
             "character": "Airur Grunt",
-            "script": "Quite being a jackass Eirar. I'm trying to talk to Mr. Tesda.",
+            "script": "Quit being a jackass Eirar. I'm trying to talk to Mr. Tesda.",
             "choice1": "",
             "choice2": "",
             "choice1id": "Eirar Grunt 10",
@@ -482,7 +512,7 @@
         },
         {
             "id": "Eirar Grunt 10",
-            "character": "Eirur Grunt",
+            "character": "Eirar Grunt",
             "script": "Fine. But just cause you think my rhymes are cringy, that doesn't mean everyone does. Someday I'll be a poet and you'll come to me to praise my creativity with the flowing fountain pen!",
             "choice1": "",
             "choice2": "",
@@ -576,7 +606,7 @@
             "script": "Okay, I get that you aren't feeling well. It's fine for you to take it out on me, I won't hold a grudge. But you should think more of the situation you are in right now. A traveler like you should know how to guage his position. You could have died if we didn't find you.",
             "choice1": "",
             "choice2": "",
-            "choice1id": "Airur Grunt Busy 4",
+            "choice1id": "Airur Grunt 4",
             "choice2id": "",
             "nextConversation": ""
         },
