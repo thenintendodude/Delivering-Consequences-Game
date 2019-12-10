@@ -27,7 +27,7 @@ I also created the play menu and also opening dialogue scenes at the very beginn
 
 #### Initial Player / NPC Movement Design
 
-This portion was implemented initially by our animator. (JOANNE explain why you implemented this in your role as animator here: probably mention inspiration from Zee's Final Combat game)
+This portion was implemented initially by our animator.
 
 #### Collision Detection and Natural Boundaries
 Physics and animation worked closely on placement of 2D sprites witin the town to tell an implicit story as well as give the town more realism. For example, the graveyard in the middle of town hints at the town's grim past. 
