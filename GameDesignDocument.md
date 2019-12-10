@@ -205,7 +205,9 @@ pause between loops.
 ### Sound Effects
 Since I know that sound effects provide nice interactivity and satisfcation when
 playing games, I wanted to make sure to include some sound effects in our game. Specifically, I chose sound effects related to opening and closing
-doors, initiating conversation with characters, and beating the game. I found
+doors, initiating conversation with characters, and beating the game (although
+I never got to put in the beat the game sound effect since that part of the game
+didn't get finished in time. I found
 that these "transition" sound effects were very impactful in the flow of the
 game, and made you feel that you were really interacting with the world. However,
 I wanted these sound effects to be mostly light and unobtrusive, since I don't
