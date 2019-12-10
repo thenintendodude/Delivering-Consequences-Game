@@ -89,8 +89,11 @@ very important for our game as it is primariliy story-focused. More explicitly,
 here is our movement scheme:
 
 Left Arrow (or A): Move character left
+
 Right Arrow (or D): Move character right
+
 Up Arrow (or W): Move character up
+
 Down Arrow (or S): Move character down
 
 We implemented the [movement commands](https://github.com/thenintendodude/Delivering-Consequences-Game/blob/master/Delivering-Consequences-Game/Assets/Scripts/PlayerMovement.cs)
@@ -120,9 +123,14 @@ initiate, continue, and make decisions during conversations. So, here is the
 input scheme we came up with:
 
 Walk up to NPC and press Spacebar: Initiate Conversation
+
 When in conversation, press C to show next text in a conversation.
+
 When in conversation, click Left UI Button with mouse: Make choice 1 in conversation
+
 When in conversation, click Right UI Button with mouse: Make choice 2 in conversation
+
+The logic for looking for input in conversations is found [here](https://github.com/thenintendodude/Delivering-Consequences-Game/blob/master/Delivering-Consequences-Game/Assets/Scripts/PlayerConversation.cs).
 
 Since C and Spacebar are very close to the WASD buttons, it seemed to make sense
 to use these to move the conversation along. Since our input scheme is so simple
@@ -137,7 +145,8 @@ the user to select with their cursor. Since Alannah was in charge of UI, it made
 most sense for these on-screen buttons to fall under her role.
 
 ### Main Menu and Backstory
-For the Main Menu and Backstory scenes, we found it made most sense to use
+For the [Main Menu](https://github.com/thenintendodude/Delivering-Consequences-Game/blob/master/Delivering-Consequences-Game/Assets/Scenes/Menu.unity) and Backstory scenes (first backstory scene,
+for example, is [here](https://github.com/thenintendodude/Delivering-Consequences-Game/blob/master/Delivering-Consequences-Game/Assets/Scenes/Backstory%201.unity)), we found it made most sense to use
 UI Buttons to navigate between scenes. Here are the UI Buttons we used:
 When viewing Main Menu scene, click on UI Button "Play" to start the game (head
 to first backstory scene).
@@ -162,47 +171,6 @@ ___
 
 ## Audio
 
-### Music Style
-For the music, I wanted to choose mostly tracks that sounded serious, somber, and mysterious. This was particularly true for the main menu screen and background,
-since these are the player's first impressions of the game. The reason I wanted
-to portray these feelings is because our story is of a character who has just
-fallen from great power and is now unsure of his state in the world.
-
-The only place where'd I say the music isn't as somber is in the houses of the
-NPCs, since I wanted the player to feel like the homes were safe
-and welcoming places for them to go, since it is these places where they can
-actually progress in the game.
-
-### Editing Music
-I edited the outdoor music audio track so that the looping was a
-bit tighter compared to the original track.
-
-### Sound Effects
-Since I know that sound effects provide nice interactivity and satisfcation when
-playing games, I wanted to make sure to include some sound effects in our game. Specifically, I chose sound effects related to opening and closing
-doors, initiating conversation with characters, and beating the game. I found
-that these "transition" sound effects were very impactful in the flow of the
-game.
-
-### Audio System
-The Audio systems for the main menu and backstory scenes were fairly simple, as
-I just had to play one song in the background on a continuous loop. However, the
-Audio system for the main gameplay was much more complicated...
-
-I organized all audio for the main gameplay under an Audio GameObject in the
-scene, which contained child objects that each held one audio track that would
-be played during the game. Then, attached to the Audio object I had a script
-called AudioManager, so that all sound effects and switching between
-music tracks could be easily abstracted away and handled elegantly.
-
-Specifically, the AudioManager deals with the details of gathering together
-all the audio tracks, triggering sound effects, toggling music between different
-tracks in a smooth way that fades from one track to another, and providing an easy
-interface for the rest of the scripts to deal with audio. By providing
-Enums to list all possible Sound Effects and Music, it made it easy to see
-what audio options you had and caused less mistakes for the programmers using
-AudioManager.
-
 ### Audio Tracks Used (All are royalty-free)
 Our-Mountain_v003: For outdoor music, [Source]( https://soundimage.org/wp-content/uploads/2014/09/Our-Mountain_v003.mp3), CC0 license.
 Fantasy_Game_Background: For menu screen music, [Source](http://soundimage.org/wp-content/uploads/2014/04/Fantasy_Game_Background.mp3), CC0 license.
@@ -213,12 +181,86 @@ Door Close: For exiting buildings, [Source](https://freesound.org/people/Inspect
 UI Confirmation Beep: For when user initiates a conversation, [Source]( https://freesound.org/people/paep3nguin/sounds/388046/), CC0 license.
 victory-fanfare: Beat the game, [Source]( https://freesound.org/people/humanoide9000/sounds/466133/).
 
-### Unused Audio, but wanted to link them here since they could be useful should we continue our game in the future):
-Windless Slopes: For outdoor music, Source: https://bakudas.itch.io/generic-rpg-pack
-Orchestral-victory-fanfare: Made Progress in some way, Source: https://freesound.org/people/Sheyvan/sounds/470083/
-Long Beep: For Main Menu Select Confirmation, Source: https://www.partnersinrhyme.com/soundfx/PUBLIC-DOMAIN-SOUNDS/beep_sounds/beep_beep-fm_wav.shtml
-Short Beep: For Input Confirmation, Source:https://www.partnersinrhyme.com/soundfx/PUBLIC-DOMAIN-SOUNDS/beep_sounds/beep_beep-pure_wav.shtml
-Double Short Bee: For Input Confirmation, Source: https://www.partnersinrhyme.com/soundfx/PUBLIC-DOMAIN-SOUNDS/beep_sounds/beep_beep-doub_wav.shtml
+### Music Style
+For the music, I wanted to choose mostly tracks that sounded serious, somber, and mysterious. This was particularly true for the main menu screen and background,
+since these are the player's first impressions of the game. The reason I wanted
+to portray these feelings is because our story is of a character who has just
+fallen from great power and is now unsure of his state in the world.
+
+In addition, all music themes are a retro-feel to match our retro graphics style.
+
+The only place where'd I say the music isn't as somber is in the houses of the
+NPCs, since I wanted the player to feel like the homes were safe
+and welcoming places for them to go. This is because it is in these homes that
+many important characters are with whom the character should create a strong
+repore, so we want to encourage the character to go to the welcoming houses
+through the welcoming music since it is there that the player can actually
+progress in the game.
+
+### Editing Music
+I edited the outdoor music audio track so that the looping was a
+bit tighter compared to the original track, or else there was a long awkward
+pause between loops.
+
+### Sound Effects
+Since I know that sound effects provide nice interactivity and satisfcation when
+playing games, I wanted to make sure to include some sound effects in our game. Specifically, I chose sound effects related to opening and closing
+doors, initiating conversation with characters, and beating the game. I found
+that these "transition" sound effects were very impactful in the flow of the
+game, and made you feel that you were really interacting with the world. However,
+I wanted these sound effects to be mostly light and unobtrusive, since I don't
+want to distract the player with weird sound effects in a heavily story-based
+game.
+
+### Audio System
+The Audio systems for the [main menu](https://github.com/thenintendodude/Delivering-Consequences-Game/blob/master/Delivering-Consequences-Game/Assets/Scenes/Menu.unity) scene was fairly simple, as
+I just had to play one song in the background on a continuous loop. I simply
+created a GameObject and attached a script to it, and told it to play upon
+awake. However, the Audio system for the backstory scenes and main gameplay
+scene were much more complicated...
+
+For the backstory scenes, while I just had to play one track on loop, I had to
+implement a [BackstoryAudioManager script](https://github.com/thenintendodude/Delivering-Consequences-Game/blob/master/Delivering-Consequences-Game/Assets/Scripts/Audio/BackstoryAudioManager.cs) attached to all the audio objects to ensure that the music
+doesn't reset itself to the beginning upon continuing from one backstory scene
+to another. To do this, I attached the script to the same GameObject that
+contained the audio source. Then, this script's logic was that if no other
+GameObject containing an audio source was instantiated, it would instantiate an
+Audio object, play the AudioSource, and tell Unity to not destroy it when the
+scene changed. However, if there was already an Audio
+object, when the scene changed it would instead destroy itself to ensure that
+there was only ever one audio source playing. Finally, it would constantly be
+checking in the Update() function if the scene had finally changed to the main
+gameplay scene (the "SampleScene"), in which case it would destory the audio
+object for good since we no longer needed to play the backstory.
+
+For the main gameplay, I organized all audio under an Audio GameObject in the
+scene, which contained child objects that each held one audio track that would
+be played during the game. Then, attached to the Audio object I had a script
+called [AudioManager](https://github.com/thenintendodude/Delivering-Consequences-Game/blob/master/Delivering-Consequences-Game/Assets/Scripts/Audio/AudioManager.cs#L101), so that all sound effects and switching between
+music tracks could be easily abstracted away and handled elegantly.
+
+The AudioManager deals with the details of gathering together
+all the audio tracks, triggering sound effects, toggling music between different
+tracks in a smooth way that fades from one track to another, and providing an easy
+interface for the rest of the scripts to trigger the audio. By providing
+Enums to list all possible Sound Effects and Music, it made it easy to see
+what audio options you had and caused less mistakes for the programmers using
+AudioManager.
+
+Triggering sound effects was relatively easy, as I just had to play whatever
+audio track another script wanted until completion. However, for music tracks,
+I had to keep track of which music was currently playing so that I knew which
+track to fade out when another script wanted to change the music (such as when
+moving in and out of buildings). The fading was handled by an IEnumerator called
+[StartFade()](https://github.com/thenintendodude/Delivering-Consequences-Game/blob/afcec937e46fb1cffeaf0ff27bdff7e13bf3a637/Delivering-Consequences-Game/Assets/Scripts/Audio/AudioManager.cs#L101),
+which faded a given audio track from one level to another over whatever specified
+duration (I always chose 1 second, however).
+
+A small detail that came up is in order to prevent issues when a player quickly
+switches from moving outside to inside to back outside, I had to keep track
+of which music was fading out, and stop the track from fading out completely.
+Otherwise, the fade out Coroutine would stop the track before the new fade in coroutine
+had finished, causing it to stop the track altogether.
 
 ## Gameplay Testing
 

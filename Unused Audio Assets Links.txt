@@ -1,0 +1,7 @@
+
+### Unused Audio, but wanted to link them here since they could be useful should we continue our game in the future):
+Windless Slopes: For outdoor music, Source: https://bakudas.itch.io/generic-rpg-pack
+Orchestral-victory-fanfare: Made Progress in some way, Source: https://freesound.org/people/Sheyvan/sounds/470083/
+Long Beep: For Main Menu Select Confirmation, Source: https://www.partnersinrhyme.com/soundfx/PUBLIC-DOMAIN-SOUNDS/beep_sounds/beep_beep-fm_wav.shtml
+Short Beep: For Input Confirmation, Source:https://www.partnersinrhyme.com/soundfx/PUBLIC-DOMAIN-SOUNDS/beep_sounds/beep_beep-pure_wav.shtml
+Double Short Bee: For Input Confirmation, Source: https://www.partnersinrhyme.com/soundfx/PUBLIC-DOMAIN-SOUNDS/beep_sounds/beep_beep-doub_wav.shtml
