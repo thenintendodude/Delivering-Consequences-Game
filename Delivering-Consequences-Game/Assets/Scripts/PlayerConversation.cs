@@ -40,9 +40,20 @@ public class PlayerConversation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // This only happens when we are able to move on in the game and the empathy bar is full. 
         if(NPC.GetComponent<UpdateBars>() != null && NPC.GetComponent<UpdateBars>().isEmpathyFull())
         {
             NextConversation = "end";
+        }
+
+        // We always want Fie to have the first conversation and we do not need the player to press space; we always want it to happen.
+        if (!IsTalking && WithinRadius && NPC.name == "Fie Ronndly" && !player.GetComponent<PlayerInteraction>().isTalkingToNPC() && NextConversation == "AwakenInTown0")
+        {
+            AudioManager.Get().TriggerSoundEffect(SoundEffect.uiConfirmation);
+            NPC.GetComponent<InteractionPanel>().setInteractionPanel(false);
+            PlayerMovement.AllowMovement(false);
+            player.GetComponent<PlayerInteraction>().setTalkingToNPC(true);
+            StartTalking();
         }
         if (!IsTalking && WithinRadius && Input.GetButtonDown("Jump") && !player.GetComponent<PlayerInteraction>().isTalkingToNPC())
         {
@@ -208,7 +219,7 @@ public class PlayerConversation : MonoBehaviour
         }
         if (NPC.GetComponent<UpdateBars>() != null)
         {
-            NPC.GetComponent<UpdateBars>().updateEmpathy(10); // make these based off the text node values! 
+            NPC.GetComponent<UpdateBars>().updateEmpathy(10); // Make these based off the text node values! 
             NPC.GetComponent<UpdateBars>().updatePower(10);
             NPC.GetComponent<UpdateBars>().updateCharisma(10);
             NPC.GetComponent<UpdateBars>().updateStrategy(10);
