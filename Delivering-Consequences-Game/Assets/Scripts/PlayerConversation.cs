@@ -174,6 +174,9 @@ public class PlayerConversation : MonoBehaviour
         }
         else
         {
+            PlayerMovement.AllowMovement(true);
+            IsTalking = false;
+            player.GetComponent<PlayerInteraction>().setTalkingToNPC(false);
             NPC.GetComponent<InteractionPanel>().setInteractionPanel(true);
             modalPanel.ClosePanel();
         }
@@ -194,6 +197,9 @@ public class PlayerConversation : MonoBehaviour
         }
         else
         {
+            PlayerMovement.AllowMovement(true);
+            IsTalking = false;
+            player.GetComponent<PlayerInteraction>().setTalkingToNPC(false);
             NPC.GetComponent<InteractionPanel>().setInteractionPanel(true);
             modalPanel.ClosePanel();
         }
