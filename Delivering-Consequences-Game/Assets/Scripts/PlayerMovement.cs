@@ -15,11 +15,14 @@ public class PlayerMovement : MonoBehaviour
     {
         if (!CanMove)
         {
-            return;
+            Movement.x = 0;
+            Movement.y = 0;
         }
-        Movement.x = Input.GetAxisRaw("Horizontal");
-        Movement.y = Input.GetAxisRaw("Vertical");
-
+        else
+        {
+            Movement.x = Input.GetAxisRaw("Horizontal");
+            Movement.y = Input.GetAxisRaw("Vertical");
+        }
         CharAnimator.SetFloat("Horizontal", Movement.x);
         CharAnimator.SetFloat("Vertical", Movement.y);
         CharAnimator.SetFloat("Speed", Movement.sqrMagnitude);
@@ -28,6 +31,10 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate() 
     {
+        if (!CanMove)
+        {
+            return;
+        }
         var currentMoveSpeed = MoveSpeed;
         if (pressingRun())
         {
