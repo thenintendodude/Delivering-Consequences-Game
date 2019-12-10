@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: 05033349c619a4e3a857e48580f95ae0
   - enabled: 1
-    path: Assets/Scenes/Backstory.unity
+    path: Assets/Scenes/Backstory 6.unity
     guid: c6b3e094d7d0e4c21b6ccff10be70b21
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity

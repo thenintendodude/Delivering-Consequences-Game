@@ -60,6 +60,7 @@
             "choice2id": "",
             "nextConversation": ""
         },
+        {
             "id": "AwakenInTown0",
             "character": "Narrator",
             "script": "Demanim begins to awaken. As he begins to regain consciousness, he rolls out of bed ineffectively and lands on the ground. Not used to raised bedding, the impact was startling. His wounds seared with pain intense enough for him to momentarily pass out again. ",
