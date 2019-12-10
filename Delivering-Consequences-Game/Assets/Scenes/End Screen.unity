@@ -284,7 +284,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1056129185}
-        m_MethodName: 
+        m_MethodName: QuitGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -784,7 +784,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1846556377}
   - component: {fileID: 1846556376}
-  - component: {fileID: 1846556375}
   m_Layer: 0
   m_Name: Backstory Music
   m_TagString: Untagged
@@ -792,18 +791,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1846556375
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1846556374}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 412acfd4d5cae6b4aa16e54aa9ba8a06, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!82 &1846556376
 AudioSource:
   m_ObjectHideFlags: 0
@@ -814,8 +801,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 93e8da7cef4723d47b179c80b4e00e97, type: 3}
-  m_PlayOnAwake: 0
+  m_audioClip: {fileID: 8300000, guid: 537b9c8259b06224ea5fe4f306faa225, type: 3}
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 1

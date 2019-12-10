@@ -10,4 +10,11 @@ public class BackstoryScene : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
+
+    public void QuitGame()
+    {
+        Debug.Log("Quit!");
+        // The below statement will not happen in the unity editor so debug.log to make sure working right now.
+        Application.Quit();
+    }
 }
