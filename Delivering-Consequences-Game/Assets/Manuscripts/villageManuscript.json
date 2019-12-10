@@ -1,6 +1,65 @@
 {
     "nodes": [
         {
+            "id": "beginning 1",
+            "character": "Narrator",
+            "script": "Long ago, the lands of the known world were conquered by an evil demon. This demon spent his life establishing its rule and laying the foundations for oppression through the generations. In time, the demon beared its young, grew old, and died. Its children grew into the void that the death of the original conquerer left, beginning a cycle of tyrannical rule.",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "beginning 2",
+            "choice2id": "",
+            "nextConversation": ""
+        },
+        {
+            "id": "beginning 2",
+            "character": "Narrator",
+            "script": "After many generations, the resistance put up by the oppressed began to wane, realizing after failing time and again, that overthrowing the rule of the demons would be near impossible. As this occurred, the demons began loosening their rule, many finding no satisfaction in slaughtering and antagonizing the beings they unquestioningly overpowered. Life was difficult for those the demons did not consider as one of their ilk, but not impossible. Most were able to eek out a living well enough to survive, provided they did not cause provocation.",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "beginning 3",
+            "choice2id": "",
+            "nextConversation": ""
+        },
+        {
+            "id": "beginning 3",
+            "character": "Narrator",
+            "script": "Your story begins with a demon named Demanim, the latest ruler of the land. He is relatively young for a demon, at the age of 89 years. One day, an unusual report reached the young ruler. Reports of resistance were uncommon, but not unheard of. However, this report detailed a group of self-proclaimed 'heroes' ravaging the land and defeating the ruling demons. Days later, Demanim personally traveled to the southern continent to address the worsening situation. The demon found himself fighting a group of 4 humans, each unbelievably powerful for humans. After a valiant fight in which Demanim slayed two of the attackers, Demanim was mortally wounded.",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "beginning 4",
+            "choice2id": "",
+            "nextConversation": ""
+        },
+        {
+            "id": "beginning 4",
+            "character": "Narrator",
+            "script": "With Demanim's defeat imminent, the heroes prepared to deliver the final blow. In a state of confusion and fear that the demon had never known before, Demanim attempted to flee. The heroes sliced his wings off and pinned him down. Panicking, the demon transformed into the image one of the slain heroes. The effect enraged the surivors instead of giving them pause. They began to tear into the demon and rip out an orb Demanim had no idea was inside of him. Before it was completely severed, the heroes were interrupted by reinforcements. This distraction was enough for Demanim to break the grip of one of the heroes. The other gripped the orb tightly, leaving no option for Demanim to sever it himself to escape. With this action, a great explosion of light blinded everyone nearby. When the light was gone, so was Demanim. All that remained of him was the orb in the hero's hand, still beating like a heart.",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "beginning 5",
+            "choice2id": "",
+            "nextConversation": ""
+        },
+        {
+            "id": "beginning 5",
+            "character": "Narrator",
+            "script": "The demon appeared within the mineshafts of a mountain on a continent in the northern hemisphere, delirious and confused. Demanim used his overwhelming strength to tear through walls towards the surface, but with each strike, found himself less able to summon the wells of strength buried within. Eventually, his progress was impeded by fatigue and the mountain began to cave in around him. Partially buried, he would have died alone from the blood loss, if not for a lucky miner that was escaping the cave-in. It being the early morning, there were very few inside the mine shafts, keeping the damage to miners minimal. The man was able to pull Demanim out of the rubble and bring him to a nearby village. Demanim still had the visage of the hero he had mimicked in his panic. The villagers nursed him to health while he remained unconscious, unaware of the stature of the one they were caring for.",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "beginning 6",
+            "choice2id": "",
+            "nextConversation": ""
+        },
+        {
+            "id": "beginning 6",
+            "character": "Narrator",
+            "script": "After a few days, Demanim began rousing himself to consciousness. His health returning slowly for a demon, but fairly quickly for a human. You begin by controlling the demon in human form, separated from the core of his essence by a great distance. This core being the source of his power, the distance weakens his connection with it. The heroes failed to sever it completely, the only way being to physically cut the connection with a blade and intent completely opposite of the intent of the demon. While the bond between the demon and his core cannot be cut while they are far apart, the strength Demanim can retrieve from a distance will fade over time. Completely unaware of this fundamental property he experiences the consequences of, he awakens with only vague memories of his fateful encounter with the heroes and almost none of his strength at his command.",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "",
+            "choice2id": "",
+            "nextConversation": ""
+        },
             "id": "AwakenInTown0",
             "character": "Narrator",
             "script": "Demanim begins to awaken. As he begins to regain consciousness, he rolls out of bed ineffectively and lands on the ground. Not used to raised bedding, the impact was startling. His wounds seared with pain intense enough for him to momentarily pass out again. ",
