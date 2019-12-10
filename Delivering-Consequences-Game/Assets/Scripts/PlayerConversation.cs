@@ -82,6 +82,9 @@ public class PlayerConversation : MonoBehaviour
                 NPC.GetComponent<InteractionPanel>().setInteractionPanel(true);
                 PlayerMovement.AllowMovement(true);
                 modalPanel.ClosePanel();
+
+                // if (NPC.name == "Fie Ronndly" && ) For eventually putting in
+                // beat the game sound effect
             }
             else // Else we know they just pressed Jump and there is still more to the conversation. 
             {
