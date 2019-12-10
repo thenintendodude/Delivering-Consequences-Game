@@ -1,6 +1,7 @@
 # Game Basic Information
 
 # Summary
+You are an evil overlord who has just been defeated by a hero. You wake up in a little village and are tended to by villagers. You must interact with them to level up your stats and become a "better" person. Only once have you filled up your empathy, can you win the game.
 
 # Gameplay explanation
 Use WASD or the arrow key to move around the village. Press spacebar to initiate
