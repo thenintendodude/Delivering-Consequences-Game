@@ -186,6 +186,13 @@ public class PlayerConversation : MonoBehaviour
     // These get invoked depending on which choice the player chooses, if applicable. 
     private void Choice1Function()
     {
+        if (NPC.GetComponent<UpdateBars>() != null)
+        {
+            NPC.GetComponent<UpdateBars>().updateEmpathy(TextObject.c1e);
+            NPC.GetComponent<UpdateBars>().updatePower(TextObject.c1p);
+            NPC.GetComponent<UpdateBars>().updateCharisma(TextObject.c1c);
+            NPC.GetComponent<UpdateBars>().updateStrategy(TextObject.c1s);
+        }
         if (TextObject.choice1id != "")
         {
             GetAndStartDisplayingText(TextObject.choice1id);
@@ -198,18 +205,17 @@ public class PlayerConversation : MonoBehaviour
             NPC.GetComponent<InteractionPanel>().setInteractionPanel(true);
             modalPanel.ClosePanel();
         }
-        if (NPC.GetComponent<UpdateBars>() != null)
-        {
-            Debug.Log(TextObject.c1e);
-            NPC.GetComponent<UpdateBars>().updateEmpathy(TextObject.c1e); 
-            NPC.GetComponent<UpdateBars>().updatePower(TextObject.c1p);
-            NPC.GetComponent<UpdateBars>().updateCharisma(TextObject.c1c);
-            NPC.GetComponent<UpdateBars>().updateStrategy(TextObject.c1s);
-        }
     }
 
     private void Choice2Function()
     {
+        if (NPC.GetComponent<UpdateBars>() != null)
+        {
+            NPC.GetComponent<UpdateBars>().updateEmpathy(TextObject.c2e);
+            NPC.GetComponent<UpdateBars>().updatePower(TextObject.c2p);
+            NPC.GetComponent<UpdateBars>().updateCharisma(TextObject.c2c);
+            NPC.GetComponent<UpdateBars>().updateStrategy(TextObject.c2s);
+        }
         if (TextObject.choice2id != "")
         {
             GetAndStartDisplayingText(TextObject.choice2id);
@@ -221,13 +227,6 @@ public class PlayerConversation : MonoBehaviour
             player.GetComponent<PlayerInteraction>().setTalkingToNPC(false);
             NPC.GetComponent<InteractionPanel>().setInteractionPanel(true);
             modalPanel.ClosePanel();
-        }
-        if (NPC.GetComponent<UpdateBars>() != null)
-        {
-            NPC.GetComponent<UpdateBars>().updateEmpathy(TextObject.c2e);
-            NPC.GetComponent<UpdateBars>().updatePower(TextObject.c2p);
-            NPC.GetComponent<UpdateBars>().updateCharisma(TextObject.c2c);
-            NPC.GetComponent<UpdateBars>().updateStrategy(TextObject.c2s);
         }
     }
 }
