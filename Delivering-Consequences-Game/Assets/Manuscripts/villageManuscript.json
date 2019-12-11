@@ -1107,14 +1107,14 @@
             "choice1id": "Airur Grunt 2",
             "choice2id": "Airur Grunt Busy",
             "nextConversation": "",
-            "c1e": "",
-            "c1p": "",
-            "c1c": "",
-            "c1s": "",
-            "c2e": "",
-            "c2p": "",
-            "c2c": "",
-            "c2s": ""
+            "c1e": "7",
+            "c1p": "-5",
+            "c1c": "0",
+            "c1s": "0",
+            "c2e": "-5",
+            "c2p": "0",
+            "c2c": "0",
+            "c2s": "0"
         },
         {
             "id": "Airur Grunt Busy",
