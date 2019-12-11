@@ -44,7 +44,7 @@ public class UpdateBars : MonoBehaviour
     }
 
     public void updateCharisma(int change)
-    {
+    { 
         charismaBar.value += change;
 
         if (charismaBar.value > charismaBar.maxValue)
@@ -58,7 +58,7 @@ public class UpdateBars : MonoBehaviour
     }
 
     public void updateStrategy(int change)
-    {
+    { 
         strategyBar.value += change;
 
         if (strategyBar.value > strategyBar.maxValue)

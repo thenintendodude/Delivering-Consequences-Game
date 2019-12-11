@@ -67,6 +67,14 @@ namespace Conversation
         public string choice1id;
         public string choice2id;
         public string nextConversation;
+        public int c1e;
+        public int c1p;
+        public int c1c;
+        public int c1s;
+        public int c2e;
+        public int c2p;
+        public int c2c;
+        public int c2s;
     }
 }
 

@@ -8,7 +8,15 @@
             "choice2": "",
             "choice1id": "beginning 2",
             "choice2id": "",
-            "nextConversation": ""
+            "nextConversation": "",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "beginning 2",
@@ -18,7 +26,15 @@
             "choice2": "",
             "choice1id": "beginning 3",
             "choice2id": "",
-            "nextConversation": ""
+            "nextConversation": "",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "beginning 3",
@@ -28,7 +44,15 @@
             "choice2": "",
             "choice1id": "beginning 4",
             "choice2id": "",
-            "nextConversation": ""
+            "nextConversation": "",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "beginning 4",
@@ -38,7 +62,15 @@
             "choice2": "",
             "choice1id": "beginning 5",
             "choice2id": "",
-            "nextConversation": ""
+            "nextConversation": "",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "beginning 5",
@@ -48,7 +80,15 @@
             "choice2": "",
             "choice1id": "beginning 6",
             "choice2id": "",
-            "nextConversation": ""
+            "nextConversation": "",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "beginning 6",
@@ -58,7 +98,15 @@
             "choice2": "",
             "choice1id": "",
             "choice2id": "",
-            "nextConversation": ""
+            "nextConversation": "",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "AwakenInTown0",
@@ -68,27 +116,51 @@
             "choice2": "",
             "choice1id": "AwakenInTown4",
             "choice2id": "",
-            "nextConversation": ""
+            "nextConversation": "",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "AwakenInTown1",
             "character": "Girl",
-            "script": "Hey the man we found is trying to get out of bed! \nAre you alright? Take it easy now, you're hurt!",
+            "script": "Hey, the man we found is trying to get out of bed! \nAre you alright? Take it easy now, you're hurt!",
             "choice1": "",
             "choice2": "",
             "choice1id": "AwakenInTown2",
             "choice2id": "",
-            "nextConversation": ""
+            "nextConversation": "",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "AwakenInTown2",
             "character": "Demanim",
-            "script": "(grogilly, after a long pause) Ughh.... What...",
+            "script": "(groggily, after a long pause) Ughh.... What...",
             "choice1": "",
             "choice2": "",
             "choice1id": "AwakenInTown2.5",
             "choice2id": "",
-            "nextConversation": ""
+            "nextConversation": "",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "AwakenInTown2.5",
@@ -98,7 +170,15 @@
             "choice2": "",
             "choice1id": "AwakenInTown4",
             "choice2id": "",
-            "nextConversation": ""
+            "nextConversation": "",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "AwakenInTown3",
@@ -108,7 +188,15 @@
             "choice2": "",
             "choice1id": "AwakenInTown4",
             "choice2id": "",
-            "nextConversation": ""
+            "nextConversation": "",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "AwakenInTown4",
@@ -118,7 +206,15 @@
             "choice2": "",
             "choice1id": "AwakenInTown5",
             "choice2id": "",
-            "nextConversation": ""
+            "nextConversation": "",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "AwakenInTown5",
@@ -128,7 +224,15 @@
             "choice2": "",
             "choice1id": "AwakenInTown6",
             "choice2id": "",
-            "nextConversation": ""
+            "nextConversation": "",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "AwakenInTown6",
@@ -138,7 +242,15 @@
             "choice2": "",
             "choice1id": "AwakenInTown7",
             "choice2id": "",
-            "nextConversation": ""
+            "nextConversation": "",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "AwakenInTown7",
@@ -148,7 +260,15 @@
             "choice2": "",
             "choice1id": "AwakenInTown8",
             "choice2id": "",
-            "nextConversation": ""
+            "nextConversation": "",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "AwakenInTown8",
@@ -158,7 +278,15 @@
             "choice2": "",
             "choice1id": "Wait1",
             "choice2id": "",
-            "nextConversation": ""
+            "nextConversation": "",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "Wait1",
@@ -168,7 +296,15 @@
             "choice2": "",
             "choice1id": "Wait 2",
             "choice2id": "",
-            "nextConversation": ""
+            "nextConversation": "",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "Wait 2",
@@ -178,7 +314,15 @@
             "choice2": "Ignore everything else she has to say.",
             "choice1id": "Wait 3",
             "choice2id": "IgnoreFie",
-            "nextConversation": ""
+            "nextConversation": "",
+            "c1e": -5,
+            "c1p": 0,
+            "c1c": -2,
+            "c1s": 0,
+            "c2e": 5,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "Wait 3",
@@ -188,7 +332,15 @@
             "choice2": "",
             "choice1id": "Wait 4",
             "choice2id": "",
-            "nextConversation": ""
+            "nextConversation": "",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "Wait 4",
@@ -198,7 +350,15 @@
             "choice2": "Tell her a fake name of some kind. Anything will do.",
             "choice1id": "RealName1",
             "choice2id": "FakeName0",
-            "nextConversation": ""
+            "nextConversation": "",
+            "c1e": -5,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": -10,
+            "c2e": 10,
+            "c2p": -10,
+            "c2c": 10,
+            "c2s": 10
         },
         {
             "id": "RealName1",
@@ -208,7 +368,15 @@
             "choice2": "",
             "choice1id": "RealName2",
             "choice2id": "",
-            "nextConversation": ""
+            "nextConversation": "",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "RealName2",
@@ -218,7 +386,15 @@
             "choice2": "Give up. The situation calls for diplomacy, not force.",
             "choice1id": "RealName2.1",
             "choice2id": "FakeName1",
-            "nextConversation": ""
+            "nextConversation": "",
+            "c1e": -5,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 15,
+            "c2p": -5,
+            "c2c": 0,
+            "c2s": 10
         },
         {
             "id": "RealName2.1",
@@ -228,7 +404,15 @@
             "choice2": "Give up. The situation calls for diplomacy, not force.",
             "choice1id": "RealName2.2",
             "choice2id": "FakeName1",
-            "nextConversation": ""
+            "nextConversation": "",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 15,
+            "c2p": -5,
+            "c2c": 0,
+            "c2s": 10
         },
         {
             "id": "RealName2.2",
@@ -238,7 +422,15 @@
             "choice2": "Give up. The situation calls for diplomacy, not force.",
             "choice1id": "RealName2.3",
             "choice2id": "FakeName1",
-            "nextConversation": ""
+            "nextConversation": "",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 15,
+            "c2p": -5,
+            "c2c": 0,
+            "c2s": 10
         },
         {
             "id": "RealName2.3",
@@ -248,7 +440,15 @@
             "choice2": "Give up. The situation calls for diplomacy, not force.",
             "choice1id": "RealName2.3",
             "choice2id": "FakeName1",
-            "nextConversation": ""
+            "nextConversation": "",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 15,
+            "c2p": -5,
+            "c2c": 0,
+            "c2s": 10
         },
         {
             "id": "FakeName0",
@@ -258,7 +458,15 @@
             "choice2": "",
             "choice1id": "FakeName2",
             "choice2id": "",
-            "nextConversation": ""
+            "nextConversation": "",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "FakeName1",
@@ -268,7 +476,15 @@
             "choice2": "Dema Noman?",
             "choice1id": "FakeName2",
             "choice2id": "WrongName",
-            "nextConversation": ""
+            "nextConversation": "",
+            "c1e": 10,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 10,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "WrongName",
@@ -278,7 +494,15 @@
             "choice2": "Leave her be. She will understand when you rule again.",
             "choice1id": "FakeName1",
             "choice2id": "",
-            "nextConversation": "temp"
+            "nextConversation": "temp",
+            "c1e": 10,
+            "c1p": -5,
+            "c1c": 5,
+            "c1s": 10,
+            "c2e": -5,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "FakeName2",
@@ -288,7 +512,15 @@
             "choice2": "",
             "choice1id": "",
             "choice2id": "",
-            "nextConversation": "temp"
+            "nextConversation": "temp",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "IgnoreFie",
@@ -298,7 +530,15 @@
             "choice2": "",
             "choice1id": "",
             "choice2id": "",
-            "nextConversation": "Second Introduction"
+            "nextConversation": "Second Introduction",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "Second Introduction",
@@ -308,7 +548,15 @@
             "choice2": "",
             "choice1id": "Second Introduction 2",
             "choice2id": "",
-            "nextConversation": ""
+            "nextConversation": "",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "Second Introduction 2",
@@ -318,7 +566,15 @@
             "choice2": "",
             "choice1id": "",
             "choice2id": "",
-            "nextConversation": "Wait 3"
+            "nextConversation": "Wait 3",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "Errer Grunt 1",
@@ -328,7 +584,15 @@
             "choice2": "",
             "choice1id": "",
             "choice2id": "",
-            "nextConversation": "Errer Grunt 2"
+            "nextConversation": "Errer Grunt 2",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "Errer Grunt 2",
@@ -338,7 +602,15 @@
             "choice2": "",
             "choice1id": "",
             "choice2id": "",
-            "nextConversation": "Errer Grunt 2"
+            "nextConversation": "Errer Grunt 2",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "Urrir Grunt 1",
@@ -348,7 +620,15 @@
             "choice2": "",
             "choice1id": "Urrir Grunt 2",
             "choice2id": "",
-            "nextConversation": ""
+            "nextConversation": "",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "Urrir Grunt 2",
@@ -358,7 +638,15 @@
             "choice2": "",
             "choice1id": "Urrir Grunt 3",
             "choice2id": "",
-            "nextConversation": ""
+            "nextConversation": "",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "Urrir Grunt 3",
@@ -368,7 +656,15 @@
             "choice2": "retort 'you deign to give ME orders!?!'",
             "choice1id": "Urrir Grunt Feign",
             "choice2id": "Urrir Grunt Angry",
-            "nextConversation": ""
+            "nextConversation": "",
+            "c1e": 10,
+            "c1p": -5,
+            "c1c": 5,
+            "c1s": 10,
+            "c2e": -15,
+            "c2p": 0,
+            "c2c": -5,
+            "c2s": -5
         },
         {
             "id": "Urrir Grunt Feign",
@@ -378,7 +674,15 @@
             "choice2": "",
             "choice1id": "",
             "choice2id": "",
-            "nextConversation": "Urrir Grunt 4"
+            "nextConversation": "Urrir Grunt 4",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "Urrir Grunt 4",
@@ -388,7 +692,15 @@
             "choice2": "",
             "choice1id": "Urrir Grunt 5",
             "choice2id": "",
-            "nextConversation": ""
+            "nextConversation": "",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "Urrir Grunt 5",
@@ -398,7 +710,15 @@
             "choice2": "",
             "choice1id": "",
             "choice2id": "",
-            "nextConversation": "Urrir Grunt 4"
+            "nextConversation": "Urrir Grunt 4",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "Urrir Grunt Angry",
@@ -408,7 +728,15 @@
             "choice2": "",
             "choice1id": "",
             "choice2id": "",
-            "nextConversation": "Urrir Grunt Quiet"
+            "nextConversation": "Urrir Grunt Quiet",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "Urrir Grunt Quiet",
@@ -418,7 +746,15 @@
             "choice2": "",
             "choice1id": "Urrir Grunt Errer",
             "choice2id": "",
-            "nextConversation": "Urrir Grunt Quiet"
+            "nextConversation": "Urrir Grunt Quiet",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "Urrir Grunt Errer",
@@ -428,7 +764,15 @@
             "choice2": "",
             "choice1id": "",
             "choice2id": "",
-            "nextConversation": "Urrir Grunt Quiet"
+            "nextConversation": "Urrir Grunt Quiet",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "Eirar Grunt 0",
@@ -438,7 +782,15 @@
             "choice2": "",
             "choice1id": "Eirar Grunt Monologue",
             "choice2id": "",
-            "nextConversation": ""
+            "nextConversation": "",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "Eirar Grunt Monologue",
@@ -448,7 +800,15 @@
             "choice2": "Walk away, light as a feather, free from it all.",
             "choice1id": "Eirar Grunt 1",
             "choice2id": "",
-            "nextConversation": "Eirar Grunt 0"
+            "nextConversation": "Eirar Grunt 0",
+            "c1e": 15,
+            "c1p": 0,
+            "c1c": 10,
+            "c1s": 10,
+            "c2e": -5,
+            "c2p": 0,
+            "c2c": -5,
+            "c2s": 0
         },
         {
             "id": "Eirar Grunt 1",
@@ -458,17 +818,33 @@
             "choice2": "",
             "choice1id": "Eirar Grunt 2",
             "choice2id": "",
-            "nextConversation": ""
+            "nextConversation": "",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "Eirar Grunt 2",
             "character": "Eirar Grunt",
             "script": "He is Airur. He is they-yure.",
-            "choice1": "Continue listening. Its so stupid it entertains.",
+            "choice1": "Continue listening.",
             "choice2": "You've had enough of this, time to move on.",
             "choice1id": "Eirar Grunt 3",
             "choice2id": "Eirar Grunt Disengage",
-            "nextConversation": "Eirar Grunt 0"
+            "nextConversation": "Eirar Grunt 0",
+            "c1e": 0,
+            "c1p": -5,
+            "c1c": 5,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "Eirar Grunt Disengage",
@@ -478,7 +854,15 @@
             "choice2": "",
             "choice1id": "",
             "choice2id": "",
-            "nextConversation": "Eirar Grunt Monologue"
+            "nextConversation": "Eirar Grunt Monologue",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "Eirar Grunt 3",
@@ -488,7 +872,15 @@
             "choice2": "You've had enough of this, time to move on.",
             "choice1id": "Eirar Grunt 4",
             "choice2id": "",
-            "nextConversation": "Eirar Grunt 0"
+            "nextConversation": "Eirar Grunt 0",
+            "c1e": 10,
+            "c1p": -5,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "Eirar Grunt 4",
@@ -498,7 +890,15 @@
             "choice2": "Leave the fool to himeself.",
             "choice1id": "Eirar Grunt 5",
             "choice2id": "",
-            "nextConversation": "Eirar Grunt 0"
+            "nextConversation": "Eirar Grunt 0",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "Eirar Grunt 5",
@@ -508,7 +908,15 @@
             "choice2": "",
             "choice1id": "Eirar Grunt 6",
             "choice2id": "",
-            "nextConversation": ""
+            "nextConversation": "",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "Eirar Grunt 6",
@@ -518,7 +926,15 @@
             "choice2": "Not fascinating, but without better options, you listen.",
             "choice1id": "Eirar Grunt 7",
             "choice2id": "",
-            "nextConversation": ""
+            "nextConversation": "",
+            "c1e": -5,
+            "c1p": 0,
+            "c1c": -5,
+            "c1s": 0,
+            "c2e": 10,
+            "c2p": -5,
+            "c2c": 5,
+            "c2s": 0
         },
         {
             "id": "Eirar Grunt 7",
@@ -528,7 +944,15 @@
             "choice2": "",
             "choice1id": "Eirar Grunt 8",
             "choice2id": "",
-            "nextConversation": ""
+            "nextConversation": "",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "Eirar Grunt 8",
@@ -538,7 +962,15 @@
             "choice2": "Shrug off the forced rhyme.",
             "choice1id": "Eirar Grunt Punch",
             "choice2id": "Eirar Grunt Shrug",
-            "nextConversation": ""
+            "nextConversation": "",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "Eirar Grunt Punch",
@@ -548,7 +980,15 @@
             "choice2": "",
             "choice1id": "Eirar Grunt 9",
             "choice2id": "",
-            "nextConversation": ""
+            "nextConversation": "",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "Eirar Grunt Shrug",
@@ -558,17 +998,33 @@
             "choice2": "",
             "choice1id": "Eirar Grunt 9",
             "choice2id": "",
-            "nextConversation": ""
+            "nextConversation": "",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "Eirar Grunt 9",
             "character": "Airur Grunt",
-            "script": "Quit being a jackass Eirar. I'm trying to talk to Mr. Tesda.",
+            "script": "Quit being a jacka** Eirar. I'm trying to talk to Mr. Tesda.",
             "choice1": "",
             "choice2": "",
             "choice1id": "Eirar Grunt 10",
             "choice2id": "",
-            "nextConversation": ""
+            "nextConversation": "",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "Eirar Grunt 10",
@@ -578,7 +1034,15 @@
             "choice2": "",
             "choice1id": "Eirar Grunt 11",
             "choice2id": "",
-            "nextConversation": ""
+            "nextConversation": "",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "Eirar Grunt 11",
@@ -588,7 +1052,15 @@
             "choice2": "",
             "choice1id": "",
             "choice2id": "",
-            "nextConversation": "Eirar Grunt Dime"
+            "nextConversation": "Eirar Grunt Dime",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "Eirar Grunt Dime",
@@ -598,7 +1070,15 @@
             "choice2": "",
             "choice1id": "",
             "choice2id": "",
-            "nextConversation": "Eirar Grunt Fine"
+            "nextConversation": "Eirar Grunt Fine",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "Eirar Grunt Fine",
@@ -608,17 +1088,33 @@
             "choice2": "",
             "choice1id": "",
             "choice2id": "",
-            "nextConversation": "Eirar Grunt Dime"
+            "nextConversation": "Eirar Grunt Dime",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "Airur Grunt 1",
             "character": "Airur Grunt",
             "script": "Hey, you're the traveler Sumar found while evacuating the mines. Can you tell me what your travels are like? You see, I want to leave this village in a few years when I'm old enough for my father to approve. He's Ayror, the man keeping guard by the village entrance to the east. He keeps the monsters from coming near the village. One time, he defeated a scaled wyvern with just a knife and a pot lid, just to prove to an adventurer that equipment isn't everything! I want to be just like him! Do you have any amazing stories like that!?!",
-            "choice1": "Eventually respond, once this guy shuts up.",
+            "choice1": "Eventually respond, when you can get a word in.",
             "choice2": "Tell him you're busy, even though you're not.",
             "choice1id": "Airur Grunt 2",
             "choice2id": "Airur Grunt Busy",
-            "nextConversation": ""
+            "nextConversation": "",
+            "c1e": 7,
+            "c1p": -5,
+            "c1c": 2,
+            "c1s": -2,
+            "c2e": -5,
+            "c2p": 0,
+            "c2c": -2,
+            "c2s": 2
         },
         {
             "id": "Airur Grunt Busy",
@@ -628,7 +1124,15 @@
             "choice2": "",
             "choice1id": "Airur Grunt Busy 2",
             "choice2id": "",
-            "nextConversation": ""
+            "nextConversation": "",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "Airur Grunt Busy 2",
@@ -638,7 +1142,15 @@
             "choice2": "",
             "choice1id": "Airur Grunt Busy 3",
             "choice2id": "",
-            "nextConversation": ""
+            "nextConversation": "",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "Airur Grunt Busy 3",
@@ -648,7 +1160,15 @@
             "choice2": "Walk away with no explanation.",
             "choice1id": "Airur Grunt 2",
             "choice2id": "Airur Grunt Walk Away",
-            "nextConversation": ""
+            "nextConversation": "",
+            "c1e": -5,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "Airur Grunt 2",
@@ -658,7 +1178,15 @@
             "choice2": "",
             "choice1id": "Airur Grunt 3",
             "choice2id": "",
-            "nextConversation": ""
+            "nextConversation": "",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "Airur Grunt 3",
@@ -668,7 +1196,15 @@
             "choice2": "",
             "choice1id": "Airur Grunt 4",
             "choice2id": "",
-            "nextConversation": ""
+            "nextConversation": "",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "Airur Grunt 4",
@@ -678,7 +1214,15 @@
             "choice2": "",
             "choice1id": "",
             "choice2id": "",
-            "nextConversation": "Airur Grunt Feel Better"
+            "nextConversation": "Airur Grunt Feel Better",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "Airur Grunt Walk Away",
@@ -688,7 +1232,15 @@
             "choice2": "",
             "choice1id": "",
             "choice2id": "",
-            "nextConversation": "Airur Grunt Feel Better"
+            "nextConversation": "Airur Grunt Feel Better",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "Airur Grunt Feel Better",
@@ -698,7 +1250,15 @@
             "choice2": "",
             "choice1id": "Airur Grunt Feel Better 2",
             "choice2id": "",
-            "nextConversation": ""
+            "nextConversation": "",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "Airur Grunt Feel Better 2",
@@ -708,7 +1268,15 @@
             "choice2": "",
             "choice1id": "",
             "choice2id": "",
-            "nextConversation": "Airur Grunt Feel Better"
+            "nextConversation": "Airur Grunt Feel Better",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "Ayror Grunt 1",
@@ -718,7 +1286,15 @@
             "choice2": "",
             "choice1id": "",
             "choice2id": "",
-            "nextConversation": "temp"
+            "nextConversation": "temp",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "Chir Collec 1",
@@ -728,7 +1304,15 @@
             "choice2": "",
             "choice1id": "Chir Collec 2",
             "choice2id": "",
-            "nextConversation": "Chir Collec 1"
+            "nextConversation": "Chir Collec 1",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "Chir Collec 2",
@@ -738,7 +1322,15 @@
             "choice2": "",
             "choice1id": "",
             "choice2id": "",
-            "nextConversation": "temp"
+            "nextConversation": "temp",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "Reova Collec 1",
@@ -748,7 +1340,15 @@
             "choice2": "",
             "choice1id": "",
             "choice2id": "",
-            "nextConversation": "temp"
+            "nextConversation": "temp",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "Forria Dovven 1",
@@ -756,19 +1356,161 @@
             "script": "Hi, my name is Forria Dovven. I am the gravekeeper.",
             "choice1": "",
             "choice2": "",
+            "choice1id": "Forria Dovven 2",
+            "choice2id": "",
+            "nextConversation": "temp",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
+        },
+        {
+            "id": "Forria Dovven 2",
+            "character": "Foria Dovven",
+            "script": "You should help me with the upkeep of my graves whenever you have time, traveler.",
+            "choice1": "Why would I want to do that?",
+            "choice2": "I shall be back to help.",
             "choice1id": "",
             "choice2id": "",
-            "nextConversation": "temp"
+            "nextConversation": "Forria Dovven Dead",
+            "c1e": -10,
+            "c1p": 0,
+            "c1c": -10,
+            "c1s": 0,
+            "c2e": 10,
+            "c2p": -5,
+            "c2c": 0,
+            "c2s": 10
+        },
+        {
+            "id": "Forria Dovven Dead",
+            "character": "Foria Dovven",
+            "script": "Do the dead ever talk to you?",
+            "choice1": "The ones I killed, sometimes.",
+            "choice2": "Are you okay?",
+            "choice1id": "Forria Dovven Concerned",
+            "choice2id": "Forria Dovven Unconcerned",
+            "nextConversation": "temp",
+            "c1e": -10,
+            "c1p": 0,
+            "c1c": -10,
+            "c1s": 0,
+            "c2e": 10,
+            "c2p": -5,
+            "c2c": 0,
+            "c2s": 10
+        },
+        {
+            "id": "Forria Dovven Concerned",
+            "character": "Foria Dovven",
+            "script": "I am not sure if you actually mean that, but I wish you well. Be off.",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "",
+            "choice2id": "",
+            "nextConversation": "temp",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
+        },
+        {
+            "id": "Forria Dovven Unconcerned",
+            "character": "Foria Dovven",
+            "script": "Yes, yes. I just work too much.",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "",
+            "choice2id": "",
+            "nextConversation": "temp",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "Aria Camph 1",
             "character": "Aria Camph",
             "script": "Hi, my name is Aria Camph!",
+            "choice1": "Aria Camph 2",
+            "choice2": "",
+            "choice1id": "",
+            "choice2id": "",
+            "nextConversation": "temp",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
+        },
+        {
+            "id": "Aria Camph 2",
+            "character": "Aria Camph",
+            "script": "It is quite a lot of work taking care of all these children. Would you like to buy some produce to help out?",
+            "choice1": "Do not be sarcastic. Do NOT be sarcastic.",
+            "choice2": "I do not care about children.",
+            "choice1id": "Aria Camph 3",
+            "choice2id": "Aria Dislike",
+            "nextConversation": "temp",
+            "c1e": 15,
+            "c1p": -5,
+            "c1c": 10,
+            "c1s": 5,
+            "c2e": -5,
+            "c2p": 0,
+            "c2c": -10,
+            "c2s": 0
+        },
+        {
+            "id": "Aria Camph 3",
+            "character": "Aria Camph",
+            "script": "Thank you stranger!",
             "choice1": "",
             "choice2": "",
             "choice1id": "",
             "choice2id": "",
-            "nextConversation": "temp"
+            "nextConversation": "temp",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
+        },
+        {
+            "id": "Aria Dislike",
+            "character": "Aria Camph",
+            "script": "(gasps)",
+            "choice1": "",
+            "choice2": "",
+            "choice1id": "",
+            "choice2id": "",
+            "nextConversation": "temp",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "Dimarr Camph 1",
@@ -778,7 +1520,15 @@
             "choice2": "",
             "choice1id": "",
             "choice2id": "",
-            "nextConversation": "temp"
+            "nextConversation": "temp",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "Gredor Minch 1",
@@ -786,9 +1536,36 @@
             "script": "Hi, my name is Gredor Minch. Don't talk to me.",
             "choice1": "",
             "choice2": "",
+            "choice1id": "Gredor Minch 2",
+            "choice2id": "",
+            "nextConversation": "Gredor Minch 1",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
+        },
+        {
+
+            "id": "Gredor Minch 2",
+            "character": "Gredor Minch",
+            "script": "I just said do not talk to me. What do you want? Do you want to restart or something?",
+            "choice1": "Restart! I should have been more empathetic...",
+            "choice2": "Nah. I am doing just fine.",
             "choice1id": "",
             "choice2id": "",
-            "nextConversation": "temp"
+            "nextConversation": "Gredor Minch 1",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "Leddor Minch 1",
@@ -798,7 +1575,15 @@
             "choice2": "",
             "choice1id": "",
             "choice2id": "",
-            "nextConversation": "temp"
+            "nextConversation": "temp",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "Greyor Camph 1",
@@ -808,7 +1593,15 @@
             "choice2": "",
             "choice1id": "",
             "choice2id": "",
-            "nextConversation": "temp"
+            "nextConversation": "temp",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "Reymur Camph 1",
@@ -818,7 +1611,15 @@
             "choice2": "Shoot... what was that name I made up?",
             "choice1id": "Reymur Camph Ignore",
             "choice2id": "Reymur Camph 2",
-            "nextConversation": ""
+            "nextConversation": "",
+            "c1e": -2,
+            "c1p": 0,
+            "c1c": -2,
+            "c1s": 2,
+            "c2e": 3,
+            "c2p": -2,
+            "c2c": 2,
+            "c2s": -2
         },
         {
             "id": "Reymur Camph Ignore",
@@ -828,7 +1629,15 @@
             "choice2": "",
             "choice1id": "",
             "choice2id": "",
-            "nextConversation": "Reymur Camph Ignore"
+            "nextConversation": "Reymur Camph Ignore",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "Reymur Camph 2",
@@ -838,7 +1647,15 @@
             "choice2": "I remember!",
             "choice1id": "Reymur Camph Forgot",
             "choice2id": "Reymur Camph Remember",
-            "nextConversation": ""
+            "nextConversation": "",
+            "c1e": -3,
+            "c1p": 0,
+            "c1c": 2,
+            "c1s": -2,
+            "c2e": -3,
+            "c2p": 0,
+            "c2c": -2,
+            "c2s": 2
         },
         {
             "id": "Reymur Camph Forgot",
@@ -848,7 +1665,15 @@
             "choice2": "George Orwell",
             "choice1id": "Reymur Camph React",
             "choice2id": "Reymur Camph React",
-            "nextConversation": ""
+            "nextConversation": "",
+            "c1e": 0,
+            "c1p": -3,
+            "c1c": -2,
+            "c1s": 2,
+            "c2e": -3,
+            "c2p": 0,
+            "c2c": 2,
+            "c2s": -2
         },
         {
             "id": "Reymur Camph React",
@@ -858,7 +1683,15 @@
             "choice2": "",
             "choice1id": "Reymur Camph React 2",
             "choice2id": "",
-            "nextConversation": ""
+            "nextConversation": "",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "Reymur Camph React 2",
@@ -868,7 +1701,15 @@
             "choice2": "",
             "choice1id": "",
             "choice2id": "",
-            "nextConversation": "temp"
+            "nextConversation": "temp",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "Reymur Camph Remember",
@@ -878,17 +1719,33 @@
             "choice2": "",
             "choice1id": "Reymur Camph Remember 2",
             "choice2id": "",
-            "nextConversation": "temp"
+            "nextConversation": "temp",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "Reymur Camph Remember 2",
             "character": "Demanim",
             "script": "(man this kid pisses me off. Why are all children so abonimable? And there's so many of them... Ugh...)",
             "choice1": "Tell him you are Demanim, here to reap his soul personally.",
-            "choice2": "Tell him your fake name.",
+            "choice2": "Tell him your fake name. No need to scare.",
             "choice1id": "Reymur Camph Truth",
             "choice2id": "Reymur Camph Alias",
-            "nextConversation": ""
+            "nextConversation": "",
+            "c1e": -10,
+            "c1p": 0,
+            "c1c": 2,
+            "c1s": -2,
+            "c2e": 10,
+            "c2p": -5,
+            "c2c": -2,
+            "c2s": 2
         },
         {
             "id": "Reymur Camph Truth",
@@ -898,7 +1755,15 @@
             "choice2": "Tell the kid you aren't able to play right now.",
             "choice1id": "Reymur Camph Aww",
             "choice2id": "Reymur Camph Aww",
-            "nextConversation": ""
+            "nextConversation": "",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": -2,
+            "c1s": 2,
+            "c2e": 20,
+            "c2p": -10,
+            "c2c": 2,
+            "c2s": -2
         },
         {
             "id": "Reymur Camph Aww",
@@ -908,7 +1773,15 @@
             "choice2": "",
             "choice1id": "",
             "choice2id": "",
-            "nextConversation": "Reymur Camph Bored"
+            "nextConversation": "Reymur Camph Bored",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "Reymur Camph Bored",
@@ -918,7 +1791,15 @@
             "choice2": "",
             "choice1id": "",
             "choice2id": "",
-            "nextConversation": "Reymur Camph Bored"
+            "nextConversation": "Reymur Camph Bored",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "Reymur Camph Alias",
@@ -928,7 +1809,15 @@
             "choice2": "Anir Tesra",
             "choice1id": "Reymur Correct Alias 1",
             "choice2id": "Reymur Incorrect Alias",
-            "nextConversation": ""
+            "nextConversation": "",
+            "c1e": 15,
+            "c1p": -2,
+            "c1c": -2,
+            "c1s": 2,
+            "c2e": 5,
+            "c2p": -2,
+            "c2c": 2,
+            "c2s": -2
         },
         {
             "id": "Reymur Correct Alias 1",
@@ -938,7 +1827,15 @@
             "choice2": "Maintain composure. MAINTAIN COMPOSURE.",
             "choice1id": "Reymur Gets Killed",
             "choice2id": "Reymur Greyor Correction",
-            "nextConversation": ""
+            "nextConversation": "",
+            "c1e": -10,
+            "c1p": 0,
+            "c1c": 2,
+            "c1s": -2,
+            "c2e": 20,
+            "c2p": -5,
+            "c2c": -2,
+            "c2s": 2
         },
         {
             "id": "Reymur Gets Killed",
@@ -948,7 +1845,15 @@
             "choice2": "",
             "choice1id": "",
             "choice2id": "",
-            "nextConversation": "Reymur Camph Bored"
+            "nextConversation": "Reymur Camph Bored",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "Reymur Greyor Correction",
@@ -958,7 +1863,15 @@
             "choice2": "",
             "choice1id": "Reymur Greyor Correction 2",
             "choice2id": "",
-            "nextConversation": ""
+            "nextConversation": "",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "Reymur Greyor Correction 2",
@@ -968,7 +1881,15 @@
             "choice2": "",
             "choice1id": "Reymur Greyor Correction 3",
             "choice2id": "",
-            "nextConversation": ""
+            "nextConversation": "",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "Reymur Greyor Correction 3",
@@ -978,7 +1899,15 @@
             "choice2": "",
             "choice1id": "",
             "choice2id": "",
-            "nextConversation": "Reymur Greyor Success"
+            "nextConversation": "Reymur Greyor Success",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "Reymur Greyor Success",
@@ -988,7 +1917,15 @@
             "choice2": "",
             "choice1id": "Reymur Greyor Success 2",
             "choice2id": "",
-            "nextConversation": ""
+            "nextConversation": "",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "Reymur Greyor Success 2",
@@ -998,7 +1935,15 @@
             "choice2": "",
             "choice1id": "",
             "choice2id": "",
-            "nextConversation": "Reymur Greyor Success 2"
+            "nextConversation": "Reymur Greyor Success 2",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "Laea Camph 1",
@@ -1008,7 +1953,15 @@
             "choice2": "",
             "choice1id": "",
             "choice2id": "",
-            "nextConversation": "temp"
+            "nextConversation": "temp",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "Gredor Camph 1",
@@ -1018,17 +1971,33 @@
             "choice2": "",
             "choice1id": "",
             "choice2id": "",
-            "nextConversation": "temp"
+            "nextConversation": "temp",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "Dalia Phan 1",
             "character": "Dalia Phan",
-            "script": "Hi, my name is Dalia Phan, its super fun to play here!",
+            "script": "Hi, my name is Dalia Phan, it's super fun to play here!",
             "choice1": "",
             "choice2": "",
             "choice1id": "",
             "choice2id": "",
-            "nextConversation": "temp"
+            "nextConversation": "temp",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "Hollia Phan 1",
@@ -1038,7 +2007,15 @@
             "choice2": "",
             "choice1id": "",
             "choice2id": "",
-            "nextConversation": "temp"
+            "nextConversation": "temp",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "Sumar Phan 1",
@@ -1048,7 +2025,15 @@
             "choice2": "",
             "choice1id": "",
             "choice2id": "",
-            "nextConversation": "temp"
+            "nextConversation": "temp",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "bunny",
@@ -1058,7 +2043,15 @@
             "choice2": "",
             "choice1id": "",
             "choice2id": "",
-            "nextConversation": "bunny"
+            "nextConversation": "bunny",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "end",
@@ -1068,7 +2061,15 @@
             "choice2": "",
             "choice1id": "",
             "choice2id": "",
-            "nextConversation": "end"
+            "nextConversation": "end",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "temp",
@@ -1078,17 +2079,33 @@
             "choice2": "",
             "choice1id": "",
             "choice2id": "",
-            "nextConversation": "temp"
+            "nextConversation": "temp",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         },
         {
             "id": "winGame",
             "character": "Fie",
-            "script": "You have come a long way from where you started. Please continue on your journey now.",
+            "script": "You have come a long way from where you started. It seems you have become quite empathetic of our village's people. I wish you great luck on your journey out that gate to the east.",
             "choice1": "",
             "choice2": "",
             "choice1id": "",
             "choice2id": "",
-            "nextConversation": "winGame"
+            "nextConversation": "winGame",
+            "c1e": 0,
+            "c1p": 0,
+            "c1c": 0,
+            "c1s": 0,
+            "c2e": 0,
+            "c2p": 0,
+            "c2c": 0,
+            "c2s": 0
         }
     ]
 }

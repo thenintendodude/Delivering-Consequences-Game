@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Conversation;
+using UnityEngine.SceneManagement;
 
 public class PlayerConversation : MonoBehaviour
 {
@@ -82,9 +83,6 @@ public class PlayerConversation : MonoBehaviour
                 NPC.GetComponent<InteractionPanel>().setInteractionPanel(true);
                 PlayerMovement.AllowMovement(true);
                 modalPanel.ClosePanel();
-
-                // if (NPC.name == "Fie Ronndly" && ) For eventually putting in
-                // beat the game sound effect
             }
             else // Else we know they just pressed Jump and there is still more to the conversation. 
             {
@@ -189,29 +187,41 @@ public class PlayerConversation : MonoBehaviour
     // These get invoked depending on which choice the player chooses, if applicable. 
     private void Choice1Function()
     {
+        if (NPC.GetComponent<UpdateBars>() != null)
+        {
+            NPC.GetComponent<UpdateBars>().updateEmpathy(TextObject.c1e);
+            NPC.GetComponent<UpdateBars>().updatePower(TextObject.c1p);
+            NPC.GetComponent<UpdateBars>().updateCharisma(TextObject.c1c);
+            NPC.GetComponent<UpdateBars>().updateStrategy(TextObject.c1s);
+        }
         if (TextObject.choice1id != "")
         {
             GetAndStartDisplayingText(TextObject.choice1id);
         }
         else
         {
+            // This is only when you want to restart the game!
+            if(TextObject.choice1 == "Restart! I need more empathy.")
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            }
             PlayerMovement.AllowMovement(true);
             IsTalking = false;
             player.GetComponent<PlayerInteraction>().setTalkingToNPC(false);
             NPC.GetComponent<InteractionPanel>().setInteractionPanel(true);
             modalPanel.ClosePanel();
         }
-        if (NPC.GetComponent<UpdateBars>() != null)
-        {
-            NPC.GetComponent<UpdateBars>().updateEmpathy(10); // make these based off the text node values! 
-            NPC.GetComponent<UpdateBars>().updatePower(-10);
-            NPC.GetComponent<UpdateBars>().updateCharisma(5);
-            NPC.GetComponent<UpdateBars>().updateStrategy(7);
-        }
     }
 
     private void Choice2Function()
     {
+        if (NPC.GetComponent<UpdateBars>() != null)
+        {
+            NPC.GetComponent<UpdateBars>().updateEmpathy(TextObject.c2e);
+            NPC.GetComponent<UpdateBars>().updatePower(TextObject.c2p);
+            NPC.GetComponent<UpdateBars>().updateCharisma(TextObject.c2c);
+            NPC.GetComponent<UpdateBars>().updateStrategy(TextObject.c2s);
+        }
         if (TextObject.choice2id != "")
         {
             GetAndStartDisplayingText(TextObject.choice2id);
@@ -223,13 +233,6 @@ public class PlayerConversation : MonoBehaviour
             player.GetComponent<PlayerInteraction>().setTalkingToNPC(false);
             NPC.GetComponent<InteractionPanel>().setInteractionPanel(true);
             modalPanel.ClosePanel();
-        }
-        if (NPC.GetComponent<UpdateBars>() != null)
-        {
-            NPC.GetComponent<UpdateBars>().updateEmpathy(10); // Make these based off the text node values! 
-            NPC.GetComponent<UpdateBars>().updatePower(-10);
-            NPC.GetComponent<UpdateBars>().updateCharisma(5);
-            NPC.GetComponent<UpdateBars>().updateStrategy(7);
         }
     }
 }
