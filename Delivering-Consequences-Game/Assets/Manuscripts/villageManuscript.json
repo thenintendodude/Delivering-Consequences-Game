@@ -8,7 +8,15 @@
             "choice2": "",
             "choice1id": "beginning 2",
             "choice2id": "",
-            "nextConversation": ""
+            "nextConversation": "",
+            "c1e": "",
+            "c1p": "",
+            "c1c": "",
+            "c1s": "",
+            "c2e": "",
+            "c2p": "",
+            "c2c": "",
+            "c2s": ""
         },
         {
             "id": "beginning 2",
@@ -18,7 +26,15 @@
             "choice2": "",
             "choice1id": "beginning 3",
             "choice2id": "",
-            "nextConversation": ""
+            "nextConversation": "",
+            "c1e": "",
+            "c1p": "",
+            "c1c": "",
+            "c1s": "",
+            "c2e": "",
+            "c2p": "",
+            "c2c": "",
+            "c2s": ""
         },
         {
             "id": "beginning 3",
@@ -28,7 +44,15 @@
             "choice2": "",
             "choice1id": "beginning 4",
             "choice2id": "",
-            "nextConversation": ""
+            "nextConversation": "",
+            "c1e": "",
+            "c1p": "",
+            "c1c": "",
+            "c1s": "",
+            "c2e": "",
+            "c2p": "",
+            "c2c": "",
+            "c2s": ""
         },
         {
             "id": "beginning 4",
@@ -38,7 +62,15 @@
             "choice2": "",
             "choice1id": "beginning 5",
             "choice2id": "",
-            "nextConversation": ""
+            "nextConversation": "",
+            "c1e": "",
+            "c1p": "",
+            "c1c": "",
+            "c1s": "",
+            "c2e": "",
+            "c2p": "",
+            "c2c": "",
+            "c2s": ""
         },
         {
             "id": "beginning 5",
@@ -48,7 +80,15 @@
             "choice2": "",
             "choice1id": "beginning 6",
             "choice2id": "",
-            "nextConversation": ""
+            "nextConversation": "",
+            "c1e": "",
+            "c1p": "",
+            "c1c": "",
+            "c1s": "",
+            "c2e": "",
+            "c2p": "",
+            "c2c": "",
+            "c2s": ""
         },
         {
             "id": "beginning 6",
@@ -58,7 +98,15 @@
             "choice2": "",
             "choice1id": "",
             "choice2id": "",
-            "nextConversation": ""
+            "nextConversation": "",
+            "c1e": "",
+            "c1p": "",
+            "c1c": "",
+            "c1s": "",
+            "c2e": "",
+            "c2p": "",
+            "c2c": "",
+            "c2s": ""
         },
         {
             "id": "AwakenInTown0",

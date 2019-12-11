@@ -203,7 +203,8 @@ public class PlayerConversation : MonoBehaviour
         }
         if (NPC.GetComponent<UpdateBars>() != null)
         {
-            NPC.GetComponent<UpdateBars>().updateEmpathy(TextObject.c1e); // make these based off the text node values! 
+            Debug.Log(TextObject.c1e);
+            NPC.GetComponent<UpdateBars>().updateEmpathy(TextObject.c1e); 
             NPC.GetComponent<UpdateBars>().updatePower(TextObject.c1p);
             NPC.GetComponent<UpdateBars>().updateCharisma(TextObject.c1c);
             NPC.GetComponent<UpdateBars>().updateStrategy(TextObject.c1s);
@@ -226,7 +227,7 @@ public class PlayerConversation : MonoBehaviour
         }
         if (NPC.GetComponent<UpdateBars>() != null)
         {
-            NPC.GetComponent<UpdateBars>().updateEmpathy(TextObject.c2e); // make these based off the text node values! 
+            NPC.GetComponent<UpdateBars>().updateEmpathy(TextObject.c2e);
             NPC.GetComponent<UpdateBars>().updatePower(TextObject.c2p);
             NPC.GetComponent<UpdateBars>().updateCharisma(TextObject.c2c);
             NPC.GetComponent<UpdateBars>().updateStrategy(TextObject.c2s);

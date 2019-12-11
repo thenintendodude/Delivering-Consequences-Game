@@ -33,7 +33,6 @@ public class UpdateBars : MonoBehaviour
     public void updatePower(string change)
     {
         int c = int.Parse(change);
-        empathyBar.value += c;
         powerBar.value += c;
 
         if (powerBar.value > powerBar.maxValue)
@@ -49,7 +48,6 @@ public class UpdateBars : MonoBehaviour
     public void updateCharisma(string change)
     {
         int c = int.Parse(change);
-        empathyBar.value += c;
         charismaBar.value += c;
 
         if (charismaBar.value > charismaBar.maxValue)
@@ -65,7 +63,6 @@ public class UpdateBars : MonoBehaviour
     public void updateStrategy(string change)
     {
         int c = int.Parse(change);
-        empathyBar.value += c;
         strategyBar.value += c;
 
         if (strategyBar.value > strategyBar.maxValue)
