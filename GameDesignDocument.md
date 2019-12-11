@@ -249,7 +249,7 @@ scene changed. However, if there was already a Backstory Music
 object when the scene changed, it would instead destroy the new Backstory Music object to ensure that
 there was only ever one audio source playing. Finally, it would constantly be
 checking in the Update() function if the scene had finally changed to the main
-gameplay scene (the "SampleScene"), in which case it would destory the Backstory Music
+gameplay scene (the "SampleScene"), in which case it would destroy the Backstory Music
 object for good since we no longer needed to play the backstory.
 
 For the main gameplay, I organized all audio under an Audio GameObject in the
@@ -267,16 +267,16 @@ what audio options you had and caused less mistakes for the programmers using
 AudioManager.
 
 Triggering sound effects was relatively easy, as I just had to play whatever
-audio track another script wanted until completion. However, for music tracks,
+audio track it was told to play until the track finished. However, for music tracks,
 I had to keep track of which music was currently playing so that I knew which
 track to fade out when another script wanted to change the music (such as when
 moving in and out of buildings). The fading was handled by an IEnumerator called
 [StartFade()](https://github.com/thenintendodude/Delivering-Consequences-Game/blob/afcec937e46fb1cffeaf0ff27bdff7e13bf3a637/Delivering-Consequences-Game/Assets/Scripts/Audio/AudioManager.cs#L101),
-which faded a given audio track from one level to another over whatever specified
+which faded a given audio track from one level to another over a specified
 duration (I always chose 1 second, however).
 
-A small detail that came up is in order to prevent issues when a player quickly
-switches from moving outside to inside to back outside, I had to keep track
+A small detail that came up was, in order to prevent issues from occurring where the audio would stop when a player quickly
+switched from moving outside to inside to back outside, I had to keep track
 of which music was fading out, and stop the track from fading out completely.
 Otherwise, the fade out Coroutine would stop the track before the new fade in coroutine
 had finished, causing it to stop the track altogether.
