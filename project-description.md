@@ -31,16 +31,6 @@ I also created the play menu and also opening dialogue scenes at the very beginn
 I also implemented the ability to win the game once the empathy bar is full and walking to the east of Fie at the end, and the new spawn points for Fie and the exit guard once the empathy bar is full. For this, I used the "Fie End Spawn Point" script for the guard and Fie and set new empty game objects where their spawn points would be. I also make the village decor vanish so that there is no longer a gate blocking your way out of the town. I also implemented the restart option in the game, which happens when you talk to "Gredor Minch" in the bottom left corner, in case you think you need to start over in order to make some different choices to win the game.
 
 
-## Game Logic
-#### Story
-As the primary writer of the story within a story-expoloration oriented game, the majority of my time went into writing the story. With the exception of a only a few of the conversations, all of the dialogue from the intro to the game, the banter with Fie Ronndly, and to the quircky conversations with the guards peppered through the town. I diagrammed a series of binary trees to model each conversation, but quickly found that the excessive branching created exponentially more work to ensure each path in the conversation was at least above a certain minimum length. To mitigate this issue, many of the paths actually diverge and reconverge. I felt as though the majority of my time went into my 'Story' subrole, rather than 'Game Logic' itself. For more details on the writing of the story itself, see 'Story' under "Subroles," as I feel that is a more appropriate place to put this description. 
-
-#### Text nodes
-Each segment of text is stored as an object in a json file. Specifically, within the Assests/Manuscript folder. With some assistance from Zee, I implemented a json reader to load the information for each text node. Each text node contains information such as, who is speaking, what they are saying, and the information necessary to obtain the next text node for a given conversation. This is achieved via assigning each node an "id" that acts as the key in a dictionary of text node objects. Upon entering a scene, a specific json file of text nodes is loaded and each node in the file is put into that dictionary. In the scene itself, the characters have initial id associated with them that is used to retrieve the first text node in their conversation. 
-
-Each node supports being a simple statement or allowing the user to make a choice. The choice determines which of the two text node ids is used to retrieve the next text node for the conversation. I reserved a case for the conversation being completed too. At certain choices, the conversation may immediately end, or go on to additional nodes. Either way, if the conversation ends, the NPC is given a new id for the next time a conversation is initiated. I collaborated with Elias and Alannah in implementing this, Elias being responsible for the input, Alannah being responsible for using the API we defined together to display the actual text.
-
-
 ## Movement/Physics
 
 #### Initial Player / NPC Movement Design
@@ -185,6 +175,15 @@ for the PlayerConversation.cs script [here](https://github.com/thenintendodude/D
  [conversations](https://github.com/thenintendodude/Delivering-Consequences-Game/blob/master/Delivering-Consequences-Game/Assets/Manuscripts/villageManuscript.json).
 
 ## Game Logic
+#### Story
+As the primary writer of the story within a story-expoloration oriented game, the majority of my time went into writing the story. With the exception of a only a few of the conversations, all of the dialogue from the intro to the game, the banter with Fie Ronndly, and to the quircky conversations with the guards peppered through the town. I diagrammed a series of binary trees to model each conversation, but quickly found that the excessive branching created exponentially more work to ensure each path in the conversation was at least above a certain minimum length. To mitigate this issue, many of the paths actually diverge and reconverge. I felt as though the majority of my time went into my 'Story' subrole, rather than 'Game Logic' itself. For more details on the writing of the story itself, see 'Narrative Design,' as I feel that is a more appropriate place to put this description. 
+
+#### Text nodes
+Each segment of text is stored as an object in a json file. Specifically, within the Assests/Manuscript folder. With some assistance from Zee, I implemented a json reader to load the information for each text node. Each text node contains information such as, who is speaking, what they are saying, and the information necessary to obtain the next text node for a given conversation. This is achieved via assigning each node an "id" that acts as the key in a dictionary of text node objects. Upon entering a scene, a specific json file of text nodes is loaded and each node in the file is put into that dictionary. In the scene itself, the characters have initial id associated with them that is used to retrieve the first text node in their conversation. 
+
+Each node supports being a simple statement or allowing the user to make a choice. The choice determines which of the two text node ids is used to retrieve the next text node for the conversation. I reserved a case for the conversation being completed too. At certain choices, the conversation may immediately end, or go on to additional nodes. Either way, if the conversation ends, the NPC is given a new id for the next time a conversation is initiated. I collaborated with Elias and Alannah in implementing this, Elias being responsible for the input, Alannah being responsible for using the API we defined together to display the actual text.
+
+The others and I collaborated on allowing choices in conversations to impact the player's stats and trigger the end condition of the game, when Demanim's empathy maximizes. We achieved this by adding fields to specific nodes that specify how much to change the stats by. 
 
 ___
 # SUB-ROLES
@@ -300,6 +299,8 @@ Only the last few gameplay testers were able to play the game in its entirety. G
 
 
 ## Narrative Design
+
+Demanim, a demon, an overlord, a life form just trying to get about his day, commanding an empire that stretches across the planet, finds himself with a dilemma one day. He is defeated by pesky "heroes" upholding "justice." After barely escaping alive, Demanim finds himself in an unfamiliar town, without the aid of any of his powers. If left only with the ability to interact with people via "talking" instead of using force to get his way, what happens to him? How does his character develop? We wish to give the player the ability to explore different options through the dialogue of the characters and the ways their attitude regarding Demanim changes over time. 
 
 
 ## Press Kit and Trailer
