@@ -300,7 +300,13 @@ Only the last few gameplay testers were able to play the game in its entirety. G
 
 ## Narrative Design
 
+####Motivation
 Demanim, a demon, an overlord, a life form just trying to get about his day, commanding an empire that stretches across the planet, finds himself with a dilemma one day. He is defeated by pesky "heroes" upholding "justice." After barely escaping alive, Demanim finds himself in an unfamiliar town, without the aid of any of his powers. If left only with the ability to interact with people via "talking" instead of using force to get his way, what happens to him? How does his character develop? We wish to give the player the ability to explore different options through the dialogue of the characters and the ways their attitude regarding Demanim changes over time. 
+
+####Branching and Merging
+Looking at binary trees, one can see that the number of branches grows to an incomprehensible amount within only a few choices. To mitigate the issues associated with this, many of Demanim's "choices" willl actually eventually merge down one path out of 2 or 3 overarching paths. For instance, at the beginning, Demanim is asked what his true name is. However, no matter what choice he gives the NPC, she will continue to ask him for a name until giving an answer she believes. 
+
+Similarly, the conversations Demanim has with the village guards, brothers/cousins sharing almost the same name, pronounced like "error," will each end with putting the guards in a state that is either mildly antagonistic or mildly familiar. This is only signified with what dialogue the grunts give him afterwards, but the foundation for diverging storylines is beginning to take form. 
 
 
 ## Press Kit and Trailer
