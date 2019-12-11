@@ -28,7 +28,7 @@ I created the popup panel for "press space to interact", which utilizes the trig
 I also created the play menu and also opening dialogue scenes at the very beginning of the game. These rely on their respective scripts, which manage the buttons on the screen. I also created the end win screen.
 
 #### Note
-I also implemented the ability to win the game once the empathy bar is full and walking to the east of Fie at the end, and the new spawn points for Fie and the exit guard once the empathy bar is full. For this, I used the "Fie End Spawn Point" script for the guard and Fie and set new empty game objects where their spawn points would be. I also make the village decor vanish so that there is no longer a gate blocking your way out of the town.
+I also implemented the ability to win the game once the empathy bar is full and walking to the east of Fie at the end, and the new spawn points for Fie and the exit guard once the empathy bar is full. For this, I used the "Fie End Spawn Point" script for the guard and Fie and set new empty game objects where their spawn points would be. I also make the village decor vanish so that there is no longer a gate blocking your way out of the town. I also implemented the restart option in the game, which happens when you talk to "Gredor Minch" in the bottom left corner, in case you think you need to start over in order to make some different choices to win the game.
 
 ## Movement/Physics
 

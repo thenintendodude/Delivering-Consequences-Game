@@ -555,7 +555,8 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Use the arrow keys on the keyboard to move your character! Use space to
-    interact with others and increase your stats!
+    interact with others and increase your stats! There is a way to restart inside
+    the game as well, find it if needed!
 --- !u!222 &899665228
 CanvasRenderer:
   m_ObjectHideFlags: 0

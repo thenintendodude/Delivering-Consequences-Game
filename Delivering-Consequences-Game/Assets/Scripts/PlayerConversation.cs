@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Conversation;
+using UnityEngine.SceneManagement;
 
 public class PlayerConversation : MonoBehaviour
 {
@@ -199,6 +200,11 @@ public class PlayerConversation : MonoBehaviour
         }
         else
         {
+            // This is only when you want to restart the game!
+            if(TextObject.choice1 == "Restart! I need more empathy.")
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            }
             PlayerMovement.AllowMovement(true);
             IsTalking = false;
             player.GetComponent<PlayerInteraction>().setTalkingToNPC(false);
