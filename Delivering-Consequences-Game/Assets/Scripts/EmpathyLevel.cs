@@ -9,7 +9,7 @@ public class EmpathyLevel : MonoBehaviour
     public Slider powerBar;
     public Slider charismaBar;
     public Slider strategyBar;
-    private int maxEmpathy = 100;
+    private int maxEmpathy = 70;
     private int maxPower = 100;
     private int maxCharisma = 100;
     private int maxStrategy = 100;
