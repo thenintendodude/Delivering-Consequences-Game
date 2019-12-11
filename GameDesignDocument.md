@@ -283,7 +283,7 @@ had finished, causing it to stop the track altogether.
 
 ## Gameplay Testing
 
-The first few gameplay testers happened once the game was not quite finished and the storyline had not been implemented yet. These were simply to test out what else we could implement without the story being involved, such as did the controls feel good and how did the music sound. 
+The first few gameplay testers happened once the game was not quite finished and the storyline had not been implemented yet. These were simply to test out what else we could implement without the story being involved, such as did the controls feel good and how did the music sound. There is a folder inside the repo that has all of the gameplay documents for each tester. They all gave valuable feedback which we implemented into our game, such as a restart option and added some more conversations to make the game flow smoother.
 
 
 ## Narrative Design
