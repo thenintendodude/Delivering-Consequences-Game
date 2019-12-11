@@ -1,7 +1,7 @@
 # Game Basic Information
 
 # Summary
-You are an evil overlord who has just been defeated by a hero. You wake up in a little village and are tended to by villagers. You must interact with them to level up your stats and become a "better" person. Only once have you filled up your empathy, can you win the game.
+You are an evil overlord who has just been defeated by a hero. You wake up in a little village and are tended to by villagers. You must interact with them to influence your stats to become a "better" person. Only once have you filled up your empathy, can you win the game.
 
 # Gameplay explanation
 Use WASD or the arrow key to move around the village. Press spacebar to initiate
@@ -23,6 +23,17 @@ There will be an "empathy" value measurement on the screen that indicates to the
 
 #### Opening menu and dialogue scene
 I also created the play menu and also opening dialogue scenes at the very beginning of the game. These rely on their respective scripts, which manage the buttons on the screen. 
+
+
+## Game Logic
+#### Story
+As the primary writer of the story within a story-expoloration oriented game, the majority of my time went into writing the story. With the exception of a only a few of the conversations, all of the dialogue from the intro to the game, the banter with Fie Ronndly, and to the quircky conversations with the guards peppered through the town. I diagrammed a series of binary trees to model each conversation, but quickly found that the excessive branching created exponentially more work to ensure each path in the conversation was at least above a certain minimum length. To mitigate this issue, many of the paths actually diverge and reconverge. I felt as though the majority of my time went into my 'Story' subrole, rather than 'Game Logic' itself. For more details on the writing of the story itself, see 'Story' under "Subroles," as I feel that is a more appropriate place to put this description. 
+
+#### Text nodes
+Each segment of text is stored as an object in a json file. Specifically, within the Assests/Manuscript folder. With some assistance from Zee, I implemented a json reader to load the information for each text node. Each text node contains information such as, who is speaking, what they are saying, and the information necessary to obtain the next text node for a given conversation. This is achieved via assigning each node an "id" that acts as the key in a dictionary of text node objects. Upon entering a scene, a specific json file of text nodes is loaded and each node in the file is put into that dictionary. In the scene itself, the characters have initial id associated with them that is used to retrieve the first text node in their conversation. 
+
+Each node supports being a simple statement or allowing the user to make a choice. The choice determines which of the two text node ids is used to retrieve the next text node for the conversation. I reserved a case for the conversation being completed too. At certain choices, the conversation may immediately end, or go on to additional nodes. Either way, if the conversation ends, the NPC is given a new id for the next time a conversation is initiated. I collaborated with Elias and Alannah in implementing this, Elias being responsible for the input, Alannah being responsible for using the API we defined together to display the actual text.
+
 
 ## Movement/Physics
 
