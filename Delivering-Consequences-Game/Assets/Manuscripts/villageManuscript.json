@@ -387,14 +387,14 @@
             "choice1id": "RealName2.1",
             "choice2id": "FakeName1",
             "nextConversation": "",
-            "c1e": 0,
+            "c1e": -5,
             "c1p": 0,
             "c1c": 0,
             "c1s": 0,
-            "c2e": 0,
-            "c2p": 0,
+            "c2e": 10,
+            "c2p": -5,
             "c2c": 0,
-            "c2s": 0
+            "c2s": 10
         },
         {
             "id": "RealName2.1",
@@ -409,10 +409,10 @@
             "c1p": 0,
             "c1c": 0,
             "c1s": 0,
-            "c2e": 0,
-            "c2p": 0,
+            "c2e": 10,
+            "c2p": -5,
             "c2c": 0,
-            "c2s": 0
+            "c2s": 10
         },
         {
             "id": "RealName2.2",
@@ -427,10 +427,10 @@
             "c1p": 0,
             "c1c": 0,
             "c1s": 0,
-            "c2e": 0,
-            "c2p": 0,
+            "c2e": 10,
+            "c2p": -5,
             "c2c": 0,
-            "c2s": 0
+            "c2s": 10
         },
         {
             "id": "RealName2.3",
@@ -445,10 +445,10 @@
             "c1p": 0,
             "c1c": 0,
             "c1s": 0,
-            "c2e": 0,
-            "c2p": 0,
+            "c2e": 10,
+            "c2p": -5,
             "c2c": 0,
-            "c2s": 0
+            "c2s": 10
         },
         {
             "id": "FakeName0",
@@ -495,11 +495,11 @@
             "choice1id": "FakeName1",
             "choice2id": "",
             "nextConversation": "temp",
-            "c1e": 0,
-            "c1p": 0,
-            "c1c": 0,
-            "c1s": 0,
-            "c2e": 0,
+            "c1e": 10,
+            "c1p": -5,
+            "c1c": 5,
+            "c1s": 10,
+            "c2e": -5,
             "c2p": 0,
             "c2c": 0,
             "c2s": 0
@@ -657,14 +657,14 @@
             "choice1id": "Urrir Grunt Feign",
             "choice2id": "Urrir Grunt Angry",
             "nextConversation": "",
-            "c1e": 0,
-            "c1p": 0,
-            "c1c": 0,
-            "c1s": 0,
-            "c2e": 0,
+            "c1e": 10,
+            "c1p": -5,
+            "c1c": 5,
+            "c1s": 10,
+            "c2e": -15,
             "c2p": 0,
-            "c2c": 0,
-            "c2s": 0
+            "c2c": -5,
+            "c2s": -5
         },
         {
             "id": "Urrir Grunt Feign",
@@ -801,13 +801,13 @@
             "choice1id": "Eirar Grunt 1",
             "choice2id": "",
             "nextConversation": "Eirar Grunt 0",
-            "c1e": 0,
+            "c1e": 10,
             "c1p": 0,
-            "c1c": 0,
-            "c1s": 0,
-            "c2e": 0,
+            "c1c": 10,
+            "c1s": 10,
+            "c2e": -5,
             "c2p": 0,
-            "c2c": 0,
+            "c2c": -5,
             "c2s": 0
         },
         {
@@ -838,8 +838,8 @@
             "choice2id": "Eirar Grunt Disengage",
             "nextConversation": "Eirar Grunt 0",
             "c1e": 0,
-            "c1p": 0,
-            "c1c": 0,
+            "c1p": -5,
+            "c1c": 5,
             "c1s": 0,
             "c2e": 0,
             "c2p": 0,
@@ -927,13 +927,13 @@
             "choice1id": "Eirar Grunt 7",
             "choice2id": "",
             "nextConversation": "",
-            "c1e": 0,
+            "c1e": -5,
             "c1p": 0,
-            "c1c": 0,
+            "c1c": -5,
             "c1s": 0,
-            "c2e": 0,
-            "c2p": 0,
-            "c2c": 0,
+            "c2e": 10,
+            "c2p": -5,
+            "c2c": 5,
             "c2s": 0
         },
         {
