@@ -114,8 +114,8 @@ movement.
 
 ### Running
 We also wanted to allow our player to walk faster since the village can seem
-quite large after a while. So, we decided to implement a [run mechanic](https://github.com/thenintendodude/Delivering-Consequences-Game/blob/d6f8be30549d386b693db44fa5cd4597ed0c6129/Delivering-Consequences-Game/Assets/Scripts/PlayerMovement.cs#L26).
-Here is the input command explicitly:
+quite large after a while. So, we decided to implement a [run mechanic](https://github.com/thenintendodude/Delivering-Consequences-Game/blob/d6f8be30549d386b693db44fa5cd4597ed0c6129/Delivering-Consequences-Game/Assets/Scripts/PlayerMovement.cs#L26):
+
 Hold Mouse Right-Click (while moving): Run
 
 I decided to make the control for running to be right-clicking the mouse because
