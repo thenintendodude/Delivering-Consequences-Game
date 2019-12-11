@@ -162,8 +162,10 @@ Again, since Alannah was in charge of UI, it made most sense for these on-screen
 Since overall the Input role wasn't very very large, I decided to help some other
 teammates with their main roles. For instance, I created a detailed pseudocode
 for the PlayerConversation.cs script [here](https://github.com/thenintendodude/Delivering-Consequences-Game/blob/master/Conversation%20Handler%20and%20Communication%20with%20Other%20Classes.pdf),
- I made much of the footage that went into the Trailer, and I implemented the [physics logic](https://github.com/thenintendodude/Delivering-Consequences-Game/blob/master/Delivering-Consequences-Game/Assets/Scripts/PlayerMovement.cs)
- that made walking happen (changing movement and animation speed).
+ I made much of the footage that went into the Trailer, I implemented the [physics logic](https://github.com/thenintendodude/Delivering-Consequences-Game/blob/master/Delivering-Consequences-Game/Assets/Scripts/PlayerMovement.cs)
+ that made walking happen (changing movement and animation speed), and I helped
+ with balancing the empathy/power values that result from decisions in our
+ [conversations](https://github.com/thenintendodude/Delivering-Consequences-Game/blob/master/Delivering-Consequences-Game/Assets/Manuscripts/villageManuscript.json).
 
 ## Game Logic
 
