@@ -131,7 +131,7 @@ input scheme we came up with:
 
 Walk up to NPC and press Spacebar: Initiate Conversation
 
-When in conversation, press C to show next text in a conversation.
+When in conversation, press C: show next text in a conversation.
 
 When in conversation, click Left UI Button with mouse: Make choice 1 in conversation
 
@@ -140,7 +140,7 @@ When in conversation, click Right UI Button with mouse: Make choice 2 in convers
 The logic for looking for input in conversations is found [here](https://github.com/thenintendodude/Delivering-Consequences-Game/blob/master/Delivering-Consequences-Game/Assets/Scripts/PlayerConversation.cs).
 
 Since C and Spacebar are very close to the WASD buttons, it seemed to make sense
-to use these to move the conversation along. Since our input scheme is so simple
+to use these to move the conversation along. Also, since our input scheme is so simple
 and concentrated in certain scripts, we didn't think it was necessary to make
 an ICommand script, and simply checked that the plyaer was pressing 'C' or
 "jump" (spacebar).
@@ -168,7 +168,7 @@ Again, since Alannah was in charge of UI, it made most sense for these on-screen
 Since overall the Input role wasn't very very large, I decided to help some other
 teammates with their main roles. For instance, I created a detailed pseudocode
 for the PlayerConversation.cs script [here](https://github.com/thenintendodude/Delivering-Consequences-Game/blob/master/Conversation%20Handler%20and%20Communication%20with%20Other%20Classes.pdf),
- I made much of the footage that went into the Trailer, I implemented the [physics logic](https://github.com/thenintendodude/Delivering-Consequences-Game/blob/master/Delivering-Consequences-Game/Assets/Scripts/PlayerMovement.cs)
+ I made some of the footage that went into the Trailer, I implemented the [physics logic](https://github.com/thenintendodude/Delivering-Consequences-Game/blob/master/Delivering-Consequences-Game/Assets/Scripts/PlayerMovement.cs)
  that made walking happen (changing movement and animation speed), and I helped
  with balancing the empathy/power values that result from decisions in our
  [conversations](https://github.com/thenintendodude/Delivering-Consequences-Game/blob/master/Delivering-Consequences-Game/Assets/Manuscripts/villageManuscript.json).
@@ -182,12 +182,19 @@ ___
 
 ### Audio Tracks Used (All are royalty-free)
 Our-Mountain_v003: For outdoor music, [Source]( https://soundimage.org/wp-content/uploads/2014/09/Our-Mountain_v003.mp3), CC0 license.
+
 Fantasy_Game_Background: For menu screen music, [Source](http://soundimage.org/wp-content/uploads/2014/04/Fantasy_Game_Background.mp3), CC0 license.
+
 The Foyer: For Backstory, [Source]( https://www.playonloop.com/2019-music-loops/the-foyer/#free-download), CC0 license.
+
 Red Carpet Wooden Floor: For indoor music, [Source](https://bakudas.itch.io/generic-rpg-pack), CC0 license.
+
 Squeaky Door Open: For going into building, [Source]( https://freesound.org/people/CastIronCarousel/sounds/216878/), CC0 license.
+
 Door Close: For exiting buildings, [Source](https://freesound.org/people/InspectorJ/sounds/339677/), CC0 license.
+
 UI Confirmation Beep: For when user initiates a conversation, [Source]( https://freesound.org/people/paep3nguin/sounds/388046/), CC0 license.
+
 victory-fanfare: Beat the game, [Source]( https://freesound.org/people/humanoide9000/sounds/466133/).
 
 ### Music Style
@@ -201,10 +208,13 @@ In addition, all music themes are a retro-feel to match our retro graphics style
 The only place where'd I say the music isn't as somber is in the houses of the
 NPCs, since I wanted the player to feel like the homes were safe
 and welcoming places for them to go. This is because it is in these homes that
-many important characters are with whom the character should create a strong
+some important characters are with whom the character should create a strong
 repore, so we want to encourage the character to go to the welcoming houses
-through the welcoming music since it is there that the player can actually
-progress in the game.
+since it is there that the player must go to progress in the game.
+
+The "Beat the Game" music played in the EndScreen scene is also not somber and
+is instead very happy, since the player has beaten the game! (or at least what we
+have so far).
 
 ### Editing Music
 I edited the outdoor music audio track so that the looping was a
@@ -213,8 +223,8 @@ pause between loops.
 
 ### Sound Effects
 Since I know that sound effects provide nice interactivity and satisfcation when
-playing games, I wanted to make sure to include some sound effects in our game. Specifically, I chose sound effects related to opening and closing
-doors, initiating conversation with characters, and beating the game. I found
+playing games, I wanted to make sure to include some sound effects in our game. Specifically, I chose sound effects related to opening doors, closing
+doors, and initiating conversation with characters. I found
 that these "transition" sound effects were very impactful in the flow of the
 game, and made you feel that you were really interacting with the world. However,
 I wanted these sound effects to be mostly light and unobtrusive, since I don't
@@ -232,14 +242,14 @@ For the backstory scenes, while I just had to play one track on loop, I had to
 implement a [BackstoryAudioManager script](https://github.com/thenintendodude/Delivering-Consequences-Game/blob/master/Delivering-Consequences-Game/Assets/Scripts/Audio/BackstoryAudioManager.cs) attached to all the audio objects to ensure that the music
 doesn't reset itself to the beginning upon continuing from one backstory scene
 to another. To do this, I attached the script to the same GameObject that
-contained the audio source. Then, this script's logic was that if no other
-GameObject containing an audio source was instantiated, it would instantiate an
-Audio object, play the AudioSource, and tell Unity to not destroy it when the
-scene changed. However, if there was already an Audio
-object, when the scene changed it would instead destroy itself to ensure that
+contained the audio source. Then, this script's logic was as follows: if no other
+GameObject containing an audio source was instantiated, it would instantiate a
+Backstory Music object, play the AudioSource, and tell Unity to not destroy it when the
+scene changed. However, if there was already a Backstory Music
+object when the scene changed, it would instead destroy the new Backstory Music object to ensure that
 there was only ever one audio source playing. Finally, it would constantly be
 checking in the Update() function if the scene had finally changed to the main
-gameplay scene (the "SampleScene"), in which case it would destory the audio
+gameplay scene (the "SampleScene"), in which case it would destory the Backstory Music
 object for good since we no longer needed to play the backstory.
 
 For the main gameplay, I organized all audio under an Audio GameObject in the

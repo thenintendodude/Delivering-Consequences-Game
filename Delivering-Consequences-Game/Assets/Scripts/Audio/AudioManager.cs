@@ -13,7 +13,6 @@ public class AudioManager : MonoBehaviour
 
     private AudioSource OpenDoor;
     private AudioSource CloseDoor;
-    private AudioSource BeatTheGame;
     private AudioSource UIConfirmation;
 
     /// Gets the shared instance of AudioManager
@@ -29,7 +28,6 @@ public class AudioManager : MonoBehaviour
 
         OpenDoor = GetAudioSourceByName("Open Door");
         CloseDoor = GetAudioSourceByName("Close Door");
-        BeatTheGame = GetAudioSourceByName("Beat The Game");
         UIConfirmation = GetAudioSourceByName("UI Confirmation");
 
         CurrentMusicPlaying = IndoorMusic;
@@ -58,9 +56,6 @@ public class AudioManager : MonoBehaviour
                 break;
             case SoundEffect.closeDoor:
                 CloseDoor.Play();
-                break;
-            case SoundEffect.beatTheGame:
-                BeatTheGame.Play();
                 break;
             case SoundEffect.uiConfirmation:
                 UIConfirmation.Play();
@@ -121,7 +116,6 @@ public enum SoundEffect
 {
     openDoor,
     closeDoor,
-    beatTheGame,
     uiConfirmation
 }
 

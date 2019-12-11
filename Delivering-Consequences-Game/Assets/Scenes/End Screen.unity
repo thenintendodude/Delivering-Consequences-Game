@@ -785,7 +785,7 @@ GameObject:
   - component: {fileID: 1846556377}
   - component: {fileID: 1846556376}
   m_Layer: 0
-  m_Name: Backstory Music
+  m_Name: Beat the Game
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
