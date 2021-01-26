@@ -41,4 +41,4 @@ We are a group of five students in a Gameplay Programming class at UC Davis. The
 | Input                 | Audio                 | Elias Heffan     |
 | Game Logic            | Narrative Design      | Alexander Miller |
 
-More information about what these roles entailed can be found in the Game Design document [here](https://github.com/thenintendodude/Delivering-Consequences-Game/blob/master/GameDesignDocument.md)! 
+More information about what these roles entailed can be found in the Game Design document [here](https://github.com/thenintendodude/Delivering-Consequences-Game/blob/master/project-description.md)! 
