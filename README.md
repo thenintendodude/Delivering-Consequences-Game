@@ -27,7 +27,7 @@ Interactions with NPCs result in *consequences*! This is indicated by four statu
 
 
 ## WATCH THE TRAILER
-[![Delivering Consequences Trailer](https://raw.githubusercontent.com/thenintendodude/Delivering-Consequences-Game/master/Press%20Kit%20Materials/Video%20Thumbnail.png?token=AFQ6X7EYO5YM2AV73TGVN2K562B5O)](https://youtu.be/8EdiNcTnL-Q/ "Delivering Consequences Trailer")  
+[![Delivering Consequences Trailer](https://raw.githubusercontent.com/thenintendodude/Delivering-Consequences-Game/master/Press%20Kit%20Materials/Video%20Thumbnail.png?token=AFQ6X7EYO5YM2AV73TGVN2K562B5O)](https://youtu.be/HyLQuB8qkgg/ "Delivering Consequences Trailer")  
 
 
 ## ABOUT US
